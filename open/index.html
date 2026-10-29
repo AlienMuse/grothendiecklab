@@ -1,0 +1,644 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src &#39;self&#39;; script-src &#39;self&#39;; style-src &#39;self&#39;; img-src &#39;self&#39; data:; font-src &#39;self&#39;; connect-src &#39;self&#39;; object-src &#39;none&#39;; base-uri &#39;none&#39;; form-action &#39;none&#39;">
+<title>An Invitation · 57 problems, 12 theses, 3 papers · Grothendieck Lab</title>
+<meta name="description" content="What the Grothendieckian Programme leaves open: three papers, 12 theses with what would refute each, and 57 problems, each a GitHub issue.">
+<meta name="author" content="Vincent Liu">
+<meta name="keywords" content="Grothendieck Lab, Grothendieckian Programme, Grothendieck, recursive mathematical discovery, machine reasoning, Grothendieckian Machine, Topos-Native Intelligence, mathematical discovery, reinforcement learning, self-evolving systems, AI for mathematics, formal verification, topos theory, descent, WiseMotif.ai">
+<meta name="tdm-reservation" content="1">
+<meta name="tdm-policy" content="https://github.com/AlienMuse/grothendieckian-programme/blob/main/TDM-AND-AI-POLICY.md">
+<link rel="canonical" href="https://grothendiecklab.com/open/">
+<meta property="og:site_name" content="Grothendieck Lab · WiseMotif.ai">
+<meta property="og:type" content="website">
+<meta property="og:title" content="An Invitation · 57 problems, 12 theses, 3 papers · Grothendieck Lab">
+<meta property="og:description" content="What the Grothendieckian Programme leaves open: three papers, 12 theses with what would refute each, and 57 problems, each a GitHub issue.">
+<meta property="og:url" content="https://grothendiecklab.com/open/">
+<meta property="og:image" content="https://grothendiecklab.com/static/img/og.jpg">
+<meta property="og:image:alt" content="The seven works as seven cells of one honeycomb">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#040a10">
+<link rel="icon" href="/static/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/static/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/static/img/apple-touch-icon.png">
+<link rel="preload" href="/static/fonts/pagella-regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/static/fonts/pagella-italic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/static/css/lab-e22a193768.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "name": "Grothendieck Lab",
+   "item": "https://grothendiecklab.com/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "name": "Open",
+   "item": "https://grothendiecklab.com/open/"
+  }
+ ]
+}
+</script>
+<script type="module" src="/static/js/main-PB52Z2DD.js"></script>
+</head>
+<body class="page-open">
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <div class="bar">
+    <div class="brand">
+      <a class="brand-home" href="/" aria-label="{&#39;machine_more&#39;: &#39;Centre and kernel&#39;, &#39;open_more&#39;: &#39;Papers, theses and problems&#39;, &#39;lab_more&#39;: &#39;The Lab&#39;}">
+        <img src="/static/img/favicon.svg" alt="" width="26" height="26">
+        <span class="brand-name">Grothendieck Lab</span>
+      </a>
+      <span class="brand-sep" aria-hidden="true">·</span>
+      <a class="brand-org" href="https://wisemotif.ai" title="WiseMotif.ai, the company&#39;s site">WiseMotif.ai</a>
+    </div>
+    <nav class="nav" aria-label="Main">
+      <a href="/programme/">Programme</a>
+      <a href="/method/">Method</a>
+      <a href="/machine/">Machine</a>
+      <a href="/open/" aria-current="page">Open</a>
+      <a href="/lab/">Lab</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="page-head" aria-labelledby="title">
+  <div class="wrap">
+    <p class="kicker">GROTHENDIECK LAB · WISEMOTIF.AI · OPEN</p>
+    <h1 id="title">An Invitation</h1>
+    <blockquote class="q q-lead q-head"><p>Every work of the Programme ends with a list of what it has not done, stated precisely enough to be taken up.</p><footer class="src">— <a href="/programme/">Series 00</a>, §11.1</footer></blockquote>
+    <ul class="tally">
+      <li><span class="n">3</span><span class="l">papers</span></li>
+      <li><span class="n">12</span><span class="l">theses, each with what would refute it</span></li>
+      <li><span class="n">57</span><span class="l">open problems, each a GitHub issue</span></li>
+    </ul>
+  </div>
+</section>
+
+<nav class="toc wrap" aria-label="On this page">
+  <a href="#papers">Three papers on the Programme</a> <a href="#theses">The twelve theses</a> <a href="#problems">The 57 problems</a> <a href="#s11-1">§11.1 What is open</a> <a href="#s11-2">§11.2 Three kinds of contribution</a> <a href="#s11-3">§11.3 Where to begin</a> <a href="#s11-4">§11.4 Corrections</a></nav>
+
+<div class="wrap prose">
+  <section class="block wide" aria-labelledby="papers">
+    <h2 id="papers">Three papers on the Programme</h2>
+    <p>Three papers introduce the Programme in article form: an overview, twelve theses and fifty-seven open problems. They were published on Zenodo on 2026-10-28 under CC BY 4.0, each with its own DOI, and the theses and the problems cite the overview. Their repository holds the 57 problems as issues, with the papers&#39; sources, data and figures.</p>
+    <ol class="papers">
+  <li class="paper gold">
+    <p class="pp-label"><span class="wk-n">OVERVIEW</span> · 2026-10-28 · 10 pages · CC BY 4.0</p>
+    <h3><a href="https://doi.org/10.5281/zenodo.23734421">The Grothendieckian Programme: An Overview</a></h3>
+    <p class="pp-sub">Seven Open Works on Mathematics and Machine Reasoning</p>
+<p>Two of the works specify a reasoning architecture — a core that holds mathematical worlds as typed, versioned and verifiable objects, and a kernel that reasons inside such worlds by sites, sheaves and descent.</p><p>This paper describes the architecture, the five research subjects, the method, the published corpus and the open process by which the works are to be reviewed and continued.</p>    <p class="pp-links"><a href="https://zenodo.org/records/23734422/files/The-Grothendieckian-Programme-An-Overview.pdf">PDF</a> · <a href="https://doi.org/10.5281/zenodo.23734421">doi:10.5281/zenodo.23734421</a></p>
+  </li>
+  <li class="paper cyan">
+    <p class="pp-label"><span class="wk-n">THESES</span> · 2026-10-28 · 26 pages · CC BY 4.0</p>
+    <h3><a href="https://doi.org/10.5281/zenodo.23734423">The Rising-Sea Theses</a></h3>
+    <p class="pp-sub">Twelve Theses on Mathematics and Machine Reasoning</p>
+<p>Each thesis is stated in one sentence, argued, tied to the passages of the seven works on which it rests, related to existing work, and paired with an observation that would refute it.</p><p>The theses concern the unit of mathematical knowledge for a reasoning system, the place of epistemic status, the latent space of mathematical reasoning, attention, failure, authority, and the method of discovery.</p>    <p class="pp-links"><a href="https://zenodo.org/records/23734424/files/The-Rising-Sea-Theses.pdf">PDF</a> · <a href="https://doi.org/10.5281/zenodo.23734423">doi:10.5281/zenodo.23734423</a></p>
+  </li>
+  <li class="paper blue">
+    <p class="pp-label"><span class="wk-n">PROBLEMS</span> · 2026-10-28 · 54 pages · CC BY 4.0</p>
+    <h3><a href="https://doi.org/10.5281/zenodo.23734426">The 57 Grothendieckian Problems</a></h3>
+    <p class="pp-sub">Open Problems for Mathematics and Machine Reasoning from the Grothendieckian Programme</p>
+<p>Thirty-five come from the two works on the architecture of a reasoning system and twenty-two from the five works that each take a named conjecture or programme as research subject; no problem is one of those conjectures.</p><p>Each problem is stated in the words of its source, located by work, chapter and page, given the status the source assigns it, and paired with a criterion that decides when it is solved, a note on existing work and the date of a literature check.</p>    <p class="pp-links"><a href="https://zenodo.org/records/23734427/files/The-57-Grothendieckian-Problems.pdf">PDF</a> · <a href="https://doi.org/10.5281/zenodo.23734426">doi:10.5281/zenodo.23734426</a> · <a href="https://github.com/AlienMuse/grothendieckian-problems">Repository</a></p>
+  </li>
+</ol>
+    <p class="src">The sentences under each title are from its abstract. The concept DOI resolves to the latest version of each paper.</p>
+  </section>
+
+  <section class="block wide" aria-labelledby="theses">
+    <h2 id="theses">The twelve theses</h2>
+    <p>Each thesis is stated in one sentence, argued, tied to the passages of the seven works on which it rests, related to existing work, and paired with an observation that would refute it. <span class="cite">(<a href="https://doi.org/10.5281/zenodo.23734423"><cite>The Rising-Sea Theses</cite></a>, Abstract)</span></p>
+    <ol class="theses">
+      <li id="thesis-1">
+        <p class="th-head"><span class="wk-n">THESIS 1</span> Worlds, not isolated theorems</p>
+        <p class="th-claim">For a reasoning system, the unit of mathematical knowledge is a typed, verifiable world, not an isolated theorem.</p>
+        <p class="th-ref"><span class="wk-label">What would refute it</span> A system that stores statements without world records and makes no more transport errors — after base change, change of coefficients or change of variance — than one that stores worlds, on a corpus of the kind specified for Problem 15.</p>
+<p class="th-probs">Problems <a href="#problem-4">4</a> · <a href="#problem-15">15</a></p>      </li>
+      <li id="thesis-2">
+        <p class="th-head"><span class="wk-n">THESIS 2</span> Status is part of the type</p>
+        <p class="th-claim">The epistemic status of a statement belongs to its type.</p>
+        <p class="th-ref"><span class="wk-label">What would refute it</span> A scalar ordering of statements that preserves, under the composition rules of Series 01, Vol. III, §56.15, every distinction drawn by the seven codes; or a controlled study in which a calibrated confidence score supports the same downstream decisions with no more errors.</p>
+<p class="th-probs">Problems <a href="#problem-7">7</a> · <a href="#problem-8">8</a> · <a href="#problem-31">31</a></p>      </li>
+      <li id="thesis-3">
+        <p class="th-head"><span class="wk-n">THESIS 3</span> A structured latent space</p>
+        <p class="th-claim">Mathematical reasoning needs a structured, non-vectorial latent space.</p>
+        <p class="th-ref"><span class="wk-label">What would refute it</span> A vector representation that performs as well as a typed carrier on tasks requiring transport and failure reporting — the counterexample and proof strata of the benchmark of Problem 13 — or a proof that the typed structure is recoverable from the embedding at no loss.</p>
+<p class="th-probs">Problems <a href="#problem-6">6</a> · <a href="#problem-18">18</a></p>      </li>
+      <li id="thesis-4">
+        <p class="th-head"><span class="wk-n">THESIS 4</span> Attention as descent</p>
+        <p class="th-claim">Attention can be rebuilt as descent.</p>
+        <p class="th-ref"><span class="wk-label">What would refute it</span> The null outcomes of the registered comparisons of Problems 19, 20 and 22; or a proof that transport along restriction maps adds no expressive power over attention in a stated class.</p>
+<p class="th-probs">Problems <a href="#problem-19">19</a> · <a href="#problem-20">20</a> · <a href="#problem-22">22</a> · <a href="#problem-24">24</a> · <a href="#problem-25">25</a> · <a href="#problem-27">27</a> · <a href="#problem-28">28</a> · <a href="#problem-35">35</a></p>      </li>
+      <li id="thesis-5">
+        <p class="th-head"><span class="wk-n">THESIS 5</span> Report failure; abstain without evidence</p>
+        <p class="th-claim">A reasoning system should report where local information fails to glue, and abstain when independent overlap data are absent.</p>
+        <p class="th-ref"><span class="wk-label">What would refute it</span> A system that never abstains and reports scores only, with fewer errors at equal coverage than one that reports obstructions and abstains; or a proof that the obstruction cannot be computed at useful cost (Problem 21).</p>
+<p class="th-probs">Problems <a href="#problem-9">9</a> · <a href="#problem-16">16</a> · <a href="#problem-17">17</a> · <a href="#problem-21">21</a> · <a href="#problem-23">23</a> · <a href="#problem-30">30</a> · <a href="#problem-32">32</a> · <a href="#problem-47">47</a></p>      </li>
+      <li id="thesis-6">
+        <p class="th-head"><span class="wk-n">THESIS 6</span> A chain of non-implications</p>
+        <p class="th-claim">Operational completion does not imply mathematical validity, which does not imply epistemic promotion, which does not imply publication.</p>
+        <p class="th-ref"><span class="wk-label">What would refute it</span> A class of problems in which one of the passages is shown to need no separate input — for example a fidelity checker that makes validity of the formal statement imply validity of the intended mathematics (Problem 5).</p>
+<p class="th-probs">Problems <a href="#problem-5">5</a> · <a href="#problem-12">12</a> · <a href="#problem-26">26</a> · <a href="#problem-29">29</a> · <a href="#problem-34">34</a></p>      </li>
+      <li id="thesis-7">
+        <p class="th-head"><span class="wk-n">THESIS 7</span> Machines propose; humans authorize</p>
+        <p class="th-claim">Machines may propose; humans authorize publication.</p>
+        <p class="th-ref"><span class="wk-label">What would refute it</span> A publication process without human authorisation whose rate of retraction and correction is no higher than that of a human-authorised process on comparable work; or a capability model in which the separation cannot be enforced.</p>
+<p class="th-probs">Problems <a href="#problem-10">10</a> · <a href="#problem-11">11</a></p>      </li>
+      <li id="thesis-8">
+        <p class="th-head"><span class="wk-n">THESIS 8</span> The rising sea</p>
+        <p class="th-claim">Hard problems are better approached by raising the surrounding theory than by direct attack.</p>
+        <p class="th-ref"><span class="wk-label">What would refute it</span> Comparative evidence that, for a reasoning system at equal cost, direct search settles more problems than theory-building does; or the research subjects of the Programme yielding no result that the extended setting made tractable.</p>
+<p class="th-probs">Problems <a href="#problem-1">1</a> · <a href="#problem-36">36</a> · <a href="#problem-37">37</a> · <a href="#problem-38">38</a> · <a href="#problem-41">41</a> · <a href="#problem-51">51</a> · <a href="#problem-52">52</a> · <a href="#problem-55">55</a> · <a href="#problem-56">56</a></p>      </li>
+      <li id="thesis-9">
+        <p class="th-head"><span class="wk-n">THESIS 9</span> State what is not established</p>
+        <p class="th-claim">A result is not complete until it states what it does not establish.</p>
+        <p class="th-ref"><span class="wk-label">What would refute it</span> Evidence that statements of what is not established add nothing that the hypotheses of the positive statement do not already convey — for example, that they can be generated mechanically from the hypotheses — or that readers misuse results no less often without them.</p>
+<p class="th-probs">Problems <a href="#problem-33">33</a> · <a href="#problem-39">39</a> · <a href="#problem-40">40</a> · <a href="#problem-43">43</a> · <a href="#problem-44">44</a> · <a href="#problem-45">45</a> · <a href="#problem-48">48</a> · <a href="#problem-49">49</a> · <a href="#problem-53">53</a> · <a href="#problem-54">54</a></p>      </li>
+      <li id="thesis-10">
+        <p class="th-head"><span class="wk-n">THESIS 10</span> Discovery is recursive</p>
+        <p class="th-claim">Mathematical discovery is recursive: propose, test against what is known, abstract what survives, ask again.</p>
+        <p class="th-ref"><span class="wk-label">What would refute it</span> Machine runs of the recursion that, on problems where the answer is known, rediscover no known result and produce no conjecture that survives its falsifiers (Problem 3); or a body of discoveries in which no abstraction step can be identified.</p>
+<p class="th-probs">Problems <a href="#problem-2">2</a> · <a href="#problem-3">3</a></p>      </li>
+      <li id="thesis-11">
+        <p class="th-head"><span class="wk-n">THESIS 11</span> Creating language</p>
+        <p class="th-claim">A mathematical reasoning system must be able to create notation and language, not only use them.</p>
+        <p class="th-ref"><span class="wk-label">What would refute it</span> A system restricted to a fixed language that matches a language-creating system on discovery tasks of the kind of Problem 14; or a language-creating system whose new primitives never survive review.</p>
+<p class="th-probs">Problems <a href="#problem-14">14</a> · <a href="#problem-57">57</a></p>      </li>
+      <li id="thesis-12">
+        <p class="th-head"><span class="wk-n">THESIS 12</span> Judge a method by its open ledger</p>
+        <p class="th-claim">A method should be judged by an open ledger of what it establishes, what it reduces to stated hypotheses, and what it leaves open.</p>
+        <p class="th-ref"><span class="wk-label">What would refute it</span> Ledgers that cannot be made checkable at the scale of a book — Series 06 itself records that the soundness of its ledger is not established — or that readers find less informative than the positive statements.</p>
+<p class="th-probs">Problems <a href="#problem-13">13</a> · <a href="#problem-42">42</a> · <a href="#problem-46">46</a> · <a href="#problem-50">50</a></p>      </li>
+    </ol>
+  </section>
+
+  <section class="block wide" aria-labelledby="problems">
+    <h2 id="problems">The 57 problems</h2>
+    <p>Thirty-five come from the two works on the architecture of a reasoning system and twenty-two from the five works that each take a named conjecture or programme as research subject; no problem is one of those conjectures. <span class="cite">(<a href="https://doi.org/10.5281/zenodo.23734426"><cite>The 57 Grothendieckian Problems</cite></a>, Abstract)</span></p>
+    <p><a href="https://github.com/AlienMuse/grothendieckian-problems/issues">the problems as GitHub issues →</a></p>
+    <div class="filters">
+      <input type="radio" name="fk" id="fk-all" checked><input type="radio" name="fk" id="fk-math"><input type="radio" name="fk" id="fk-machine"><input type="radio" name="fk" id="fk-formal">
+      <input type="radio" name="fw" id="fw-all" checked><input type="radio" name="fw" id="fw-S01"><input type="radio" name="fw" id="fw-S02"><input type="radio" name="fw" id="fw-S03"><input type="radio" name="fw" id="fw-S04"><input type="radio" name="fw" id="fw-S05"><input type="radio" name="fw" id="fw-S06"><input type="radio" name="fw" id="fw-S07">      <div class="chips" role="group" aria-label="Kind">
+        <span class="chips-h">Kind</span>
+        <label for="fk-all">All · 57</label>
+<label for="fk-math">mathematical · 25</label><label for="fk-machine">machine · 19</label><label for="fk-formal">formalization · 13</label>      </div>
+      <div class="chips" role="group" aria-label="Work">
+        <span class="chips-h">Work</span>
+        <label for="fw-all">All</label>
+<label for="fw-S01">01 · 17</label><label for="fw-S02">02 · 18</label><label for="fw-S03">03 · 4</label><label for="fw-S04">04 · 4</label><label for="fw-S05">05 · 5</label><label for="fw-S06">06 · 4</label><label for="fw-S07">07 · 5</label>      </div>
+      <ol class="problems">
+        <li id="problem-1" class="k-machine w-S01">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/1">
+            <span class="pn">1</span>
+            <span class="pt">The first rising-sea event</span>
+            <span class="pm">machine · programme level · Series 01 · Thesis 8</span>
+          </a>
+        </li>
+        <li id="problem-2" class="k-formal w-S01">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/2">
+            <span class="pn">2</span>
+            <span class="pt">A bounded fixed point of the coupled world–language cycle</span>
+            <span class="pm">formalization · programme level · Series 01 · Thesis 10</span>
+          </a>
+        </li>
+        <li id="problem-3" class="k-machine w-S01">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/3">
+            <span class="pn">3</span>
+            <span class="pt">From obstruction to conjecture</span>
+            <span class="pm">machine · research level · Series 01 · Thesis 10</span>
+          </a>
+        </li>
+        <li id="problem-4" class="k-machine w-S01">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/4">
+            <span class="pn">4</span>
+            <span class="pt">Minimal extension questions</span>
+            <span class="pm">machine · research level · Series 01 · Thesis 1</span>
+          </a>
+        </li>
+        <li id="problem-5" class="k-machine w-S01">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/5">
+            <span class="pn">5</span>
+            <span class="pt">Target fidelity</span>
+            <span class="pm">machine · research level · Series 01 · Thesis 6</span>
+          </a>
+        </li>
+        <li id="problem-6" class="k-formal w-S01">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/6">
+            <span class="pn">6</span>
+            <span class="pt">Verified encodings of universal properties</span>
+            <span class="pm">formalization · research level · Series 01 · Thesis 3</span>
+          </a>
+        </li>
+        <li id="problem-7" class="k-formal w-S01">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/7">
+            <span class="pn">7</span>
+            <span class="pt">The AURORA-K0 kernel, I: syntax and checking</span>
+            <span class="pm">formalization · research level · Series 01 · Thesis 2</span>
+          </a>
+        </li>
+        <li id="problem-8" class="k-formal w-S01">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/8">
+            <span class="pn">8</span>
+            <span class="pt">The AURORA-K0 kernel, II: a model and relative consistency</span>
+            <span class="pm">formalization · research level · Series 01 · Thesis 2</span>
+          </a>
+        </li>
+        <li id="problem-9" class="k-formal w-S01">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/9">
+            <span class="pn">9</span>
+            <span class="pt">The seven obligations of descent execution</span>
+            <span class="pm">formalization · research level · Series 01 · Thesis 5</span>
+          </a>
+        </li>
+        <li id="problem-10" class="k-formal w-S01">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/10">
+            <span class="pn">10</span>
+            <span class="pt">Non-self-authorization</span>
+            <span class="pm">formalization · research level · Series 01 · Thesis 7</span>
+          </a>
+        </li>
+        <li id="problem-11" class="k-formal w-S01">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/11">
+            <span class="pn">11</span>
+            <span class="pt">Evolution without authority</span>
+            <span class="pm">formalization · research level · Series 01 · Thesis 7</span>
+          </a>
+        </li>
+        <li id="problem-12" class="k-machine w-S01">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/12">
+            <span class="pn">12</span>
+            <span class="pt">Deterministic identity across implementations</span>
+            <span class="pm">machine · entry level · Series 01 · Thesis 6</span>
+          </a>
+        </li>
+        <li id="problem-13" class="k-machine w-S01">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/13">
+            <span class="pn">13</span>
+            <span class="pt">A frozen benchmark for counterexample and proof discovery</span>
+            <span class="pm">machine · entry level · Series 01 · Thesis 12</span>
+          </a>
+        </li>
+        <li id="problem-14" class="k-machine w-S01">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/14">
+            <span class="pn">14</span>
+            <span class="pt">The language forge, end to end</span>
+            <span class="pm">machine · programme level · Series 01 · Thesis 11</span>
+          </a>
+        </li>
+        <li id="problem-15" class="k-machine w-S01">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/15">
+            <span class="pn">15</span>
+            <span class="pt">A preregistered test of typed base change</span>
+            <span class="pm">machine · entry level · Series 01 · Thesis 1</span>
+          </a>
+        </li>
+        <li id="problem-16" class="k-machine w-S01">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/16">
+            <span class="pn">16</span>
+            <span class="pt">A preregistered test of the four judgments of gluing</span>
+            <span class="pm">machine · entry level · Series 01 · Thesis 5</span>
+          </a>
+        </li>
+        <li id="problem-17" class="k-machine w-S01">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/17">
+            <span class="pn">17</span>
+            <span class="pt">A preregistered test of obstruction records</span>
+            <span class="pm">machine · entry level · Series 01 · Thesis 5</span>
+          </a>
+        </li>
+        <li id="problem-18" class="k-machine w-S02">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/18">
+            <span class="pn">18</span>
+            <span class="pt">Discovering the site</span>
+            <span class="pm">machine · programme level · Series 02 · Thesis 3</span>
+          </a>
+        </li>
+        <li id="problem-19" class="k-machine w-S02">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/19">
+            <span class="pn">19</span>
+            <span class="pt">The capability wager</span>
+            <span class="pm">machine · research level · Series 02 · Thesis 4</span>
+          </a>
+        </li>
+        <li id="problem-20" class="k-machine w-S02">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/20">
+            <span class="pn">20</span>
+            <span class="pt">Nerve baselines between GRPO and RLOO</span>
+            <span class="pm">machine · research level · Series 02 · Thesis 4</span>
+          </a>
+        </li>
+        <li id="problem-21" class="k-machine w-S02">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/21">
+            <span class="pn">21</span>
+            <span class="pt">Relative obstruction as a predictor of unsupported answers</span>
+            <span class="pm">machine · research level · Series 02 · Thesis 5</span>
+          </a>
+        </li>
+        <li id="problem-22" class="k-machine w-S02">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/22">
+            <span class="pn">22</span>
+            <span class="pt">Topos-MoE against modern sparse mixture-of-experts</span>
+            <span class="pm">machine · research level · Series 02 · Thesis 4</span>
+          </a>
+        </li>
+        <li id="problem-23" class="k-machine w-S02">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/23">
+            <span class="pn">23</span>
+            <span class="pt">A defence against a globally coherent falsehood</span>
+            <span class="pm">machine · programme level · Series 02 · Thesis 5</span>
+          </a>
+        </li>
+        <li id="problem-24" class="k-math w-S02">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/24">
+            <span class="pn">24</span>
+            <span class="pt">Compiled-to-streaming descent stability</span>
+            <span class="pm">mathematical · research level · Series 02 · Thesis 4</span>
+          </a>
+        </li>
+        <li id="problem-25" class="k-math w-S02">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/25">
+            <span class="pn">25</span>
+            <span class="pt">The Beck–Chevalley square 12.6.3</span>
+            <span class="pm">mathematical · research level · Series 02 · Thesis 4</span>
+          </a>
+        </li>
+        <li id="problem-26" class="k-math w-S02">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/26">
+            <span class="pn">26</span>
+            <span class="pt">Sharp accumulation bounds for equivariance defects</span>
+            <span class="pm">mathematical · research level · Series 02 · Thesis 6</span>
+          </a>
+        </li>
+        <li id="problem-27" class="k-math w-S02">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/27">
+            <span class="pn">27</span>
+            <span class="pt">Local dynamics of the restriction-frame locus</span>
+            <span class="pm">mathematical · research level · Series 02 · Thesis 4</span>
+          </a>
+        </li>
+        <li id="problem-28" class="k-math w-S02">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/28">
+            <span class="pn">28</span>
+            <span class="pt">A base-change bound for the descent solve</span>
+            <span class="pm">mathematical · research level · Series 02 · Thesis 4</span>
+          </a>
+        </li>
+        <li id="problem-29" class="k-math w-S02">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/29">
+            <span class="pn">29</span>
+            <span class="pt">The training-to-serving deviation</span>
+            <span class="pm">mathematical · research level · Series 02 · Thesis 6</span>
+          </a>
+        </li>
+        <li id="problem-30" class="k-math w-S02">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/30">
+            <span class="pn">30</span>
+            <span class="pt">Monotone refinement budgets</span>
+            <span class="pm">mathematical · research level · Series 02 · Thesis 5</span>
+          </a>
+        </li>
+        <li id="problem-31" class="k-math w-S02">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/31">
+            <span class="pn">31</span>
+            <span class="pt">How many ambiguity axes are there?</span>
+            <span class="pm">mathematical · research level · Series 02 · Thesis 2</span>
+          </a>
+        </li>
+        <li id="problem-32" class="k-math w-S02">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/32">
+            <span class="pn">32</span>
+            <span class="pt">Second-order disagreement without engineering</span>
+            <span class="pm">mathematical · research level · Series 02 · Thesis 5</span>
+          </a>
+        </li>
+        <li id="problem-33" class="k-formal w-S02">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/33">
+            <span class="pn">33</span>
+            <span class="pt">Formalizing uniform circuit classes</span>
+            <span class="pm">formalization · research level · Series 02 · Thesis 9</span>
+          </a>
+        </li>
+        <li id="problem-34" class="k-formal w-S02">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/34">
+            <span class="pn">34</span>
+            <span class="pt">A second kernel</span>
+            <span class="pm">formalization · entry level · Series 02 · Thesis 6</span>
+          </a>
+        </li>
+        <li id="problem-35" class="k-formal w-S02">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/35">
+            <span class="pn">35</span>
+            <span class="pt">The computational-univalence bridge</span>
+            <span class="pm">formalization · programme level · Series 02 · Thesis 4</span>
+          </a>
+        </li>
+        <li id="problem-36" class="k-math w-S03">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/36">
+            <span class="pn">36</span>
+            <span class="pt">Polarization of a cyclotomic spectrum</span>
+            <span class="pm">mathematical · research level · Series 03 · Thesis 8</span>
+          </a>
+        </li>
+        <li id="problem-37" class="k-math w-S03">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/37">
+            <span class="pn">37</span>
+            <span class="pt">Construction Problem A1 on the syntomic stack</span>
+            <span class="pm">mathematical · research level · Series 03 · Thesis 8</span>
+          </a>
+        </li>
+        <li id="problem-38" class="k-math w-S03">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/38">
+            <span class="pn">38</span>
+            <span class="pt">Archimedean Frobenius from quaternionic THH</span>
+            <span class="pm">mathematical · research level · Series 03 · Thesis 8</span>
+          </a>
+        </li>
+        <li id="problem-39" class="k-machine w-S03">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/39">
+            <span class="pn">39</span>
+            <span class="pt">A certified inertia for the pole-removed Weil form</span>
+            <span class="pm">machine · entry level · Series 03 · Thesis 9</span>
+          </a>
+        </li>
+        <li id="problem-40" class="k-math w-S04">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/40">
+            <span class="pn">40</span>
+            <span class="pt">The Tamagawa factor as a local term</span>
+            <span class="pm">mathematical · research level · Series 04 · Thesis 9</span>
+          </a>
+        </li>
+        <li id="problem-41" class="k-math w-S04">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/41">
+            <span class="pn">41</span>
+            <span class="pt">The arithmetic flow</span>
+            <span class="pm">mathematical · programme level · Series 04 · Thesis 8</span>
+          </a>
+        </li>
+        <li id="problem-42" class="k-math w-S04">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/42">
+            <span class="pn">42</span>
+            <span class="pt">Sub-conductor rank detection</span>
+            <span class="pm">mathematical · research level · Series 04 · Thesis 12</span>
+          </a>
+        </li>
+        <li id="problem-43" class="k-machine w-S04">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/43">
+            <span class="pn">43</span>
+            <span class="pt">Murmurations from the flow: a falsification test</span>
+            <span class="pm">machine · entry level · Series 04 · Thesis 9</span>
+          </a>
+        </li>
+        <li id="problem-44" class="k-formal w-S05">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/44">
+            <span class="pn">44</span>
+            <span class="pt">The Hodge decomposition in Lean</span>
+            <span class="pm">formalization · programme level · Series 05 · Thesis 9</span>
+          </a>
+        </li>
+        <li id="problem-45" class="k-math w-S05">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/45">
+            <span class="pn">45</span>
+            <span class="pt">No δ-structure on the archimedean prism</span>
+            <span class="pm">mathematical · research level · Series 05 · Thesis 9</span>
+          </a>
+        </li>
+        <li id="problem-46" class="k-math w-S05">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/46">
+            <span class="pn">46</span>
+            <span class="pt">Independence of the twelve prism axioms</span>
+            <span class="pm">mathematical · entry level · Series 05 · Thesis 12</span>
+          </a>
+        </li>
+        <li id="problem-47" class="k-math w-S05">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/47">
+            <span class="pn">47</span>
+            <span class="pt">Descent beyond the polarized case</span>
+            <span class="pm">mathematical · research level · Series 05 · Thesis 5</span>
+          </a>
+        </li>
+        <li id="problem-48" class="k-math w-S05">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/48">
+            <span class="pn">48</span>
+            <span class="pt">A prism reading of Voisin’s counterexample</span>
+            <span class="pm">mathematical · entry level · Series 05 · Thesis 9</span>
+          </a>
+        </li>
+        <li id="problem-49" class="k-formal w-S06">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/49">
+            <span class="pn">49</span>
+            <span class="pt">Close the formal algebra leaf</span>
+            <span class="pm">formalization · entry level · Series 06 · Thesis 9</span>
+          </a>
+        </li>
+        <li id="problem-50" class="k-machine w-S06">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/50">
+            <span class="pn">50</span>
+            <span class="pt">Toward an algorithm for prismatic cohomology</span>
+            <span class="pm">machine · research level · Series 06 · Thesis 12</span>
+          </a>
+        </li>
+        <li id="problem-51" class="k-math w-S06">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/51">
+            <span class="pn">51</span>
+            <span class="pt">The real-place gauge</span>
+            <span class="pm">mathematical · research level · Series 06 · Thesis 8</span>
+          </a>
+        </li>
+        <li id="problem-52" class="k-math w-S06">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/52">
+            <span class="pn">52</span>
+            <span class="pt">The gluing problem for the global substrate</span>
+            <span class="pm">mathematical · programme level · Series 06 · Thesis 8</span>
+          </a>
+        </li>
+        <li id="problem-53" class="k-math w-S07">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/53">
+            <span class="pn">53</span>
+            <span class="pt">The multiplicative-group gate</span>
+            <span class="pm">mathematical · research level · Series 07 · Thesis 9</span>
+          </a>
+        </li>
+        <li id="problem-54" class="k-math w-S07">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/54">
+            <span class="pn">54</span>
+            <span class="pt">The first falsification test for GL<span class="m"><sub>2</sub></span></span>
+            <span class="pm">mathematical · research level · Series 07 · Thesis 9</span>
+          </a>
+        </li>
+        <li id="problem-55" class="k-math w-S07">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/55">
+            <span class="pn">55</span>
+            <span class="pt">Ambidexterity over the arithmetic base</span>
+            <span class="pm">mathematical · programme level · Series 07 · Thesis 8</span>
+          </a>
+        </li>
+        <li id="problem-56" class="k-math w-S07">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/56">
+            <span class="pn">56</span>
+            <span class="pt">Construct the global arithmetic curve</span>
+            <span class="pm">mathematical · programme level · Series 07 · Thesis 8</span>
+          </a>
+        </li>
+        <li id="problem-57" class="k-formal w-S07">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/57">
+            <span class="pn">57</span>
+            <span class="pt">Coherence for arithmetic modes</span>
+            <span class="pm">formalization · research level · Series 07 · Thesis 11</span>
+          </a>
+        </li>
+      </ol>
+    </div>
+    <p class="src">Each number opens the problem&#39;s GitHub issue, where its statement, its source, what would solve it and its discussion stand. Kinds and levels as the paper gives them.</p>
+  </section>
+
+<section class="book-sec" id="s11-1" aria-labelledby="s11-1-h">
+<h2 id="s11-1-h"><span class="sn">§11.1</span> What is open</h2><p>Every work of the Programme ends with a list of what it has not done, stated precisely enough to be taken up. The third leaves two construction problems — an arithmetic Hermitian form of negative index one compatible with an operator whose spectrum is the zeros, and an upper constraint on amplified zero data — and invites a reader to attack either without accepting the other <span class="cite">(<span class="c1">Series 03, Preface</span>)</span>. The fourth leaves twelve conjectures and fourteen obstructions, each with a statement, what it blocks, its partial results, an attack plan and a difficulty rating, ordered into a construction programme with criteria for abandoning a stage <span class="cite">(<span class="c1">Series 04, Preface</span>)</span>. The fifth leaves two live obstructions and sixty problems graded by difficulty, and tells a reader who wishes to refute the book, or to complete it, to go directly to the passage from a closed current to a positive one <span class="cite">(<span class="c1">Series 05, Preface</span>)</span>. The sixth leaves ninety-eight named obligations, of which one carries the arithmetic weight of its master inequality <span class="cite">(<span class="c1">Series 06, Abstract</span>)</span>. The seventh leaves four gaps of the first rank of difficulty and fourteen research problems in dependency order <span class="cite">(<span class="c1">Series 07, Ch. 40</span>)</span>. The first two works leave specifications to be implemented and experiments to be run <span class="cite">(<span class="c1">Series 01, Vol. III</span>; <span class="c1">Series 02, Preface</span>)</span>.</p>
+  <p class="src">Source: <a href="/programme/">Series 00</a>, §11.1</p>
+</section><section class="book-sec" id="s11-2" aria-labelledby="s11-2-h">
+<h2 id="s11-2-h"><span class="sn">§11.2</span> Three kinds of contribution</h2><p>The second work names three kinds of contribution that would matter most, and they apply to every work of the Programme <span class="cite">(<span class="c1">Series 02, Preface</span>)</span>. The first is <em>refutation</em>: a counterexample to a theorem, the failure of a stated degeneration, or an experiment in which a module fails the gate it names; each would remove something, and each is welcome. The second is <em>completion</em>: the obligations printed as open are stated precisely enough to be taken up, and several are problems of independent interest. The third is <em>construction</em>: an implementation of a specified part, run against the tests the works fix in advance. The sixth work adds the reason a sceptical reading is not a concession: a reader who finds a false obligation, a circular dependency or a certified failure of a locked comparison has advanced the subject more than one who merely finds the architecture suggestive <span class="cite">(<span class="c1">Series 06, Preface</span>)</span>.</p>
+  <p class="src">Source: <a href="/programme/">Series 00</a>, §11.2</p>
+</section><section class="book-sec" id="s11-3" aria-labelledby="s11-3-h">
+<h2 id="s11-3-h"><span class="sn">§11.3</span> Where to begin</h2><p>Each work gives its own routes for different readers, and Table 4 assembles from them five routes through the Programme. The sceptical route is the one most of the works recommend: the seventh calls it the recommended route, because its principal claim on a reader's attention is the precision of its accounting, and the accounting is at the back <span class="cite">(<span class="c1">Series 07, How to Read This Book</span>)</span>.</p>
+    <div class="tbl"><table>
+      <thead><tr><th scope="col">Route</th><th scope="col">For</th><th scope="col">Through the seven works</th></tr></thead>
+      <tbody><tr><td>First reading</td><td>a reader new to the Programme</td><td>this book; the Series Note and Abstract of each work; <span class="cite">(<span class="c1">Series 07, Ch. 1</span>)</span>, "a complete account of the whole architecture"; Part 0 of Series 04 and of Series 05</td></tr><tr><td>Mathematical</td><td>a mathematician</td><td>the Volume I prospectus and source-critical chapters of Series 01; Part III of Series 03, the function-field paradigm; Route A of Series 05; the arithmetician's route of Series 07, Chapters 1, 7, 16, 19, 33–36 and 40</td></tr><tr><td>Machine reasoning</td><td>an AI researcher</td><td>the Integrated Preface, Volume III Chapters 1–13 and the first two parts of Volume IV of Series 01; Part I, then Parts V, VI and IX of Series 02</td></tr><tr><td>Formal and computational</td><td>a formaliser or engineer</td><td>the formalisers' route of Series 01; Part X of Series 05; Part VIII of Series 06; Chapters 37–38 and Appendix G of Series 07</td></tr><tr><td>Sceptical</td><td>a referee</td><td>Parts X and XIV of Series 02; Chapters 5 and 58 of Series 03; Chapter 55 of Series 04; Route G of Series 05; Chapter 40, Appendix F and Chapter 39 of Series 07</td></tr></tbody>
+    </table><p class="tcap">Reading routes through the Programme.</p></div>
+  <p class="src">Source: <a href="/programme/">Series 00</a>, §11.3</p>
+</section><section class="book-sec" id="s11-4" aria-labelledby="s11-4-h">
+<h2 id="s11-4-h"><span class="sn">§11.4</span> Corrections</h2><p>Each work names the instrument by which it should be corrected. The seventh asks that errors be reported against its statement ledger, which gives every claim a stable identifier, so that a report names the claim it concerns <span class="cite">(<span class="c1">Series 07, Colophon</span>)</span>; the fifth undertakes to keep a public errata <span class="cite">(<span class="c1">Series 05, Preface</span>)</span>; the fourth gives every assertion a row in a proof-obligation ledger, so that a reader may audit the book rather than read it <span class="cite">(<span class="c1">Series 04, Preface</span>)</span>. Each work is published with its sources of record — a concept DOI that resolves to every version, a repository and a signed list of checksums — so that a correction can name the exact edition it corrects.</p>
+<p>The Programme is offered in the spirit in which the research subjects offer their own instruments: to be checked, and where it fails, to be corrected <span class="cite">(<span class="c1">Series 07, Preface</span>)</span>.</p>
+  <p class="src">Source: <a href="/programme/">Series 00</a>, §11.4</p>
+</section></div>
+</main>
+<footer class="foot">
+  <div class="wrap foot-grid">
+    <div>
+      <p class="foot-lab"><a href="/lab/">Grothendieck Lab · WiseMotif.ai</a></p>
+      <p>The official site of Grothendieck Lab and of the Grothendieckian Programme.</p>
+      <p><a href="https://wisemotif.ai">WiseMotif.ai</a> · © 2026 Vincent Liu · <a href="https://orcid.org/0009-0000-8718-222X">ORCID 0009-0000-8718-222X</a></p>
+      <p><a href="/lab/#name">The name</a> · <a href="/lab/#licence">Licence</a></p>
+    </div>
+    <nav class="foot-works" aria-label="The seven works">
+      <ul>
+        <li><a href="/works/grothendieckian-machine/"><span class="sn">01</span> GAI-MUA: The Grothendieckian Machine</a></li>
+        <li><a href="/works/topos-native-intelligence/"><span class="sn">02</span> GM-Omega-Infinity: Topos-Native Intelligence</a></li>
+        <li><a href="/works/arithmetic-spectral-descent/"><span class="sn">03</span> Arithmetic Spectral Descent</a></li>
+        <li><a href="/works/fractured-adelic-geometry/"><span class="sn">04</span> Fractured Adelic Geometry</a></li>
+        <li><a href="/works/the-archimedean-prism/"><span class="sn">05</span> The Archimedean Prism</a></li>
+        <li><a href="/works/strained-prismatic-geometry/"><span class="sn">06</span> Strained Prismatic Geometry</a></li>
+        <li><a href="/works/the-arithmetic-topos/"><span class="sn">07</span> The Arithmetic Topos</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
