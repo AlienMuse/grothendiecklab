@@ -11,6 +11,7 @@
   <a href="https://grothendiecklab.com/machine/">Machine</a> ·
   <a href="https://grothendiecklab.com/open/">Open problems</a> ·
   <a href="https://grothendiecklab.com/lab/">The Lab</a> ·
+  <a href="https://grothendiecklab.com/zh/">中文</a> ·
   <a href="https://wisemotif.ai">WiseMotif.ai</a>
 </p>
 

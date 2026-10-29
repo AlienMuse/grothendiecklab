@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="zh-Hans" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src &#39;self&#39;; script-src &#39;self&#39;; style-src &#39;self&#39;; img-src &#39;self&#39; data:; font-src &#39;self&#39;; connect-src &#39;self&#39;; object-src &#39;none&#39;; base-uri &#39;none&#39;; form-action &#39;none&#39;">
+<title>Grothendieck Lab · 格罗滕迪克纲领</title>
+<meta name="description" content="Grothendieck Lab 与 Grothendieckian Programme 的官方网站：关于机器如何推理数学的七部著作，34 卷、26,021 页，开放获取。">
+<meta name="author" content="Vincent Liu">
+<meta name="keywords" content="Grothendieck Lab, 格罗滕迪克纲领, Grothendieck, 递归式数学发现, 机器推理, Grothendieckian Machine, Topos-Native Intelligence, 元推理内核, 面向数学的人工智能, 形式化验证, 拓扑斯, 层, 下降, 可验证, WiseMotif.ai">
+<meta name="tdm-reservation" content="1">
+<meta name="tdm-policy" content="https://github.com/AlienMuse/grothendieckian-programme/blob/main/TDM-AND-AI-POLICY.md">
+<link rel="canonical" href="https://grothendiecklab.com/zh/">
+<link rel="alternate" hreflang="en" href="https://grothendiecklab.com/">
+<link rel="alternate" hreflang="zh-Hans" href="https://grothendiecklab.com/zh/">
+<link rel="alternate" hreflang="x-default" href="https://grothendiecklab.com/">
+<meta property="og:site_name" content="Grothendieck Lab · WiseMotif.ai">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Grothendieck Lab · 格罗滕迪克纲领">
+<meta property="og:description" content="Grothendieck Lab 与 Grothendieckian Programme 的官方网站：关于机器如何推理数学的七部著作，34 卷、26,021 页，开放获取。">
+<meta property="og:url" content="https://grothendiecklab.com/zh/">
+<meta property="og:image" content="https://grothendiecklab.com/static/img/og.jpg">
+<meta property="og:image:alt" content="七部著作，画成同一个蜂巢的七格">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#040a10">
+<link rel="icon" href="/static/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/static/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/static/img/apple-touch-icon.png">
+<link rel="preload" href="/static/fonts/pagella-regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/static/fonts/pagella-italic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/static/css/lab-09a47c6f56.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "WebSite",
+ "@id": "https://grothendiecklab.com/#site",
+ "name": "Grothendieck Lab",
+ "url": "https://grothendiecklab.com/",
+ "description": "Grothendieck Lab 与 Grothendieckian Programme 的官方网站。",
+ "inLanguage": [
+  "en",
+  "zh-Hans"
+ ],
+ "publisher": {
+  "@type": "Organization",
+  "@id": "https://grothendiecklab.com/#lab",
+  "name": "Grothendieck Lab",
+  "url": "https://grothendiecklab.com/",
+  "description": "Grothendieck Lab 与 Grothendieckian Programme 的官方网站。",
+  "parentOrganization": {
+   "@type": "Organization",
+   "name": "WiseMotif.ai",
+   "url": "https://wisemotif.ai"
+  }
+ },
+ "about": {
+  "@type": "CreativeWorkSeries",
+  "name": "The Grothendieckian Programme",
+  "url": "https://grothendiecklab.com/programme/"
+ },
+ "copyrightHolder": {
+  "@id": "https://grothendiecklab.com/lab/#person"
+ },
+ "copyrightYear": 2026,
+ "copyrightNotice": "© 2026 Vincent Liu, all rights reserved"
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Organization",
+ "@id": "https://grothendiecklab.com/#lab",
+ "name": "Grothendieck Lab",
+ "url": "https://grothendiecklab.com/",
+ "description": "Grothendieck Lab 与 Grothendieckian Programme 的官方网站。",
+ "parentOrganization": {
+  "@type": "Organization",
+  "name": "WiseMotif.ai",
+  "url": "https://wisemotif.ai"
+ }
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Person",
+ "@id": "https://grothendiecklab.com/lab/#person",
+ "name": "Vincent Liu",
+ "url": "https://grothendiecklab.com/zh/lab/",
+ "jobTitle": "Chief AI Mathematician",
+ "worksFor": {
+  "@type": "Organization",
+  "name": "WiseMotif.ai",
+  "url": "https://wisemotif.ai"
+ },
+ "affiliation": {
+  "@id": "https://grothendiecklab.com/#lab"
+ },
+ "sameAs": [
+  "https://orcid.org/0009-0000-8718-222X",
+  "https://scholar.google.com/citations?user=t0sMkU0AAAAJ",
+  "https://github.com/AlienMuse",
+  "https://zenodo.org/communities/grothendieckian-programme",
+  "https://alienmuse.github.io/"
+ ]
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "ItemList",
+ "name": "The Grothendieckian Programme · Series 01–07",
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "url": "https://grothendiecklab.com/zh/works/grothendieckian-machine/",
+   "name": "Series 01 · GAI-MUA: The Grothendieckian Machine"
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "url": "https://grothendiecklab.com/zh/works/topos-native-intelligence/",
+   "name": "Series 02 · GM-Omega-Infinity: Topos-Native Intelligence"
+  },
+  {
+   "@type": "ListItem",
+   "position": 3,
+   "url": "https://grothendiecklab.com/zh/works/arithmetic-spectral-descent/",
+   "name": "Series 03 · Arithmetic Spectral Descent"
+  },
+  {
+   "@type": "ListItem",
+   "position": 4,
+   "url": "https://grothendiecklab.com/zh/works/fractured-adelic-geometry/",
+   "name": "Series 04 · Fractured Adelic Geometry"
+  },
+  {
+   "@type": "ListItem",
+   "position": 5,
+   "url": "https://grothendiecklab.com/zh/works/the-archimedean-prism/",
+   "name": "Series 05 · The Archimedean Prism"
+  },
+  {
+   "@type": "ListItem",
+   "position": 6,
+   "url": "https://grothendiecklab.com/zh/works/strained-prismatic-geometry/",
+   "name": "Series 06 · Strained Prismatic Geometry"
+  },
+  {
+   "@type": "ListItem",
+   "position": 7,
+   "url": "https://grothendiecklab.com/zh/works/the-arithmetic-topos/",
+   "name": "Series 07 · The Arithmetic Topos"
+  }
+ ]
+}
+</script>
+<script type="module" src="/static/js/main-PB52Z2DD.js"></script>
+</head>
+<body class="page-home l-zh">
+<a class="skip" href="#main">跳到正文</a>
+<header class="top">
+  <div class="bar">
+    <div class="brand">
+      <a class="brand-home" href="/zh/" aria-label="{&#39;machine_more&#39;: &#39;中心与内核&#39;, &#39;open_more&#39;: &#39;论文、论纲与问题&#39;, &#39;lab_more&#39;: &#39;实验室&#39;}">
+        <img src="/static/img/favicon.svg" alt="" width="26" height="26">
+        <span class="brand-name">Grothendieck Lab</span>
+      </a>
+      <span class="brand-sep" aria-hidden="true">·</span>
+      <a class="brand-org" href="https://wisemotif.ai" title="WiseMotif.ai，公司主站">WiseMotif.ai</a>
+    </div>
+    <div class="bar-r">
+      <nav class="nav" aria-label="主导航">
+        <a href="/zh/programme/">纲领</a>
+        <a href="/zh/method/">方法</a>
+        <a href="/zh/machine/">机器</a>
+        <a href="/zh/open/">开放</a>
+        <a href="/zh/lab/">实验室</a>
+      </nav>
+      <a class="lang" href="/" hreflang="en" lang="en" title="本页的英文版">English</a>
+    </div>
+  </div>
+</header>
+<main id="main">
+<div class="tide">
+  <div class="stage" data-far="/static/img/stars-far.webp" data-far-tile="1400">
+    <picture>
+      <source media="(max-width: 899px), (max-aspect-ratio: 1/1)" srcset="/static/img/poster-tall.webp" width="1080" height="1920">
+      <img class="poster" src="/static/img/poster-wide.webp" width="1920" height="1200" alt="" fetchpriority="high">
+    </picture>
+    <canvas aria-hidden="true"></canvas>
+    <div class="hc" role="group" aria-label="七部著作，画成同一个蜂巢的七格">
+      <svg class="hc-glass" viewBox="0 0 500 519.615" aria-hidden="true" focusable="false">
+<polygon class="g-cyan g-core" points="347.50,259.81 298.75,344.25 201.25,344.25 152.50,259.81 201.25,175.37 298.75,175.37"/><polygon class="g-cyan" points="347.50,86.60 298.75,171.04 201.25,171.04 152.50,86.60 201.25,2.17 298.75,2.17"/><polygon class="g-blue" points="497.50,173.21 448.75,257.64 351.25,257.64 302.50,173.21 351.25,88.77 448.75,88.77"/><polygon class="g-violet" points="497.50,346.41 448.75,430.85 351.25,430.85 302.50,346.41 351.25,261.97 448.75,261.97"/><polygon class="g-blue" points="347.50,433.01 298.75,517.45 201.25,517.45 152.50,433.01 201.25,348.58 298.75,348.58"/><polygon class="g-violet" points="197.50,346.41 148.75,430.85 51.25,430.85 2.50,346.41 51.25,261.97 148.75,261.97"/><polygon class="g-blue" points="197.50,173.21 148.75,257.64 51.25,257.64 2.50,173.21 51.25,88.77 148.75,88.77"/>      </svg>
+      <a class="cell p-centre cyan core" href="/zh/works/grothendieckian-machine/"
+         data-series="01" data-pos="centre" data-colour="cyan" aria-label="Series 01 · GAI-MUA: The Grothendieckian Machine">
+        <span class="cs">SERIES 01</span>
+        <span class="cr">GAI-MUA</span>
+        <span class="cf">Desc(Φ₁,…,Φ₆)</span>
+      </a>
+      <a class="cell p-top cyan" href="/zh/works/topos-native-intelligence/"
+         data-series="02" data-pos="top" data-colour="cyan" aria-label="Series 02 · GM-Omega-Infinity: Topos-Native Intelligence">
+        <span class="cs">SERIES 02</span>
+        <span class="cr">TOPOS-NATIVE</span>
+        <span class="cf">Sub(X) ≅ Hom(X, Ω)</span>
+      </a>
+      <a class="cell p-upper-right blue" href="/zh/works/arithmetic-spectral-descent/"
+         data-series="03" data-pos="upper-right" data-colour="blue" aria-label="Series 03 · Arithmetic Spectral Descent">
+        <span class="cs">SERIES 03</span>
+        <span class="cr">RIEMANN&nbsp;· GRH</span>
+        <span class="cf"><span class="f2">#{Re λ &gt; ½}</span><span class="f2">≤ min(n₊, n₋)</span></span>
+      </a>
+      <a class="cell p-lower-right violet" href="/zh/works/fractured-adelic-geometry/"
+         data-series="04" data-pos="lower-right" data-colour="violet" aria-label="Series 04 · Fractured Adelic Geometry">
+        <span class="cs">SERIES 04</span>
+        <span class="cr">BSD</span>
+        <span class="cf">Δ(X<sub>E</sub>)</span>
+      </a>
+      <a class="cell p-bottom blue" href="/zh/works/the-archimedean-prism/"
+         data-series="05" data-pos="bottom" data-colour="blue" aria-label="Series 05 · The Archimedean Prism">
+        <span class="cs">SERIES 05</span>
+        <span class="cr">HODGE</span>
+        <span class="cf">Δ(X)</span>
+      </a>
+      <a class="cell p-lower-left violet" href="/zh/works/strained-prismatic-geometry/"
+         data-series="06" data-pos="lower-left" data-colour="violet" aria-label="Series 06 · Strained Prismatic Geometry">
+        <span class="cs">SERIES 06</span>
+        <span class="cr">abc</span>
+        <span class="cf">Spec ℤ → 𝔖</span>
+      </a>
+      <a class="cell p-upper-left blue" href="/zh/works/the-arithmetic-topos/"
+         data-series="07" data-pos="upper-left" data-colour="blue" aria-label="Series 07 · The Arithmetic Topos">
+        <span class="cs">SERIES 07</span>
+        <span class="cr">LANGLANDS</span>
+        <span class="cf">𝔛<sub>𝐙</sub></span>
+      </a>
+    </div>
+  </div>
+
+  <div class="frames">
+    <section class="frame hero" data-sea="0" aria-labelledby="title">
+      <div class="fin">
+        <p class="kicker">GROTHENDIECK LAB · WISEMOTIF.AI</p>
+        <h1 id="title" lang="en"><span class="nb">The Grothendieckian</span> Programme</h1>
+        <p class="subtitle">格罗滕迪克纲领 · 机器推理时代的递归式数学发现</p>
+        <blockquote class="dedication">
+<p><span class="dl">……在难题周围建起使之自然的宇宙，</span><span class="dl">直到海水上涨、难题自行打开。</span></p>
+          <p class="dl2">本纲领要问的是：这种上涨能否延续——并被习得。</p>
+          <footer class="src">——<a href="/zh/programme/">Series 00</a>，献辞</footer>
+          <details class="orig"><summary>英文原文</summary><p lang="en">…raised around them the universes in which they become natural, until, as the sea rises, they open of themselves. This Programme asks whether that rising can be continued — and learned.</p></details>
+        </blockquote>
+        <p class="facts">七部著作 · 34 卷 · 26,021 页 · 开放获取，各有 DOI</p>
+        <p class="actions">
+          <a class="btn btn-primary" href="/zh/programme/">阅读总纲</a>
+          <a class="btn" href="#works">七部著作</a>
+          <a class="btn" href="/zh/open/">开放问题</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="frame" data-sea="0" aria-labelledby="question">
+      <div class="fin panel">
+        <h2 class="eyebrow" id="question">问题</h2>
+        <blockquote class="q q-lead"><p>现今的语言模型以预测下一个 token 为训练目标。七部著作并不主张取代它们。它们追问的是：任何基于局部证据进行推理的机器必须遵从什么；以及一台机器要怎样才能像 Grothendieck 对待难题那样工作——建立使问题变得自然的环境，并在那里提出下一个问题。</p><footer class="src">——<a href="/zh/programme/">Series 00</a>，摘要</footer><details class="orig"><summary>英文原文</summary><p lang="en">Present language models are trained to predict the next token. The seven works do not propose to replace them. They ask what any machine that reasons over local evidence must answer to, and what it would take for a machine to do what Grothendieck did with a hard problem: to build the setting in which the problem becomes natural, and to pose the next question there.</p></details></blockquote>
+      </div>
+    </section>
+    <section class="frame" data-sea="0.02" aria-labelledby="method">
+      <div class="fin panel">
+        <p class="eyebrow">方法</p>
+        <h2 class="display" id="method">递归式数学发现，是以证明为标准的递归自我改进。</h2>
+        <blockquote class="q "><p>提出一个结构；用答案已知的情形检验它；把经受住检验的部分抽象到新的情境中，在那里重新提出问题。没有经受住检验的部分并不丢弃：它成为一个猜想、一个缺口或一项证伪测试，带有陈述、状态和在台账中的位置，作为结果的一部分被带向前。</p><footer class="src">——<a href="/zh/programme/">Series 00</a>，§1.2</footer><details class="orig"><summary>英文原文</summary><p lang="en">A structure is proposed; it is tested against the cases in which the answer is known; what survives is abstracted into a new setting, and the question is posed again there. What does not survive is not discarded. It becomes a conjecture, a gap or a falsification test, with a statement, a status and a place in a ledger, and it is carried forward as part of the result.</p></details></blockquote>
+        <blockquote class="q q-small"><p>由此得到的图景，与关于递归自我改进的常见说法不同。这里的递归，意味着在稳定约束之下的不可变承继。第 n + 1 代使用第 n 代的证据，包括失败与因果分析，而第 n 代的记录与目标保持不变。</p><footer class="src">——<a href="/zh/works/grothendieckian-machine/">Series 01</a>，第六卷，第 13063 页</footer><details class="orig"><summary>英文原文</summary><p lang="en">The resulting picture differs from common accounts of recursive self-improvement. Recursion here means immutable succession under stable constraints. Generation n + 1 uses evidence from generation n, including failures and causal analyses, while the record and target of n remain fixed.</p></details></blockquote>
+        <blockquote class="q q-small q-muted"><p>递归式数学发现能否成功、重要的研究判断能否形式化、治理是否可靠，仍然是经验性与制度性的问题。</p><footer class="src">——<a href="/zh/works/grothendieckian-machine/">Series 01</a>，第六卷，第 13076 页</footer><details class="orig"><summary>英文原文</summary><p lang="en">The success of recursive mathematical discovery, the formalizability of important research judgments, and the reliability of governance remain empirical and institutional questions.</p></details></blockquote>
+      </div>
+    </section>
+
+    <section class="frame" id="works" data-sea="0.1" aria-labelledby="works-title">
+      <div class="fin panel">
+        <h2 class="eyebrow" id="works-title">七部著作</h2>
+        <blockquote class="q q-lead"><p>范本是 Grothendieck 的涨潮：难题不在它所在之处被攻击；而是在它周围建起一个理论，直到问题变得自然、自行让开。</p><footer class="src">——<a href="/zh/programme/">Series 00</a>，§1.2</footer><details class="orig"><summary>英文原文</summary><p lang="en">The model is Grothendieck&#39;s rising sea: a hard problem is not attacked where it stands; a theory is raised around it until the problem becomes natural and gives way.</p></details></blockquote>
+      </div>
+    </section>
+    <section class="frame beat" data-sea="row:0" aria-label="Series 05">
+      <div class="fin panel">
+        <article class="work blue">
+          <p class="wk-head"><span class="wk-n">SERIES 05</span> <span class="wk-place">研究课题 3 · Hodge</span></p>
+          <h3><a href="/zh/works/the-archimedean-prism/" lang="en">The Archimedean Prism</a></h3>
+          <p class="wk-label">中心主张的状态（各书自己的说法）</p>
+          <p class="wk-status">由十条无条件公理证明五种表述等价 <span class="tag">[NEW]</span>；五者均未证明</p>
+          <p class="wk-links"><a href="/zh/works/the-archimedean-prism/">作品页 →</a> <a href="https://github.com/AlienMuse/the-archimedean-prism">GitHub</a> <a href="https://doi.org/10.5281/zenodo.23597954">DOI 10.5281/zenodo.23597954</a></p>
+        </article>
+        <p class="src">来源：<a href="/zh/programme/">Series 00</a>，表 1</p>
+      </div>
+    </section>
+    <section class="frame beat" data-sea="row:1" aria-label="Series 04, Series 06">
+      <div class="fin panel">
+        <article class="work violet">
+          <p class="wk-head"><span class="wk-n">SERIES 04</span> <span class="wk-place">研究课题 2 · BSD</span></p>
+          <h3><a href="/zh/works/fractured-adelic-geometry/" lang="en">Fractured Adelic Geometry</a></h3>
+          <p class="wk-label">中心主张的状态（各书自己的说法）</p>
+          <p class="wk-status">由 Conjecture A 与公理推出秩与首项系数公式 <span class="tag">[CONDITIONAL]</span></p>
+          <p class="wk-links"><a href="/zh/works/fractured-adelic-geometry/">作品页 →</a> <a href="https://github.com/AlienMuse/fractured-adelic-geometry">GitHub</a> <a href="https://doi.org/10.5281/zenodo.23585887">DOI 10.5281/zenodo.23585887</a></p>
+        </article>
+        <article class="work violet">
+          <p class="wk-head"><span class="wk-n">SERIES 06</span> <span class="wk-place">研究课题 4 · abc</span></p>
+          <h3><a href="/zh/works/strained-prismatic-geometry/" lang="en">Strained Prismatic Geometry</a></h3>
+          <p class="wk-label">中心主张的状态（各书自己的说法）</p>
+          <p class="wk-status">定理 C 无条件 <span class="tag">[NEW]</span>；定理 A、B 依赖已命名的义务</p>
+          <p class="wk-links"><a href="/zh/works/strained-prismatic-geometry/">作品页 →</a> <a href="https://github.com/AlienMuse/strained-prismatic-geometry">GitHub</a> <a href="https://doi.org/10.5281/zenodo.23610034">DOI 10.5281/zenodo.23610034</a></p>
+        </article>
+        <p class="src">来源：<a href="/zh/programme/">Series 00</a>，表 1</p>
+      </div>
+    </section>
+    <section class="frame beat" data-sea="row:2" aria-label="Series 01">
+      <div class="fin panel">
+        <article class="work cyan core">
+          <p class="wk-head"><span class="wk-n">SERIES 01</span> <span class="wk-place">核心</span></p>
+          <h3><a href="/zh/works/grothendieckian-machine/" lang="en">The Grothendieckian Machine</a></h3>
+          <p class="wk-label">中心主张的状态（各书自己的说法）</p>
+          <p class="wk-status">规范性的研究架构，其合约主要为 D、R、O</p>
+          <p class="wk-links"><a href="/zh/works/grothendieckian-machine/">作品页 →</a> <a href="https://github.com/AlienMuse/grothendieckian-machine">GitHub</a> <a href="https://doi.org/10.5281/zenodo.23480696">DOI 10.5281/zenodo.23480696</a></p>
+        </article>
+        <p class="src">来源：<a href="/zh/programme/">Series 00</a>，表 1</p>
+      </div>
+    </section>
+    <section class="frame beat" data-sea="row:3" aria-label="Series 03, Series 07">
+      <div class="fin panel">
+        <article class="work blue">
+          <p class="wk-head"><span class="wk-n">SERIES 03</span> <span class="wk-place">研究课题 1 · RH 与 GRH</span></p>
+          <h3><a href="/zh/works/arithmetic-spectral-descent/" lang="en">Arithmetic Spectral Descent</a></h3>
+          <p class="wk-label">中心主张的状态（各书自己的说法）</p>
+          <p class="wk-status">AHK-1–AHK-3 ⇒ RH 已证 <span class="tag">[T]</span>；满足它们的算术系统未构造 <span class="tag">[O]</span></p>
+          <p class="wk-links"><a href="/zh/works/arithmetic-spectral-descent/">作品页 →</a> <a href="https://github.com/AlienMuse/arithmetic-spectral-descent">GitHub</a> <a href="https://doi.org/10.5281/zenodo.23564898">DOI 10.5281/zenodo.23564898</a></p>
+        </article>
+        <article class="work blue">
+          <p class="wk-head"><span class="wk-n">SERIES 07</span> <span class="wk-place">研究课题 5 · Langlands</span></p>
+          <h3><a href="/zh/works/the-arithmetic-topos/" lang="en">The Arithmetic Topos</a></h3>
+          <p class="wk-label">中心主张的状态（各书自己的说法）</p>
+          <p class="wk-status">主猜想无一情形被无条件确立</p>
+          <p class="wk-links"><a href="/zh/works/the-arithmetic-topos/">作品页 →</a> <a href="https://github.com/AlienMuse/the-arithmetic-topos">GitHub</a> <a href="https://doi.org/10.5281/zenodo.23629681">DOI 10.5281/zenodo.23629681</a></p>
+        </article>
+        <p class="src">来源：<a href="/zh/programme/">Series 00</a>，表 1</p>
+      </div>
+    </section>
+    <section class="frame beat" data-sea="row:4" aria-label="Series 02">
+      <div class="fin panel">
+        <article class="work cyan">
+          <p class="wk-head"><span class="wk-n">SERIES 02</span> <span class="wk-place">元推理内核</span></p>
+          <h3><a href="/zh/works/topos-native-intelligence/" lang="en">Topos-Native Intelligence</a></h3>
+          <p class="wk-label">中心主张的状态（各书自己的说法）</p>
+          <p class="wk-status">若干局部特化已证明；无整体包含或替代结果</p>
+          <p class="wk-links"><a href="/zh/works/topos-native-intelligence/">作品页 →</a> <a href="https://github.com/AlienMuse/topos-native-intelligence">GitHub</a> <a href="https://doi.org/10.5281/zenodo.23538544">DOI 10.5281/zenodo.23538544</a></p>
+        </article>
+        <p class="src">来源：<a href="/zh/programme/">Series 00</a>，表 1</p>
+      </div>
+    </section>
+    <section class="frame" data-sea="1" aria-labelledby="boundary">
+      <div class="fin panel panel-boundary">
+        <h2 class="eyebrow" id="boundary">边界</h2>
+        <blockquote class="q q-lead"><p>七部著作都不声称证明了它所研究的问题。黎曼猜想、Birch–Swinnerton-Dyer 猜想、Hodge 猜想和 abc 猜想仍未解决；在文献已证明的情形之外，数域上的 Langlands 对应也仍未解决；每一部都在开头几页用自己的一句话写明这一点。</p><footer class="src">——<a href="/zh/programme/">Series 00</a>，§1.5</footer><details class="orig"><summary>英文原文</summary><p lang="en">None of the seven works claims a proof of the problems it studies. The Riemann Hypothesis, the Birch and Swinnerton-Dyer conjecture, the Hodge conjecture and the abc conjecture remain open, and so does the Langlands correspondence over number fields beyond the cases the literature has proved; each work says so in its first pages, in a sentence of its own.</p></details></blockquote>
+      </div>
+    </section>
+  </div>
+</div>
+
+<section class="after principles" aria-labelledby="principles">
+  <div class="wrap">
+    <h2 class="eyebrow" id="principles">七条原则</h2>
+    <blockquote class="q q-lead"><p>并排阅读，七部著作守着七条原则。每一条都至少在其中四部里，用它们自己的话陈述过。</p><footer class="src">——<a href="/zh/programme/">Series 00</a>，§3.3</footer><details class="orig"><summary>英文原文</summary><p lang="en">Read side by side, the seven works keep seven principles. Each is stated in at least four of them, in their own words.</p></details></blockquote>
+    <ol class="plist">
+      <li><h3>先改变世界，再面对问题。</h3><p>问题抗拒时，这些著作并不更用力地敲打它；它们追问什么样的环境世界会使它变得自然，在明确的公理下建起那个世界，并记录这次改变得到了什么、失去了什么。</p></li>
+      <li><h3>结论是一个能粘合的截面。</h3><p>只有在局部证据于重叠处一致、并粘合成一个整体的地方，结论才被许可。</p></li>
+      <li><h3>障碍是一种产出。</h3><p>论证失败之处，失败被定位、被赋予类型并被保留。</p></li>
+      <li><h3>结果不强于它的证明。</h3><p>每一项论断在提出之处都带着它的状态。</p></li>
+      <li><h3>生成不是验证。</h3><p>一个候选的产生者，从来不是它唯一的评判者。</p></li>
+      <li><h3>抽象的资格，来自它所保持的东西。</h3><p>一个新结构，凭它所保持的东西、它所暴露的障碍以及它使之可检查的东西，赢得自己的位置。</p></li>
+      <li><h3>方法是递归的，而且可能失败。</h3><p>每一部都预先说明什么会推翻它。</p></li>
+    </ol>
+<p class="src">译自总纲 §3.3 · <a href="/method/#s3-3" hreflang="en">英文原文</a></p>
+  </div>
+</section>
+
+<section class="after machine-m" aria-labelledby="h-machine">
+  <div class="wrap split">
+    <div>
+      <h2 class="eyebrow" id="h-machine">机器</h2>
+      <blockquote class="q q-lead"><p>在其中心，The Grothendieckian Machine（Series 01）把数学世界作为有类型、有版本、可验证的对象来持有，每一项论断的状态都是其类型的一部分。</p><footer class="src">——<a href="/zh/programme/">Series 00</a>，摘要</footer><details class="orig"><summary>英文原文</summary><p lang="en">At its centre, The Grothendieckian Machine (Series 01) holds mathematical worlds as typed, versioned and verifiable objects, with the status of every claim part of its type.</p></details></blockquote>
+      <blockquote class="q "><p>在它之上，Topos-Native Intelligence（Series 02）在一个世界内部像在一个拓扑斯（topos）内部那样推理：上下文是一个 site，证据是一个层，结论是一个整体截面——它只在局部数据能够粘合之处存在——而粘合的失败则是一个可以定位的障碍。</p><footer class="src">——<a href="/zh/programme/">Series 00</a>，摘要</footer><details class="orig"><summary>英文原文</summary><p lang="en">Over it, Topos-Native Intelligence (Series 02) reasons inside a world as inside a topos: a context is a site, the evidence a sheaf, a conclusion a global section that exists only where the local data glue, and a failure to glue an obstruction that can be located.</p></details></blockquote>
+      <p class="actions"><a class="btn" href="/zh/machine/">中心与内核 →</a></p>
+    </div>
+    <figure class="fig fig-honeycomb" data-fig="honeycomb" data-label="七部著作，画成同一个蜂巢的七格">
+  <div class="hc-stack">
+    <div class="fig-box"></div>
+    <svg class="hc-links" viewBox="0 0 130 130" role="group" aria-label="七部著作，画成同一个蜂巢的七格">
+<a href="/zh/works/grothendieckian-machine/" aria-label="Series 01 · GAI-MUA: The Grothendieckian Machine"><title>Series 01 · GAI-MUA: The Grothendieckian Machine</title><polygon points="88.95,65.00 76.98,85.74 53.02,85.74 41.05,65.00 53.02,44.26 76.98,44.26"/><text class="fb" x="65.0" y="62.8">SERIES 01</text><text class="fb r" x="65.0" y="68.6">GAI-MUA</text></a><a href="/zh/works/topos-native-intelligence/" aria-label="Series 02 · GM-Omega-Infinity: Topos-Native Intelligence"><title>Series 02 · GM-Omega-Infinity: Topos-Native Intelligence</title><polygon points="88.95,22.75 76.98,43.49 53.02,43.49 41.05,22.75 53.02,2.01 76.98,2.01"/><text class="fb" x="65.0" y="20.55">SERIES 02</text><text class="fb r" x="65.0" y="26.35">TOPOS-NATIVE</text></a><a href="/zh/works/arithmetic-spectral-descent/" aria-label="Series 03 · Arithmetic Spectral Descent"><title>Series 03 · Arithmetic Spectral Descent</title><polygon points="125.54,43.88 113.57,64.62 89.61,64.62 77.64,43.88 89.61,23.13 113.57,23.13"/><text class="fb" x="101.59" y="41.68">SERIES 03</text><text class="fb r" x="101.59" y="47.480000000000004">RIEMANN · GRH</text></a><a href="/zh/works/fractured-adelic-geometry/" aria-label="Series 04 · Fractured Adelic Geometry"><title>Series 04 · Fractured Adelic Geometry</title><polygon points="125.54,86.12 113.57,106.87 89.61,106.87 77.64,86.12 89.61,65.38 113.57,65.38"/><text class="fb" x="101.59" y="83.92">SERIES 04</text><text class="fb r" x="101.59" y="89.72">BSD</text></a><a href="/zh/works/the-archimedean-prism/" aria-label="Series 05 · The Archimedean Prism"><title>Series 05 · The Archimedean Prism</title><polygon points="88.95,107.25 76.98,127.99 53.02,127.99 41.05,107.25 53.02,86.51 76.98,86.51"/><text class="fb" x="65.0" y="105.05">SERIES 05</text><text class="fb r" x="65.0" y="110.85">HODGE</text></a><a href="/zh/works/strained-prismatic-geometry/" aria-label="Series 06 · Strained Prismatic Geometry"><title>Series 06 · Strained Prismatic Geometry</title><polygon points="52.36,86.12 40.39,106.87 16.43,106.87 4.46,86.12 16.43,65.38 40.39,65.38"/><text class="fb" x="28.41" y="83.92">SERIES 06</text><text class="fb r" x="28.41" y="89.72">abc</text></a><a href="/zh/works/the-arithmetic-topos/" aria-label="Series 07 · The Arithmetic Topos"><title>Series 07 · The Arithmetic Topos</title><polygon points="52.36,43.88 40.39,64.62 16.43,64.62 4.46,43.88 16.43,23.13 40.39,23.13"/><text class="fb" x="28.41" y="41.68">SERIES 07</text><text class="fb r" x="28.41" y="47.480000000000004">LANGLANDS</text></a>    </svg>
+  </div>
+</figure>
+  </div>
+</section>
+
+<section class="after open-m" aria-labelledby="h-open">
+  <div class="wrap">
+    <h2 class="eyebrow" id="h-open">开放</h2>
+    <blockquote class="q q-lead"><p>本纲领的每一部著作，都以一份它没有做到的事的清单结尾，陈述得足够精确，可以被接手。</p><footer class="src">——<a href="/zh/programme/">Series 00</a>，§11.1</footer><details class="orig"><summary>英文原文</summary><p lang="en">Every work of the Programme ends with a list of what it has not done, stated precisely enough to be taken up.</p></details></blockquote>
+    <ul class="tally">
+      <li><span class="n">3</span><span class="l">篇论文</span></li>
+      <li><span class="n">12</span><span class="l">条论纲，各附“什么会推翻它”</span></li>
+      <li><span class="n">57</span><span class="l">个开放问题，各是一个 GitHub issue</span></li>
+    </ul>
+    <p class="actions"><a class="btn btn-primary" href="/zh/open/">论文、论纲与问题 →</a> <a class="btn" href="https://github.com/AlienMuse/grothendieckian-problems/issues">这些问题的 GitHub issue</a></p>
+  </div>
+</section>
+
+<section class="after lab-m" aria-labelledby="h-lab">
+  <div class="wrap">
+    <h2 class="eyebrow" id="h-lab">实验室</h2>
+    <p class="lab-lead"><strong>Grothendieck Lab</strong> 是 WiseMotif.ai 研发 Grothendieckian Programme 的实验室。</p>
+    <p class="display-sm">递归式数学发现，是以证明为标准的递归自我改进。</p>
+    <p class="actions"><a class="btn" href="/zh/lab/">实验室 →</a> <a class="btn" href="https://wisemotif.ai">WiseMotif.ai</a></p>
+  </div>
+</section>
+</main>
+<footer class="foot">
+  <div class="wrap foot-grid">
+    <div>
+      <p class="foot-lab"><a href="/zh/lab/">Grothendieck Lab · WiseMotif.ai</a></p>
+      <p>Grothendieck Lab 与 Grothendieckian Programme 的官方网站。</p>
+      <p><a href="https://wisemotif.ai">WiseMotif.ai</a> · © 2026 Vincent Liu · <a href="https://orcid.org/0009-0000-8718-222X">ORCID 0009-0000-8718-222X</a></p>
+      <p><a href="/zh/lab/#name">名称</a> · <a href="/zh/lab/#licence">许可</a> · <a href="/" hreflang="en" lang="en">English</a></p>
+<p class="foot-note">中文为译文，以英文原文为准；书名、卷名、体系专名与无稳定中文译名的术语保留英文。</p>    </div>
+    <nav class="foot-works" aria-label="七部著作">
+      <ul>
+        <li><a href="/zh/works/grothendieckian-machine/"><span class="sn">01</span> <span lang="en">GAI-MUA: The Grothendieckian Machine</span></a></li>
+        <li><a href="/zh/works/topos-native-intelligence/"><span class="sn">02</span> <span lang="en">GM-Omega-Infinity: Topos-Native Intelligence</span></a></li>
+        <li><a href="/zh/works/arithmetic-spectral-descent/"><span class="sn">03</span> <span lang="en">Arithmetic Spectral Descent</span></a></li>
+        <li><a href="/zh/works/fractured-adelic-geometry/"><span class="sn">04</span> <span lang="en">Fractured Adelic Geometry</span></a></li>
+        <li><a href="/zh/works/the-archimedean-prism/"><span class="sn">05</span> <span lang="en">The Archimedean Prism</span></a></li>
+        <li><a href="/zh/works/strained-prismatic-geometry/"><span class="sn">06</span> <span lang="en">Strained Prismatic Geometry</span></a></li>
+        <li><a href="/zh/works/the-arithmetic-topos/"><span class="sn">07</span> <span lang="en">The Arithmetic Topos</span></a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

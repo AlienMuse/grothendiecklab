@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="zh-Hans" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src &#39;self&#39;; script-src &#39;self&#39;; style-src &#39;self&#39;; img-src &#39;self&#39; data:; font-src &#39;self&#39;; connect-src &#39;self&#39;; object-src &#39;none&#39;; base-uri &#39;none&#39;; form-action &#39;none&#39;">
+<title>GAI-MUA: The Grothendieckian Machine（核心）· Series 01 · 格罗滕迪克纲领</title>
+<meta name="description" content="GAI-MUA: The Grothendieckian Machine——格罗滕迪克纲领 Series 01，核心；6 卷、14,905 页，开放获取。DOI 10.5281/zenodo.23480696">
+<meta name="author" content="Vincent Liu">
+<meta name="keywords" content="GAI-MUA, Grothendieck, 格罗滕迪克纲领, 面向数学的人工智能, 拓扑斯, 下降, 上同调, motive, 代数几何, 算术几何, 形式化验证, 证明助手">
+<meta name="tdm-reservation" content="1">
+<meta name="tdm-policy" content="https://github.com/AlienMuse/grothendieckian-programme/blob/main/TDM-AND-AI-POLICY.md">
+<link rel="canonical" href="https://grothendiecklab.com/zh/works/grothendieckian-machine/">
+<link rel="alternate" hreflang="en" href="https://grothendiecklab.com/works/grothendieckian-machine/">
+<link rel="alternate" hreflang="zh-Hans" href="https://grothendiecklab.com/zh/works/grothendieckian-machine/">
+<link rel="alternate" hreflang="x-default" href="https://grothendiecklab.com/works/grothendieckian-machine/">
+<meta property="og:site_name" content="Grothendieck Lab · WiseMotif.ai">
+<meta property="og:type" content="book">
+<meta property="og:title" content="GAI-MUA: The Grothendieckian Machine（核心）· Series 01 · 格罗滕迪克纲领">
+<meta property="og:description" content="GAI-MUA: The Grothendieckian Machine——格罗滕迪克纲领 Series 01，核心；6 卷、14,905 页，开放获取。DOI 10.5281/zenodo.23480696">
+<meta property="og:url" content="https://grothendiecklab.com/zh/works/grothendieckian-machine/">
+<meta property="og:image" content="https://grothendiecklab.com/static/img/covers/series-01.jpg">
+<meta property="og:image:alt" content="封面：GAI-MUA: The Grothendieckian Machine">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#040a10">
+<link rel="icon" href="/static/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/static/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/static/img/apple-touch-icon.png">
+<link rel="preload" href="/static/fonts/pagella-regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/static/fonts/pagella-italic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/static/css/lab-09a47c6f56.css">
+<meta name="citation_title" content="GAI-MUA: The Grothendieckian Machine — A Mathematical Universe Architecture for Verifiable and Self-Evolving Artificial Intelligence">
+<meta name="citation_author" content="Liu, Vincent">
+<meta name="citation_author_institution" content="WiseMotif.ai">
+<meta name="citation_author_orcid" content="https://orcid.org/0009-0000-8718-222X">
+<meta name="citation_publication_date" content="2026/10/20">
+<meta name="citation_publisher" content="Zenodo">
+<meta name="citation_doi" content="10.5281/zenodo.23480697">
+<meta name="citation_language" content="en">
+<meta name="citation_pdf_url" content="https://zenodo.org/records/23480697/files/GAI-MUA-v1.0.0-Complete.pdf">
+<meta name="citation_abstract_html_url" content="https://grothendiecklab.com/zh/works/grothendieckian-machine/">
+<meta name="citation_keywords" content="Grothendieck">
+<meta name="citation_keywords" content="algebraic geometry">
+<meta name="citation_keywords" content="schemes">
+<meta name="citation_keywords" content="topos theory">
+<meta name="citation_keywords" content="descent">
+<meta name="citation_keywords" content="motives">
+<meta name="citation_keywords" content="higher category theory">
+<meta name="citation_keywords" content="derived geometry">
+<meta name="citation_keywords" content="perfectoid spaces">
+<meta name="citation_keywords" content="condensed mathematics">
+<meta name="citation_keywords" content="anabelian geometry">
+<meta name="citation_keywords" content="AI for mathematics">
+<meta name="citation_keywords" content="mathematical artificial intelligence">
+<meta name="citation_keywords" content="formal verification">
+<meta name="citation_keywords" content="automated reasoning">
+<meta name="citation_keywords" content="theorem proving">
+<meta name="citation_keywords" content="categorical computation">
+<meta name="citation_keywords" content="mathematical discovery">
+<meta name="citation_keywords" content="system architecture">
+<meta name="citation_keywords" content="provenance">
+<meta name="citation_keywords" content="self-evolving systems">
+<meta name="citation_keywords" content="reinforcement learning">
+<meta name="citation_keywords" content="AI safety">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Book",
+ "@id": "https://doi.org/10.5281/zenodo.23480696",
+ "name": "GAI-MUA: The Grothendieckian Machine",
+ "alternativeHeadline": "A Mathematical Universe Architecture for Verifiable and Self-Evolving Artificial Intelligence",
+ "author": {
+  "@type": "Person",
+  "@id": "https://grothendiecklab.com/lab/#person",
+  "name": "Vincent Liu",
+  "url": "https://grothendiecklab.com/zh/lab/",
+  "jobTitle": "Chief AI Mathematician",
+  "worksFor": {
+   "@type": "Organization",
+   "name": "WiseMotif.ai",
+   "url": "https://wisemotif.ai"
+  },
+  "affiliation": {
+   "@id": "https://grothendiecklab.com/#lab"
+  },
+  "sameAs": [
+   "https://orcid.org/0009-0000-8718-222X",
+   "https://scholar.google.com/citations?user=t0sMkU0AAAAJ",
+   "https://github.com/AlienMuse",
+   "https://zenodo.org/communities/grothendieckian-programme",
+   "https://alienmuse.github.io/"
+  ]
+ },
+ "url": "https://grothendiecklab.com/zh/works/grothendieckian-machine/",
+ "bookEdition": "Research Architecture Edition 1",
+ "version": "1.0.0",
+ "datePublished": "2026-10-20",
+ "inLanguage": "en",
+ "numberOfPages": 14905,
+ "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+ "identifier": [
+  {
+   "@type": "PropertyValue",
+   "propertyID": "DOI",
+   "value": "10.5281/zenodo.23480696"
+  },
+  {
+   "@type": "PropertyValue",
+   "propertyID": "DOI (version)",
+   "value": "10.5281/zenodo.23480697"
+  }
+ ],
+ "isPartOf": [
+  {
+   "@type": "CreativeWorkSeries",
+   "name": "WiseMotif Monograph of Mathematical Intelligence"
+  },
+  {
+   "@type": "CreativeWorkSeries",
+   "name": "The Grothendieckian Programme",
+   "url": "https://grothendiecklab.com/zh/programme/"
+  }
+ ],
+ "publisher": {
+  "@type": "Organization",
+  "name": "Zenodo",
+  "url": "https://zenodo.org"
+ },
+ "bookFormat": "https://schema.org/EBook",
+ "isAccessibleForFree": true,
+ "keywords": "Grothendieck, algebraic geometry, schemes, topos theory, descent, motives, higher category theory, derived geometry, perfectoid spaces, condensed mathematics, anabelian geometry, AI for mathematics, mathematical artificial intelligence, formal verification, automated reasoning, theorem proving, categorical computation, mathematical discovery, system architecture, provenance, self-evolving systems, reinforcement learning, AI safety",
+ "abstract": "GAI-MUA: The Grothendieckian Machine is a six-volume program in mathematics, formal reasoning, system architecture, and self-evolving mathematical artificial intelligence. Its organizing conviction is that major advances frequently arise not from manipulating isolated formulas more aggressively, but from constructing an ambient world in which the objects, transports, invariants, and local-to-global laws of a problem become visible.",
+ "image": "https://grothendiecklab.com/static/img/covers/series-01.jpg",
+ "sameAs": [
+  "https://doi.org/10.5281/zenodo.23480697",
+  "https://github.com/AlienMuse/grothendieckian-machine"
+ ]
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "name": "Grothendieck Lab",
+   "item": "https://grothendiecklab.com/zh/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "name": "格罗滕迪克纲领",
+   "item": "https://grothendiecklab.com/zh/programme/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 3,
+   "name": "GAI-MUA: The Grothendieckian Machine",
+   "item": "https://grothendiecklab.com/zh/works/grothendieckian-machine/"
+  }
+ ]
+}
+</script>
+<script type="module" src="/static/js/main-PB52Z2DD.js"></script>
+</head>
+<body class="page-work l-zh">
+<a class="skip" href="#main">跳到正文</a>
+<header class="top">
+  <div class="bar">
+    <div class="brand">
+      <a class="brand-home" href="/zh/" aria-label="{&#39;machine_more&#39;: &#39;中心与内核&#39;, &#39;open_more&#39;: &#39;论文、论纲与问题&#39;, &#39;lab_more&#39;: &#39;实验室&#39;}">
+        <img src="/static/img/favicon.svg" alt="" width="26" height="26">
+        <span class="brand-name">Grothendieck Lab</span>
+      </a>
+      <span class="brand-sep" aria-hidden="true">·</span>
+      <a class="brand-org" href="https://wisemotif.ai" title="WiseMotif.ai，公司主站">WiseMotif.ai</a>
+    </div>
+    <div class="bar-r">
+      <nav class="nav" aria-label="主导航">
+        <a href="/zh/programme/">纲领</a>
+        <a href="/zh/method/">方法</a>
+        <a href="/zh/machine/">机器</a>
+        <a href="/zh/open/">开放</a>
+        <a href="/zh/lab/">实验室</a>
+      </nav>
+      <a class="lang" href="/works/grothendieckian-machine/" hreflang="en" lang="en" title="本页的英文版">English</a>
+    </div>
+  </div>
+</header>
+<main id="main">
+<section class="work-head cyan" aria-labelledby="title">
+  <div class="wrap work-grid">
+    <div class="work-id">
+      <p class="kicker"><span class="wk-n">SERIES 01</span> · 核心</p>
+      <h1 id="title" lang="en">GAI-MUA: The Grothendieckian Machine</h1>
+      <p class="subtitle" lang="en">A Mathematical Universe Architecture for Verifiable and Self-Evolving Artificial Intelligence</p>
+      <p class="series-line" lang="en">WiseMotif Monograph of Mathematical Intelligence, Series 01 · Mathematics and Artificial Intelligence</p>
+      <div class="status-card">
+        <p class="wk-label">中心主张的状态（各书自己的说法）</p>
+        <p class="wk-status">规范性的研究架构，其合约主要为 D、R、O</p>
+        <p class="src">来源：<a href="/zh/programme/">Series 00</a>，表 1</p>
+      </div>
+      <p class="actions">
+        <a class="btn btn-primary" href="https://github.com/AlienMuse/grothendieckian-machine/releases/download/v1.0.0/GAI-MUA-v1.0.0-Complete.pdf">完整 PDF</a>
+        <a class="btn" href="https://doi.org/10.5281/zenodo.23480696">Zenodo 记录</a>
+        <a class="btn" href="https://github.com/AlienMuse/grothendieckian-machine">GitHub 仓库</a>
+      </p>
+    </div>
+    <div class="work-aside">
+      <img class="cover" src="/static/img/covers/series-01.webp" width="480" height="678" alt="封面：GAI-MUA: The Grothendieckian Machine">
+      <figure class="fig fig-honeycomb" data-fig="honeycomb" data-label="七部著作，画成同一个蜂巢的七格">
+  <div class="hc-stack">
+    <div class="fig-box"></div>
+    <svg class="hc-links has-here" viewBox="0 0 130 130" role="group" aria-label="七部著作，画成同一个蜂巢的七格">
+<a href="/zh/works/grothendieckian-machine/" class="here" aria-current="page" aria-label="Series 01 · GAI-MUA: The Grothendieckian Machine"><title>Series 01 · GAI-MUA: The Grothendieckian Machine</title><polygon points="88.95,65.00 76.98,85.74 53.02,85.74 41.05,65.00 53.02,44.26 76.98,44.26"/><text class="fb" x="65.0" y="62.8">SERIES 01</text><text class="fb r" x="65.0" y="68.6">GAI-MUA</text></a><a href="/zh/works/topos-native-intelligence/" aria-label="Series 02 · GM-Omega-Infinity: Topos-Native Intelligence"><title>Series 02 · GM-Omega-Infinity: Topos-Native Intelligence</title><polygon points="88.95,22.75 76.98,43.49 53.02,43.49 41.05,22.75 53.02,2.01 76.98,2.01"/><text class="fb" x="65.0" y="20.55">SERIES 02</text><text class="fb r" x="65.0" y="26.35">TOPOS-NATIVE</text></a><a href="/zh/works/arithmetic-spectral-descent/" aria-label="Series 03 · Arithmetic Spectral Descent"><title>Series 03 · Arithmetic Spectral Descent</title><polygon points="125.54,43.88 113.57,64.62 89.61,64.62 77.64,43.88 89.61,23.13 113.57,23.13"/><text class="fb" x="101.59" y="41.68">SERIES 03</text><text class="fb r" x="101.59" y="47.480000000000004">RIEMANN · GRH</text></a><a href="/zh/works/fractured-adelic-geometry/" aria-label="Series 04 · Fractured Adelic Geometry"><title>Series 04 · Fractured Adelic Geometry</title><polygon points="125.54,86.12 113.57,106.87 89.61,106.87 77.64,86.12 89.61,65.38 113.57,65.38"/><text class="fb" x="101.59" y="83.92">SERIES 04</text><text class="fb r" x="101.59" y="89.72">BSD</text></a><a href="/zh/works/the-archimedean-prism/" aria-label="Series 05 · The Archimedean Prism"><title>Series 05 · The Archimedean Prism</title><polygon points="88.95,107.25 76.98,127.99 53.02,127.99 41.05,107.25 53.02,86.51 76.98,86.51"/><text class="fb" x="65.0" y="105.05">SERIES 05</text><text class="fb r" x="65.0" y="110.85">HODGE</text></a><a href="/zh/works/strained-prismatic-geometry/" aria-label="Series 06 · Strained Prismatic Geometry"><title>Series 06 · Strained Prismatic Geometry</title><polygon points="52.36,86.12 40.39,106.87 16.43,106.87 4.46,86.12 16.43,65.38 40.39,65.38"/><text class="fb" x="28.41" y="83.92">SERIES 06</text><text class="fb r" x="28.41" y="89.72">abc</text></a><a href="/zh/works/the-arithmetic-topos/" aria-label="Series 07 · The Arithmetic Topos"><title>Series 07 · The Arithmetic Topos</title><polygon points="52.36,43.88 40.39,64.62 16.43,64.62 4.46,43.88 16.43,23.13 40.39,23.13"/><text class="fb" x="28.41" y="41.68">SERIES 07</text><text class="fb r" x="28.41" y="47.480000000000004">LANGLANDS</text></a>    </svg>
+  </div>
+</figure>
+    </div>
+  </div>
+</section>
+
+<div class="wrap prose">
+  <section class="block boundary" aria-labelledby="boundary">
+    <h2 id="boundary">该书的边界，用它自己的话</h2>
+    <blockquote class="q q-lead"><p>“Grothendieckian Machine”这一名称指一个研究架构，而不是一个已完成的通用求解器。</p><footer class="src">——<cite>GAI-MUA: The Grothendieckian Machine</cite>，Series Note</footer><details class="orig"><summary>英文原文</summary><p lang="en">The phrase Grothendieckian Machine names a research architecture, not a completed universal solver.</p></details></blockquote>
+  </section>
+
+  <section class="block" aria-labelledby="move">
+    <h2 id="move">这部书迈出的一步</h2>
+    <dl class="move">
+<div><dt>问题原来卡在哪里</dt><dd>问题的语言压制了陈述正确不变量或粘合律所需的结构</dd></div><div><dt>换掉了什么</dt><dd>环境世界，通过一个有类型、记录得失的操作</dd></div><div><dt>由此变得自然的东西</dt><dd>零散的现象变得函子化、局部化、可表示或可重构</dd></div><div><dt>代价；仍然开放的</dt><dd>每一次扩大都会丢失一些东西；回到原问题的路必须给出</dd></div>    </dl>
+    <p class="src">来源：<a href="/zh/programme/">Series 00</a>，表 2</p>
+  </section>
+
+  <section class="block" aria-labelledby="abstract">
+    <h2 id="abstract">摘要</h2>
+<p>GAI-MUA: The Grothendieckian Machine 是一部六卷本著作，一项横跨数学、形式推理、系统架构与自演化数学人工智能的研究计划。它的组织性信念是：重大进展往往并非来自更激进地操纵孤立的公式，而是来自构造一个环境世界（ambient world），使问题中的对象、迁移、不变量以及由局部到整体的规律变得可见。</p><p>这部著作承担两项不可分割的任务。第一项是数学上的：以精确的前提和可追溯来源的证明谱系，阐述概形、拓扑斯、下降、上同调、motive、高阶结构、现代算术几何及其后继理论。第二项是架构上的：把数学世界表达为有类型、有版本、可溯源的工件，使之能够被检索、比较、形式化、用于计算并不断演化，同时不让统计上的置信度冒充证明。</p><p>“Grothendieckian Machine”这一名称指一个研究架构，而不是一个已完成的通用求解器。它的目的，是让数学世界的构造、下降、比较、障碍与重构变得足够明确，以支撑人与机器之间严格的协作。</p>    <details class="orig"><summary>英文原文</summary><p lang="en">GAI-MUA: The Grothendieckian Machine is a six-volume program in mathematics, formal reasoning, system architecture, and self-evolving mathematical artificial intelligence. Its organizing conviction is that major advances frequently arise not from manipulating isolated formulas more aggressively, but from constructing an ambient world in which the objects, transports, invariants, and local-to-global laws of a problem become visible.</p><p lang="en">The work has two inseparable obligations. The first is mathematical: to explain schemes, topoi, descent, cohomology, motives, higher structures, modern arithmetic geometry, and their successors with exact hypotheses and source-aware proof lineage. The second is architectural: to express mathematical worlds as typed, versioned, provenance-bearing artifacts that can be searched, compared, formalized, computed with, and evolved without allowing statistical confidence to masquerade as proof.</p><p lang="en">The phrase Grothendieckian Machine names a research architecture, not a completed universal solver. Its purpose is to make mathematical world construction, descent, comparison, obstruction, and reconstruction explicit enough to support rigorous human and machine collaboration.</p></details>
+  </section>
+
+  <section class="block" aria-labelledby="structure">
+    <h2 id="structure">核心结构</h2>
+    <p>世界、桥与义务；GMUS 与 GMLS；五个权威平面</p>
+    <ul class="vols" lang="en"><li>Volume I — Foundations of the Grothendieckian Universe (3,742 pages)</li><li>Volume II — The Modern Grothendieckian Synthesis (4,016 pages)</li><li>Volume III — Architecture of the Grothendieckian Machine (1,815 pages)</li><li>Volume IV — Algorithms of Grothendieckian Intelligence (2,089 pages)</li><li>Volume V — The Modular Grothendieckian Machine (1,146 pages)</li><li>Volume VI — The Self-Evolving Grothendieckian Machine (1,485 pages)</li></ul>
+  </section>
+
+  <section class="block" aria-labelledby="labels">
+    <h2 id="labels">状态标签（按原书印出）</h2>
+    <p lang="en"><strong>E</strong> established · <strong>S</strong> source-grounded synthesis · <strong>D</strong> project-native definition · <strong>R</strong> falsifiable research construction · <strong>C</strong> conjecture · <strong>O</strong> obligation · <strong>Q</strong> disputed</p>
+    <p class="src">来源：<a href="/zh/programme/">Series 00</a>，表 3</p>
+  </section>
+
+  <section class="block" aria-labelledby="record">
+    <h2 id="record">引用</h2>
+    <dl class="meta">
+      <div><dt>规模</dt><dd>6 卷 · 14,905 页</dd></div>
+      <div><dt>概念 DOI（所有版本）</dt><dd><a href="https://doi.org/10.5281/zenodo.23480696">10.5281/zenodo.23480696</a></dd></div>
+      <div><dt>版本 DOI 1.0.0</dt><dd><a href="https://doi.org/10.5281/zenodo.23480697">10.5281/zenodo.23480697</a></dd></div>
+      <div><dt>发布日期</dt><dd>2026-10-20 · Research Architecture Edition 1</dd></div>
+      <div><dt>许可</dt><dd>CC BY-NC-ND 4.0；代码清单与配套代码另以 Apache-2.0 授权</dd></div>
+    </dl>
+    <pre class="bibtex"><code>@book{liu2026series01,
+  author    = {Liu, Vincent},
+  title     = {GAI-MUA: The Grothendieckian Machine --- A Mathematical Universe Architecture for Verifiable and Self-Evolving Artificial Intelligence},
+  series    = {WiseMotif Monograph of Mathematical Intelligence, Series 01},
+  edition   = {Research Architecture Edition 1},
+  version   = {1.0.0},
+  year      = {2026},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.23480696},
+  url       = {https://doi.org/10.5281/zenodo.23480696}
+}</code></pre>
+  </section>
+</div>
+</main>
+<footer class="foot">
+  <div class="wrap foot-grid">
+    <div>
+      <p class="foot-lab"><a href="/zh/lab/">Grothendieck Lab · WiseMotif.ai</a></p>
+      <p>Grothendieck Lab 与 Grothendieckian Programme 的官方网站。</p>
+      <p><a href="https://wisemotif.ai">WiseMotif.ai</a> · © 2026 Vincent Liu · <a href="https://orcid.org/0009-0000-8718-222X">ORCID 0009-0000-8718-222X</a></p>
+      <p><a href="/zh/lab/#name">名称</a> · <a href="/zh/lab/#licence">许可</a> · <a href="/works/grothendieckian-machine/" hreflang="en" lang="en">English</a></p>
+<p class="foot-note">中文为译文，以英文原文为准；书名、卷名、体系专名与无稳定中文译名的术语保留英文。</p>    </div>
+    <nav class="foot-works" aria-label="七部著作">
+      <ul>
+        <li><a href="/zh/works/grothendieckian-machine/"><span class="sn">01</span> <span lang="en">GAI-MUA: The Grothendieckian Machine</span></a></li>
+        <li><a href="/zh/works/topos-native-intelligence/"><span class="sn">02</span> <span lang="en">GM-Omega-Infinity: Topos-Native Intelligence</span></a></li>
+        <li><a href="/zh/works/arithmetic-spectral-descent/"><span class="sn">03</span> <span lang="en">Arithmetic Spectral Descent</span></a></li>
+        <li><a href="/zh/works/fractured-adelic-geometry/"><span class="sn">04</span> <span lang="en">Fractured Adelic Geometry</span></a></li>
+        <li><a href="/zh/works/the-archimedean-prism/"><span class="sn">05</span> <span lang="en">The Archimedean Prism</span></a></li>
+        <li><a href="/zh/works/strained-prismatic-geometry/"><span class="sn">06</span> <span lang="en">Strained Prismatic Geometry</span></a></li>
+        <li><a href="/zh/works/the-arithmetic-topos/"><span class="sn">07</span> <span lang="en">The Arithmetic Topos</span></a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

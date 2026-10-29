@@ -17,8 +17,11 @@
   --cyan: #78e2db; --blue: #99b5fc; --violet: #d5a3f5; --gold: #e1cc90;
   --acc-cyan: #58ded4; --acc-blue: #82a4ff; --acc-violet: #cf8df6; --acc-gold: #dfc174;
   --glass: rgba(4, 11, 18, .58);
-  --serif: "TGP Pagella", "TGP Pagella Math", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
-  --sans: "Segoe UI", "Lab Sans", system-ui, -apple-system, "Helvetica Neue", Arial, "TGP Pagella Math", sans-serif;
+  /* Chinese in the reader's own Chinese faces, after the Latin ones (the series' site, site.css): no CJK font is served */
+  --serif: "TGP Pagella", "TGP Pagella Math", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, "Noto Serif SC",
+           "Source Han Serif SC", "Songti SC", "STSong", "SimSun", serif;
+  --sans: "Segoe UI", "Lab Sans", system-ui, -apple-system, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB",
+          "Microsoft YaHei", "Noto Sans SC", "TGP Pagella Math", sans-serif;
   --math: "TGP Pagella Math", "TGP Pagella", serif;
   --mono: ui-monospace, "Cascadia Mono", Consolas, Menlo, monospace;
   --col: min(38rem, 100%);
@@ -64,6 +67,11 @@ strong { color: var(--title); font-weight: 700; }
 .nav { display: flex; gap: 28px; font-size: 14px; letter-spacing: .04em; }
 .nav a { color: var(--ink2); text-decoration: none; padding: 4px 0; border-bottom: 1px solid transparent; }
 .nav a:hover, .nav a[aria-current="page"] { color: var(--title); border-bottom-color: var(--acc-cyan); }
+/* L8: the other language, beside the navigation */
+.bar-r { display: flex; align-items: center; gap: 26px; }
+.lang { padding: 4px 10px; border: 1px solid var(--line2); border-radius: 6px; font: 600 13px/1.2 var(--sans);
+        letter-spacing: .04em; color: var(--ink2); text-decoration: none; }
+.lang:hover { color: var(--title); border-color: var(--acc-cyan); }
 
 /* buttons */
 .actions { display: flex; flex-wrap: wrap; gap: 12px; margin: 30px 0 0; }
@@ -382,6 +390,50 @@ strong { color: var(--title); font-weight: 700; }
 .foot-works ul { margin: 0; padding: 0; list-style: none; columns: 2; column-gap: 32px; }
 .foot-works .sn { display: inline-block; width: 1.9em; font-weight: 700; color: var(--muted); }
 
+/* ======================================================================================================= Chinese == */
+/* L8 (/zh/): the series' site's rules (line height 1.8), and the book's: Chinese is never set in italics, and its labels
+   are not tracked as capitals are; an English title, a name or the original stays as it is (lang="en") */
+.l-zh { line-height: 1.8; }
+.subtitle:lang(zh-Hans), .dedication p:lang(zh-Hans), .q-muted p:lang(zh-Hans), .pp-sub:lang(zh-Hans) { font-style: normal; }
+.l-zh .dedication p { line-height: 1.6; }
+.l-zh .dedication .dl { display: block; }
+.l-zh .q p { line-height: 1.75; }
+.l-zh .q-lead p { line-height: 1.68; }
+.l-zh .book-sec p, .l-zh .lab-statement p, .l-zh .prose > .block > p { line-height: 1.86; }
+.l-zh .blist li, .l-zh .wk-status, .l-zh .move dd, .l-zh .th-claim, .l-zh .th-ref { line-height: 1.75; }
+.l-zh .tbl table { line-height: 1.65; }
+.l-zh .fig figcaption { line-height: 1.7; }
+.l-zh .display, .l-zh .display-sm { line-height: 1.32; letter-spacing: .01em; }
+.l-zh .h1-display { max-width: 17em; line-height: 1.24 !important; }
+.l-zh .eyebrow, .l-zh .block h2 { font-size: 14px; letter-spacing: .14em; }
+.l-zh .wk-label { font-size: 12.5px; letter-spacing: .08em; }
+.l-zh .facts { font-size: 13px; letter-spacing: .08em; }
+.l-zh .src, .l-zh .book-sec .src { font-size: 13px; letter-spacing: .02em; }
+.l-zh .tally .l, .l-zh .chips { font-size: 13.5px; letter-spacing: .02em; }
+.l-zh .chips-h { font-size: 12.5px; letter-spacing: .06em; }
+.l-zh .toc { font-size: 14px; }
+.l-zh .toc-g { font-size: 13px; letter-spacing: .08em; }
+.l-zh .move dt, .l-zh .meta dt { font-size: 13.5px; letter-spacing: .02em; }
+.l-zh .tbl th { font-size: 13px; letter-spacing: .04em; }
+.l-zh .nav { letter-spacing: .08em; }
+/* the English a translation translates, folded beneath it */
+.orig { margin: .7rem 0 0; font: 600 12.5px/1.5 var(--sans); color: var(--muted); }
+.orig summary { display: inline-block; cursor: pointer; list-style: none; letter-spacing: .06em; color: var(--muted);
+                border-bottom: 1px solid var(--line2); }
+.orig summary::-webkit-details-marker { display: none; }
+.orig summary::after { content: " +"; }
+.orig[open] summary::after { content: " −"; }
+.orig summary:hover, .orig[open] summary { color: var(--ink2); }
+.q .orig p, .orig p { margin: .55rem 0 0 !important; font: italic 400 16px/1.55 var(--serif) !important; color: var(--ink2) !important; }
+/* a Chinese emphasis: upright and bold, never slanted (tools/book.py shown) */
+.zh-em { font-style: normal; font-weight: 700; color: var(--title); }
+.th-en { display: block; margin-top: .25rem; font: italic 400 16px/1.35 var(--serif); color: var(--muted); }
+.pt-en { display: block; margin-top: .2rem; font: italic 400 14px/1.35 var(--serif); color: var(--muted); }
+.foot-note { font-size: 12.5px; }
+/* the 404, in both languages */
+.nf-zh { margin-top: 2.6rem; padding-top: 2rem; border-top: 1px solid var(--line); line-height: 1.8; }
+.nf-title { margin: 0 0 .3em; font: 400 clamp(30px, 3.4vw, 44px)/1.2 var(--serif); color: var(--title); }
+
 /* ========================================================================================================= widths == */
 @media (max-width: 1100px) { .nav { gap: 20px; } }
 @media (max-width: 899px), (max-aspect-ratio: 1/1) {
@@ -407,6 +459,8 @@ strong { color: var(--title); font-weight: 700; }
   body { font-size: 17px; }
   .bar { flex-direction: column; align-items: flex-start; gap: 12px; padding-top: 16px; }
   .nav { gap: 18px; font-size: 13.5px; }
+  .bar-r { width: 100%; justify-content: space-between; gap: 14px; }
+  .lang { padding: 3px 8px; font-size: 12.5px; }
   .panel { padding: 22px 20px 18px; }
   .hero h1 { font-size: 38px; }
   .dedication p { font-size: 19px; }

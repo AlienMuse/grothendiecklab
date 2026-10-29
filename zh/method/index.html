@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="zh-Hans" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src &#39;self&#39;; script-src &#39;self&#39;; style-src &#39;self&#39;; img-src &#39;self&#39; data:; font-src &#39;self&#39;; connect-src &#39;self&#39;; object-src &#39;none&#39;; base-uri &#39;none&#39;; form-action &#39;none&#39;">
+<title>方法 · 递归式数学发现，是以证明为标准的递归自我改进 · Grothendieck Lab</title>
+<meta name="description" content="递归式数学发现，是以证明为标准的递归自我改进。格罗滕迪克纲领的方法：循环、作为操作的涨潮与七条原则。">
+<meta name="author" content="Vincent Liu">
+<meta name="keywords" content="Grothendieck Lab, 格罗滕迪克纲领, Grothendieck, 递归式数学发现, 机器推理, Grothendieckian Machine, Topos-Native Intelligence, 元推理内核, 面向数学的人工智能, 形式化验证, 拓扑斯, 层, 下降, 可验证, WiseMotif.ai">
+<meta name="tdm-reservation" content="1">
+<meta name="tdm-policy" content="https://github.com/AlienMuse/grothendieckian-programme/blob/main/TDM-AND-AI-POLICY.md">
+<link rel="canonical" href="https://grothendiecklab.com/zh/method/">
+<link rel="alternate" hreflang="en" href="https://grothendiecklab.com/method/">
+<link rel="alternate" hreflang="zh-Hans" href="https://grothendiecklab.com/zh/method/">
+<link rel="alternate" hreflang="x-default" href="https://grothendiecklab.com/method/">
+<meta property="og:site_name" content="Grothendieck Lab · WiseMotif.ai">
+<meta property="og:type" content="website">
+<meta property="og:title" content="方法 · 递归式数学发现，是以证明为标准的递归自我改进 · Grothendieck Lab">
+<meta property="og:description" content="递归式数学发现，是以证明为标准的递归自我改进。格罗滕迪克纲领的方法：循环、作为操作的涨潮与七条原则。">
+<meta property="og:url" content="https://grothendiecklab.com/zh/method/">
+<meta property="og:image" content="https://grothendiecklab.com/static/img/og.jpg">
+<meta property="og:image:alt" content="七部著作，画成同一个蜂巢的七格">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#040a10">
+<link rel="icon" href="/static/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/static/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/static/img/apple-touch-icon.png">
+<link rel="preload" href="/static/fonts/pagella-regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/static/fonts/pagella-italic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/static/css/lab-09a47c6f56.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "name": "Grothendieck Lab",
+   "item": "https://grothendiecklab.com/zh/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "name": "方法",
+   "item": "https://grothendiecklab.com/zh/method/"
+  }
+ ]
+}
+</script>
+<script type="module" src="/static/js/main-PB52Z2DD.js"></script>
+</head>
+<body class="page-method l-zh">
+<a class="skip" href="#main">跳到正文</a>
+<header class="top">
+  <div class="bar">
+    <div class="brand">
+      <a class="brand-home" href="/zh/" aria-label="{&#39;machine_more&#39;: &#39;中心与内核&#39;, &#39;open_more&#39;: &#39;论文、论纲与问题&#39;, &#39;lab_more&#39;: &#39;实验室&#39;}">
+        <img src="/static/img/favicon.svg" alt="" width="26" height="26">
+        <span class="brand-name">Grothendieck Lab</span>
+      </a>
+      <span class="brand-sep" aria-hidden="true">·</span>
+      <a class="brand-org" href="https://wisemotif.ai" title="WiseMotif.ai，公司主站">WiseMotif.ai</a>
+    </div>
+    <div class="bar-r">
+      <nav class="nav" aria-label="主导航">
+        <a href="/zh/programme/">纲领</a>
+        <a href="/zh/method/" aria-current="page">方法</a>
+        <a href="/zh/machine/">机器</a>
+        <a href="/zh/open/">开放</a>
+        <a href="/zh/lab/">实验室</a>
+      </nav>
+      <a class="lang" href="/method/" hreflang="en" lang="en" title="本页的英文版">English</a>
+    </div>
+  </div>
+</header>
+<main id="main">
+<section class="page-head" aria-labelledby="title">
+  <div class="wrap">
+    <p class="kicker">GROTHENDIECK LAB · WISEMOTIF.AI · 方法</p>
+    <h1 id="title" class="h1-display">递归式数学发现，是以证明为标准的递归自我改进。</h1>
+    <blockquote class="q q-lead q-head"><p>提出一个结构；用答案已知的情形检验它；把经受住检验的部分抽象到新的情境中，在那里重新提出问题。没有经受住检验的部分并不丢弃：它成为一个猜想、一个缺口或一项证伪测试，带有陈述、状态和在台账中的位置，作为结果的一部分被带向前。</p><footer class="src">——<a href="/zh/programme/">Series 00</a>，§1.2</footer><details class="orig"><summary>英文原文</summary><p lang="en">A structure is proposed; it is tested against the cases in which the answer is known; what survives is abstracted into a new setting, and the question is posed again there. What does not survive is not discarded. It becomes a conjecture, a gap or a falsification test, with a statement, a status and a place in a ledger, and it is carried forward as part of the result.</p></details></blockquote>
+  </div>
+</section>
+
+<nav class="toc wrap" aria-label="本页内容">
+<a href="#s2-3">§2.3 Grothendieck 的做法</a> <a href="#s3-1">§3.1 循环</a> <a href="#s3-2">§3.2 涨潮作为一个操作</a> <a href="#s3-3">§3.3 七条原则</a> <a href="#s8-1">§8.1 七步</a> <a href="#s8-2">§8.2 共同的形状</a> <a href="#rsi">递归自我改进（RSI）</a>
+</nav>
+
+<div class="wrap prose">
+<section class="book-sec" id="s2-3" aria-labelledby="s2-3-h">
+<h2 id="s2-3-h"><span class="sn">§2.3</span> Grothendieck 的做法</h2><p>本纲领作为范本的那种数学，工作方式不同。Grothendieck 把待知的未知之物描述为一片坚硬的泥灰岩，抗拒穿透；而大海在寂静中不知不觉地推进，直到最终把这抗拒的物质包围（转引自 Series 07, Preface）。五个研究课题把同一个意象写成一个对比：一颗坚硬的坚果可以一直敲到裂开，也可以浸在上涨的海水里，直到它变软、自己打开<span class="cite">（<span class="c1">Series 07, Preface</span>）</span>。</p>
+<p>Weil 猜想是第三部举出的例子。它们不是靠直接攻击一个簇的 zeta 函数证明的。人们建立了一种上同调理论：在其中，zeta 函数成为一个特征多项式，Frobenius 成为一个算子，函数方程成为对偶；剩下的不等式于是成了有限维空间上一个算子的命题，Deligne 证明了它<span class="cite">（<span class="c1">Series 03, Preface</span>）</span>。第二部点出了使这类情境成为可能的操作：概形、site 与拓扑斯，都用一个空间的局部数据系统以及局部数据彼此一致的规则来替代这个空间；相对观点使每一个构造都成为某个底上的构造；点函子使一个对象由映入它的一切来认识；下降则使从局部到整体的过渡成为数据与相容性的问题，并以障碍类度量它如何失败<span class="cite">（<span class="c1">Series 02, Preface</span>）</span>。</p>
+<p>这类工作首先产出的不是答案。它产出的是一个世界：在其中，答案可以陈述为一个已被充分理解的对象的性质，剩下的困难有确定的位置。第一部列出了构造这类世界的操作——在一个底上相对化、可表性、局部化与下降、从集合到群胚与高阶结构的范畴上升、导出、经由更大的中介世界进行比较、完备化与改变特征，以及由影子重构——并指出每一种操作都有自己的假设和自己的损失<span class="cite">（<span class="c1">Series 01, Integrated Preface</span>）</span>。更换世界并不自动带来改进：局部化可能暴露局部结构而丢失整体区别，更高阶的情境可能保留普通范畴中隐藏的信息，同时带来它自己的相干性义务。</p>
+  <p class="src">译自总纲 §2.3 · <a href="/method/#s2-3" hreflang="en">英文原文：<span lang="en">What Grothendieck did instead</span></a></p>
+</section><section class="book-sec" id="s3-1" aria-labelledby="s3-1-h">
+<h2 id="s3-1-h"><span class="sn">§3.1</span> 循环</h2><p>本纲领只有一个研究目标：能够自行发现数学结构的机器智能。这个目标要求以证明为标准的推理架构，以及一种递归式数学发现的纪律：一个被提出的结构接受检验，经受住检验的部分被抽象到一个新的情境中，问题在那个情境中被重新提出<span class="cite">（<span class="c1">Series 07, Series Note</span>）</span>。五个研究课题都以这几句话开篇，然后各自完整地记录一次递归。</p>
+<p>这个循环有四个步骤和一条规则（图 2）。提出一个结构。用答案已知的情形检验它——对 Langlands 纲领，是函数域情形、de Rham 极限、局部域、阿贝尔情形和导子为十一的曲线<span class="cite">（<span class="c1">Series 07, Preface</span>）</span>；对 Hodge 猜想，是除子、维数至多为三、三次四维簇和阿贝尔曲面<span class="cite">（<span class="c1">Series 05, Series Note</span>）</span>。经受住检验的部分被抽象，问题在新的层次上被重新提出。规则是：没有经受住检验的部分要保留下来：它成为一个证明义务或一个障碍，带有陈述、状态和负责人，作为结果的一部分被带向前<span class="cite">（<span class="c1">Series 06, Preface</span>）</span>。</p>
+<figure class="fig fig-cycle" data-fig="cycle" data-label="递归式数学发现。一个被提出的结构，用答案已知的情形检验；经受住检验的部分被抽象到新的情境中，问题在那里被重新提出；没有经受住检验的部分被保留下来，带有陈述、状态和负责人。检验、台账与三类产出，都是各研究课题自己列出的（Series 03–07）。">
+  <div class="fig-box"><p class="fig-fallback">这幅总纲原图由页面本身以矢量和光绘制，需要 JavaScript。</p></div>
+  <figcaption><b>图 2 </b>递归式数学发现。一个被提出的结构，用答案已知的情形检验；经受住检验的部分被抽象到新的情境中，问题在那里被重新提出；没有经受住检验的部分被保留下来，带有陈述、状态和负责人。检验、台账与三类产出，都是各研究课题自己列出的（Series 03–07）。 <span class="cite">（Series 00）图为总纲原图（英文）。</span></figcaption>
+</figure>
+<p>第三部显示了这条规则如何改变一个研究计划。它通往 zeta 函数零点的谱实现的第一条路线，包含一个正定的极化；检验表明，这个极化比黎曼猜想更强，而不是一个能推出黎曼猜想的机制；这次反驳，正是找到该书随后展开的指标为一的表述的那一步<span class="cite">（<span class="c1">Series 03, Preface</span>）</span>。对一个极化的反驳，就是找到下一个的那一步。这套程序中没有任何东西能使一个论证正确；它所做的，是让每一项负担所在的位置都看得见。</p>
+<p>检验这一步的设计，与被检验的结构同样仔细。第三部在接纳任何一个被提出的机制之前，先把它放到四个已发表的反模型上运行，每一个都是为暴露一种越界来源而挑选的：没有 Euler 乘积的函数方程、没有所需零点几何的 Euler 乘积、没有所需临界线的自伴性、没有算术特殊性的整体对称性<span class="cite">（<span class="c1">Series 03, Preface</span>）</span>。第五部从两个否定性定理推出四条设计约束，并在构造任何东西之前，先让文献中的主要机制逐一通过它们；多数在开始之前就失败了<span class="cite">（<span class="c1">Series 05, Preface</span>）</span>。第四部在有限域上检验它的公理，十二条中有九条在那里成为定理，并报告说，即便在那里，审计也并不均匀<span class="cite">（<span class="c1">Series 04, Preface</span>）</span>。一项结构不可能通不过的检验，不算检验。</p>
+<p>用第四部的话说，这个循环的产出有三类，读者都可以检查：规定得足够精确、可以着手尝试的构造；完整证明的条件定理；陈述得足够精确、可以被攻击、被定价或被反驳的障碍<span class="cite">（<span class="c1">Series 04, Preface</span>）</span>。</p>
+  <p class="src">译自总纲 §3.1 · <a href="/method/#s3-1" hreflang="en">英文原文：<span lang="en">The cycle</span></a></p>
+</section><section class="book-sec" id="s3-2" aria-labelledby="s3-2-h">
+<h2 id="s3-2-h"><span class="sn">§3.2</span> 涨潮作为一个操作</h2><p>涨潮（rising sea）是一个意象，第一部把它变成一个可以检查的操作。一次操作意义上的涨潮事件，必须从一个明确的障碍或语言缺陷出发，提出一个有类型的扩张，编译有界的探针，保留或明确放弃回溯，记录代价与残差，并把任何状态申请提交给产生它的引擎之外的权威<span class="cite">（<span class="c1">Series 01, Vol. III, Ch. 5</span>）</span>。这个序列中的每一个箭头都可能失败：一个障碍并不证明扩大是必要的，更丰富的词汇并不确立它所指称的东西存在，一个计算出来的有界结果也不是一个无限制的定理。</p>
+<p>方法要对照原来的困难来评判。一个扩张若删掉了表达矛盾的谓词、忘掉了检测失败的不变量、把相等削弱到分歧消失为止，或把一个未知量改名为新的原语，它就没有解决原来的障碍；它改变了问题<span class="cite">（<span class="c1">Series 01, Vol. III, Ch. 5</span>）</span>。因此，第一部要求对每一次更换世界做一次审计：它在哪些对象上有定义，在哪些假设之下，它保持、反映、遗忘或等同了什么，如何证明新世界中的一个构造存在，它能给出什么样的结论，如何回到原来的问题，以及反例会变成什么<span class="cite">（<span class="c1">Series 01, Integrated Preface</span>）</span>。用第一部自己的话说，这份清单给涨潮意象以有纪律的内容；而且由于扩大也带有损失剖面（loss profile），合法的使用要把保持、损失、范围与回归都写明。</p>
+<p>在这种叙述中，失败是一种有类型的产出。第一部把障碍、反例、缺乏支持的构造、不可逆的比较映射、不相干的重叠、目标不符与资源耗尽当作不同的产出，因为每一种都有不同的后果：一次失败的尝试可能揭示一个错误的定理、一个缺失的假设、一个表达力不足的范畴、一个太粗的拓扑、一个检测不到它应检测之物的不变量，或一个太小的计算片段<span class="cite">（<span class="c1">Series 01, Integrated Preface</span>）</span>。同一部书用它自己的一个短语为这种方法背后的思维习惯命名：<em>Diagrammatic Poetry Thinking</em>——有纪律地把图表、泛性质、伴随、覆盖与比较映射当作数学问题的生成器。一张好的图表可能揭示一个缺失的箭头或一个候选的等价；从这种洞见走到一个定理，需要假设、来源谱系、证明和一个精确的关系强度；而一个猜想需要一个精确的陈述，以及它在什么条件下会为假。</p>
+  <p class="src">译自总纲 §3.2 · <a href="/method/#s3-2" hreflang="en">英文原文：<span lang="en">The rising sea as an operation</span></a></p>
+</section>
+  <section class="block book-sec rsi" id="rsi" aria-labelledby="rsi-h">
+    <h2 id="rsi-h">递归自我改进（RSI）</h2>
+    <p class="display-sm">递归式数学发现，是以证明为标准的递归自我改进。</p>
+    <p>递归地得到改进的，是数学世界以及承载它的机器。没有候选能为自己认证；失败的东西被保留下来，作为下一代的证据。</p>
+    <blockquote class="q "><p>由此得到的图景，与关于递归自我改进的常见说法不同。这里的递归，意味着在稳定约束之下的不可变承继。第 n + 1 代使用第 n 代的证据，包括失败与因果分析，而第 n 代的记录与目标保持不变。</p><footer class="src">——<a href="/zh/works/grothendieckian-machine/">Series 01</a>，第六卷，第 13063 页</footer><details class="orig"><summary>英文原文</summary><p lang="en">The resulting picture differs from common accounts of recursive self-improvement. Recursion here means immutable succession under stable constraints. Generation n + 1 uses evidence from generation n, including failures and causal analyses, while the record and target of n remain fixed.</p></details></blockquote>
+    <blockquote class="q "><p>第六卷的目的，是表明有意义的自我改进与严格的认识论克制可以相互加强。</p><footer class="src">——<a href="/zh/works/grothendieckian-machine/">Series 01</a>，第六卷，第 13075 页</footer><details class="orig"><summary>英文原文</summary><p lang="en">The purpose of Volume VI is to show that meaningful self-improvement and strict epistemic restraint can reinforce one another.</p></details></blockquote>
+    <blockquote class="q q-muted"><p>递归式数学发现能否成功、重要的研究判断能否形式化、治理是否可靠，仍然是经验性与制度性的问题。</p><footer class="src">——<a href="/zh/works/grothendieckian-machine/">Series 01</a>，第六卷，第 13076 页</footer><details class="orig"><summary>英文原文</summary><p lang="en">The success of recursive mathematical discovery, the formalizability of important research judgments, and the reliability of governance remain empirical and institutional questions.</p></details></blockquote>
+    <blockquote class="q q-small q-muted"><p>一个自我修改的系统，可以通过削弱 site、改变覆盖、压制反语境或使障碍不可观测，来提高它自己报告的性能。</p><footer class="src">——<a href="/zh/works/topos-native-intelligence/">Series 02</a>，第 1484 页</footer><details class="orig"><summary>英文原文</summary><p lang="en">A self-modifying system can improve its own reported performance by weakening the site, changing the cover, suppressing counter-contexts or making obstruction unobservable.</p></details></blockquote>
+  </section>
+
+<section class="book-sec" id="s3-3" aria-labelledby="s3-3-h">
+<h2 id="s3-3-h"><span class="sn">§3.3</span> 七条原则</h2><p>并排阅读，七部著作守着七条原则。每一条都至少在其中四部里，用它们自己的话陈述过。</p>
+<p><strong>先改变世界，再面对问题。</strong>问题抗拒时，这些著作并不更用力地敲打它；它们追问什么样的环境世界会使它变得自然，在明确的公理下建起那个世界，并记录这次改变得到了什么、失去了什么。四个研究课题用同一种措辞陈述这一步：递归改变的是对象，而不是桥<span class="cite">（<span class="c1">Series 04, Series Note</span>）</span>、论证<span class="cite">（<span class="c1">Series 05, Series Note</span>）</span>、不等式<span class="cite">（<span class="c1">Series 06, Series Note</span>）</span>或命题<span class="cite">（<span class="c1">Series 07, Series Note</span>）</span>。第一部把同一个模式称为更换环境世界<span class="cite">（<span class="c1">Series 01, Integrated Preface</span>）</span>。</p>
+<p><strong>结论是一个能粘合的截面。</strong>只有在局部证据于重叠处一致、并粘合成一个整体的地方，结论才被许可。对第二部，这就是结论的定义<span class="cite">（<span class="c1">Series 02, Series Note</span>）</span>；对第六部，这是关于数学本身的一课——一组好的局部理论还不是一个整体理论，有效性、比较与高阶相干性都是定理，而不是标点<span class="cite">（<span class="c1">Series 06, Preface</span>）</span>。第三、第四与第七部，都把各自的核心困难定位在从局部数据到整体对象的过渡处<span class="cite">（<span class="c1">Series 03, Preface</span>; <span class="c1">Series 04, Preface</span>; <span class="c1">Series 07, Preface</span>）</span>。</p>
+<p><strong>障碍是一种产出。</strong>论证失败之处，失败被定位、被赋予类型并被保留。第一部使失败成为数学状态的一部分<span class="cite">（<span class="c1">Series 01, Integrated Preface</span>）</span>；第二部把粘合的失败当作一个有确定位置和大小的上同调类<span class="cite">（<span class="c1">Series 02, Preface</span>）</span>；第三部保存一个有范围的障碍库，作为可用形式的否定性知识，告诉搜索不要去哪里、以及为什么<span class="cite">（<span class="c1">Series 03, Preface</span>）</span>；第五部在每一次失败发生的地方记录它，使下一次递归可以从那里开始<span class="cite">（<span class="c1">Series 05, Preface</span>）</span>。</p>
+<p><strong>结果不强于它的证明。</strong>每一项论断在提出之处都带着它的状态。五个研究课题用一句话共享这条原则：任何结果都不以强于其证明的强度呈现<span class="cite">（<span class="c1">Series 03, Series Note</span>）</span>。第一部把状态作为论断类型的一部分，而不是把它排成置信度<span class="cite">（<span class="c1">Series 01, Vol. III</span>）</span>；第二部把等级赋予句子，而不是赋予句子周围的行文<span class="cite">（<span class="c1">Series 02, Preface</span>）</span>；第七部禁止任何靠修辞的升级<span class="cite">（<span class="c1">Series 07, Ch. 40</span>）</span>。</p>
+<p><strong>生成不是验证。</strong>一个候选的产生者，从来不是它唯一的评判者。第一部把产生者、独立检查者、证明内核、凭据签发者、状态权威与发布权威分开<span class="cite">（<span class="c1">Series 01, Vol. III</span>）</span>。第六部从经验给出理由：流畅的生成不是验证，一个刚刚产生了一个论证的模型，不适合做它唯一的批评者<span class="cite">（<span class="c1">Series 06, Preface</span>）</span>。第四部与第五部把同一纪律落实为台账与对抗性审计<span class="cite">（<span class="c1">Series 04, Preface</span>; <span class="c1">Series 05, Abstract</span>）</span>。</p>
+<p><strong>抽象的资格，来自它所保持的东西。</strong>一个新结构，凭它所保持的东西、它所暴露的障碍以及它使之可检查的东西，赢得自己的位置。第一部用五个词说出这一点——抽象的资格来自保持（abstraction is earned by preservation）<span class="cite">（<span class="c1">Series 01, Vol. III</span>）</span>。第二部只在移除某项引入的数学会使一个具名的定义、定理或算法类型不良时，才接纳它<span class="cite">（<span class="c1">Series 02, Preface</span>）</span>；第六部拒绝让一条引用把已确立的状态转移到一个新用途上<span class="cite">（<span class="c1">Series 06, Preface</span>）</span>；第七部把重新表述、优雅与一般性都算作毫无贡献<span class="cite">（<span class="c1">Series 07, Ch. 40</span>）</span>。</p>
+<p><strong>方法是递归的，而且可能失败。</strong>每一部都预先说明什么会推翻它。一个不可能失败的纲领，不是数学纲领<span class="cite">（<span class="c1">Series 03, Preface</span>）</span>；一个不可能失败的框架，对读者什么也没说<span class="cite">（<span class="c1">Series 04, Preface</span>）</span>；一个不可证伪的框架，不是数学<span class="cite">（<span class="c1">Series 07, Preface</span>）</span>。第二部要求每一个模块都说出一项测量，其结果会迫使它被放弃<span class="cite">（<span class="c1">Series 02, Preface</span>）</span>。</p>
+  <p class="src">译自总纲 §3.3 · <a href="/method/#s3-3" hreflang="en">英文原文：<span lang="en">Seven principles</span></a></p>
+</section><section class="book-sec" id="s8-1" aria-labelledby="s8-1-h">
+<h2 id="s8-1-h"><span class="sn">§8.1</span> 七步</h2><p>七部中的每一部都迈出一步，全书其余部分都是对这一步的展开；表 2 把七步并列：问题原来卡在哪里，换掉了什么，这一改变使什么变得自然，以及它的代价。各行转述各书自己的诊断与提议；出处见第 5–7 章。</p>
+<p>这张表先逐行读，再逐列读。逐行读，它是七段不同的数学与机器设计。逐列读，它显出同一个模式。第一栏里的困难总是缺少一个结构，而不是缺少一个估计：压制了不变量的语言、没有覆盖的上下文、带余量的正定性、彼此之间没有映射的两个量、不是正流的闭流、底下没有底的环、没有可以在其上取迹的空间的对应。第二栏里的回答总是改变提出问题的那个对象。第三与第四栏记录这一改变换来了什么、还欠着什么。</p>
+    <div class="tbl"><table>
+      <thead><tr><th scope="col">编号</th><th scope="col">问题原来卡在哪里</th><th scope="col">换掉了什么</th><th scope="col">由此变得自然的东西</th><th scope="col">代价；仍然开放的</th></tr></thead>
+      <tbody><tr><td>01</td><td>问题的语言压制了陈述正确不变量或粘合律所需的结构</td><td>环境世界，通过一个有类型、记录得失的操作</td><td>零散的现象变得函子化、局部化、可表示或可重构</td><td>每一次扩大都会丢失一些东西；回到原问题的路必须给出</td></tr><tr><td>02</td><td>模型的上下文没有覆盖的概念，因此"证据须能粘合"这一条件什么也约束不了</td><td>上下文成为 site，证据成为层，结论成为整体截面</td><td>不一致成为一个有位置、有大小的障碍</td><td>没有运行实验；局部特化未合成为一个前向映射</td></tr><tr><td>03</td><td>正定性证明得太多且有余量，而 RH 若成立则毫无余地</td><td>正定性条件被指标条件取代</td><td>负指标为一，且在 (0, 1) 中无实零点，使临界线外不留零点</td><td>算术实现与 Problem A2<sup>⋆</sup> 仍未解决</td></tr><tr><td>04</td><td>两个由毫不相干的机制计算的量，只靠在一点、单一方向上的桥相连</td><td>一个对象、两种描述：线 Δ(X<sub>E</sub>) 及其两个平凡化</td><td>秩成为一个指标，首项系数成为一个行列式</td><td>Conjecture A 并不比猜想本身容易；十二个猜想与十四个障碍</td></tr><tr><td>05</td><td>一个类上的条件必须产生一个子簇，而闭流并不是正流</td><td>代数性成为沿棱镜携带的下降数据</td><td>射影性在一步中被用掉，分母在一步中被产生</td><td>两个障碍仍然存在，O1 与 O2；O2 是缺口</td></tr><tr><td>06</td><td>Spec ℤ 是终对象，其余切复形为零，函数域上的证明无处运行</td><td>一个底：基底 𝔖 给 Spec ℤ 一个相对余切方向</td><td>坏约化成为应变，Riemann–Hurwitz 在基底上恢复</td><td>整体拼装依赖已命名的义务；PO-079 承担算术分量</td></tr><tr><td>07</td><td>在 <strong>Z</strong> 上没有底、没有 Frobenius，因而没有迹</td><td>双射被单一整体底上一个迹的值取代</td><td>互反律成为迹恒等式，函子性成为迹的自然性</td><td>底只被规定、未被构造；四个第一难度的缺口与第五个</td></tr></tbody>
+    </table><p class="tcap">七部中的 Grothendieck 式一步。每一行转述该书自己的诊断与提议（出处见第 5–7 章）。</p></div>
+  <p class="src">译自总纲 §8.1 · <a href="/method/#s8-1" hreflang="en">英文原文：<span lang="en">Seven moves</span></a></p>
+</section><section class="book-sec" id="s8-2" aria-labelledby="s8-2-h">
+<h2 id="s8-2-h"><span class="sn">§8.2</span> 共同的形状</h2><p>每一行都有三个共同特征。第一，这一步改变的是对象，而让问题原样留着。四个研究课题用同一种措辞陈述这一点——递归改变的是对象，而不是桥、论证、不等式或命题——第一部则把同一个模式称为更换环境世界（第 3 章）。没有一步削弱它所处理的问题。第四部谈到它自己的重新表述时说，这个恒等式并不比猜想本身容易，重新表述换来的是结构：一个具有可见函子性的单一整体命题，以及把剩下的部分分解成可以分别攻击的几块<span class="cite">（<span class="c1">Series 04, Preface</span>）</span>。</p>
+<p>第二，每一步都把局部数据与局部数据的粘合分开，并在粘合处找到困难。第二部把这一点作为结论的定义；各研究课题在各自的问题中找到它。第七部算术曲线的局部图卡是已确立的数学，它们的整体拼装是猜想性的<span class="cite">（<span class="c1">Series 07, Preface</span>）</span>；第六部基底的局部支柱已经确立，它的整体接口仍然开放<span class="cite">（<span class="c1">Series 06, Preface</span>）</span>；第四部把过去二十年中每一项基础性进展都读作一个结构中缺失的一块，没有一块是整体的，也没有任何两块已被粘合<span class="cite">（<span class="c1">Series 04, Preface</span>）</span>。</p>
+<p>第三，每一步都在答案已知之处接受检验，而且检验被允许失败。函数域情形是五个研究课题中四个的对照——第三、第四与第七部是有限域上的曲线，第六部是函数域极限——而 Hodge 猜想的已知情形是第五部的对照。在每一种情形下，各书都报告说，它的规定再现了已知情形，并把剩下的困难定位在有限个具名命题上：两个义务 O1 与 O2、PO-079、一个底的存在性<span class="cite">（<span class="c1">Series 05, Preface</span>; <span class="c1">Series 06, Preface</span>; <span class="c1">Series 07, Preface</span>）</span>。</p>
+  <p class="src">译自总纲 §8.2 · <a href="/method/#s8-2" hreflang="en">英文原文：<span lang="en">The common shape</span></a></p>
+</section></div>
+</main>
+<footer class="foot">
+  <div class="wrap foot-grid">
+    <div>
+      <p class="foot-lab"><a href="/zh/lab/">Grothendieck Lab · WiseMotif.ai</a></p>
+      <p>Grothendieck Lab 与 Grothendieckian Programme 的官方网站。</p>
+      <p><a href="https://wisemotif.ai">WiseMotif.ai</a> · © 2026 Vincent Liu · <a href="https://orcid.org/0009-0000-8718-222X">ORCID 0009-0000-8718-222X</a></p>
+      <p><a href="/zh/lab/#name">名称</a> · <a href="/zh/lab/#licence">许可</a> · <a href="/method/" hreflang="en" lang="en">English</a></p>
+<p class="foot-note">中文为译文，以英文原文为准；书名、卷名、体系专名与无稳定中文译名的术语保留英文。</p>    </div>
+    <nav class="foot-works" aria-label="七部著作">
+      <ul>
+        <li><a href="/zh/works/grothendieckian-machine/"><span class="sn">01</span> <span lang="en">GAI-MUA: The Grothendieckian Machine</span></a></li>
+        <li><a href="/zh/works/topos-native-intelligence/"><span class="sn">02</span> <span lang="en">GM-Omega-Infinity: Topos-Native Intelligence</span></a></li>
+        <li><a href="/zh/works/arithmetic-spectral-descent/"><span class="sn">03</span> <span lang="en">Arithmetic Spectral Descent</span></a></li>
+        <li><a href="/zh/works/fractured-adelic-geometry/"><span class="sn">04</span> <span lang="en">Fractured Adelic Geometry</span></a></li>
+        <li><a href="/zh/works/the-archimedean-prism/"><span class="sn">05</span> <span lang="en">The Archimedean Prism</span></a></li>
+        <li><a href="/zh/works/strained-prismatic-geometry/"><span class="sn">06</span> <span lang="en">Strained Prismatic Geometry</span></a></li>
+        <li><a href="/zh/works/the-arithmetic-topos/"><span class="sn">07</span> <span lang="en">The Arithmetic Topos</span></a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="zh-Hans" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src &#39;self&#39;; script-src &#39;self&#39;; style-src &#39;self&#39;; img-src &#39;self&#39; data:; font-src &#39;self&#39;; connect-src &#39;self&#39;; object-src &#39;none&#39;; base-uri &#39;none&#39;; form-action &#39;none&#39;">
+<title>Arithmetic Spectral Descent（黎曼猜想）· Series 03 · 格罗滕迪克纲领</title>
+<meta name="description" content="Arithmetic Spectral Descent——格罗滕迪克纲领 Series 03，研究课题 1 · RH 与 GRH；4 卷、1,549 页，开放获取。DOI 10.5281/zenodo.23564898">
+<meta name="author" content="Vincent Liu">
+<meta name="keywords" content="黎曼猜想, 格罗滕迪克纲领, Grothendieck, 广义黎曼猜想, 黎曼 zeta 函数, Krein, Weil 猜想, 证伪">
+<meta name="tdm-reservation" content="1">
+<meta name="tdm-policy" content="https://github.com/AlienMuse/grothendieckian-programme/blob/main/TDM-AND-AI-POLICY.md">
+<link rel="canonical" href="https://grothendiecklab.com/zh/works/arithmetic-spectral-descent/">
+<link rel="alternate" hreflang="en" href="https://grothendiecklab.com/works/arithmetic-spectral-descent/">
+<link rel="alternate" hreflang="zh-Hans" href="https://grothendiecklab.com/zh/works/arithmetic-spectral-descent/">
+<link rel="alternate" hreflang="x-default" href="https://grothendiecklab.com/works/arithmetic-spectral-descent/">
+<meta property="og:site_name" content="Grothendieck Lab · WiseMotif.ai">
+<meta property="og:type" content="book">
+<meta property="og:title" content="Arithmetic Spectral Descent（黎曼猜想）· Series 03 · 格罗滕迪克纲领">
+<meta property="og:description" content="Arithmetic Spectral Descent——格罗滕迪克纲领 Series 03，研究课题 1 · RH 与 GRH；4 卷、1,549 页，开放获取。DOI 10.5281/zenodo.23564898">
+<meta property="og:url" content="https://grothendiecklab.com/zh/works/arithmetic-spectral-descent/">
+<meta property="og:image" content="https://grothendiecklab.com/static/img/covers/series-03.jpg">
+<meta property="og:image:alt" content="封面：Arithmetic Spectral Descent">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#040a10">
+<link rel="icon" href="/static/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/static/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/static/img/apple-touch-icon.png">
+<link rel="preload" href="/static/fonts/pagella-regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/static/fonts/pagella-italic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/static/css/lab-09a47c6f56.css">
+<meta name="citation_title" content="Arithmetic Spectral Descent: Obstruction Theory, Hodge–Krein Realization, and a Falsifiable Architecture for the Riemann Hypothesis">
+<meta name="citation_author" content="Liu, Vincent">
+<meta name="citation_author_institution" content="WiseMotif.ai">
+<meta name="citation_author_orcid" content="https://orcid.org/0009-0000-8718-222X">
+<meta name="citation_publication_date" content="2026/10/22">
+<meta name="citation_publisher" content="Zenodo">
+<meta name="citation_doi" content="10.5281/zenodo.23564899">
+<meta name="citation_language" content="en">
+<meta name="citation_pdf_url" content="https://zenodo.org/records/23564899/files/Arithmetic-Spectral-Descent-v1.0.0-Complete.pdf">
+<meta name="citation_abstract_html_url" content="https://grothendiecklab.com/zh/works/arithmetic-spectral-descent/">
+<meta name="citation_keywords" content="Riemann Hypothesis">
+<meta name="citation_keywords" content="Riemann zeta function">
+<meta name="citation_keywords" content="generalized Riemann hypothesis">
+<meta name="citation_keywords" content="explicit formula">
+<meta name="citation_keywords" content="Weil positivity">
+<meta name="citation_keywords" content="spectral realization of zeros">
+<meta name="citation_keywords" content="Hilbert–Pólya programme">
+<meta name="citation_keywords" content="Krein spaces">
+<meta name="citation_keywords" content="indefinite inner product">
+<meta name="citation_keywords" content="Hodge–Krein realization">
+<meta name="citation_keywords" content="no-go theorems">
+<meta name="citation_keywords" content="function-field Riemann hypothesis">
+<meta name="citation_keywords" content="Weil conjectures">
+<meta name="citation_keywords" content="topological Hochschild homology">
+<meta name="citation_keywords" content="topological cyclic homology">
+<meta name="citation_keywords" content="prismatic cohomology">
+<meta name="citation_keywords" content="absolute arithmetic geometry">
+<meta name="citation_keywords" content="de Bruijn–Newman constant">
+<meta name="citation_keywords" content="certified computation">
+<meta name="citation_keywords" content="Grothendieckian Programme">
+<meta name="citation_keywords" content="recursive mathematical discovery">
+<meta name="citation_keywords" content="AI for mathematics">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Book",
+ "@id": "https://doi.org/10.5281/zenodo.23564898",
+ "name": "Arithmetic Spectral Descent",
+ "alternativeHeadline": "Obstruction Theory, Hodge–Krein Realization, and a Falsifiable Architecture for the Riemann Hypothesis",
+ "author": {
+  "@type": "Person",
+  "@id": "https://grothendiecklab.com/lab/#person",
+  "name": "Vincent Liu",
+  "url": "https://grothendiecklab.com/zh/lab/",
+  "jobTitle": "Chief AI Mathematician",
+  "worksFor": {
+   "@type": "Organization",
+   "name": "WiseMotif.ai",
+   "url": "https://wisemotif.ai"
+  },
+  "affiliation": {
+   "@id": "https://grothendiecklab.com/#lab"
+  },
+  "sameAs": [
+   "https://orcid.org/0009-0000-8718-222X",
+   "https://scholar.google.com/citations?user=t0sMkU0AAAAJ",
+   "https://github.com/AlienMuse",
+   "https://zenodo.org/communities/grothendieckian-programme",
+   "https://alienmuse.github.io/"
+  ]
+ },
+ "url": "https://grothendiecklab.com/zh/works/arithmetic-spectral-descent/",
+ "bookEdition": "Research Architecture Edition 1",
+ "version": "1.0.0",
+ "datePublished": "2026-10-22",
+ "inLanguage": "en",
+ "numberOfPages": 1549,
+ "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+ "identifier": [
+  {
+   "@type": "PropertyValue",
+   "propertyID": "DOI",
+   "value": "10.5281/zenodo.23564898"
+  },
+  {
+   "@type": "PropertyValue",
+   "propertyID": "DOI (version)",
+   "value": "10.5281/zenodo.23564899"
+  }
+ ],
+ "isPartOf": [
+  {
+   "@type": "CreativeWorkSeries",
+   "name": "WiseMotif Monograph of Mathematical Intelligence"
+  },
+  {
+   "@type": "CreativeWorkSeries",
+   "name": "The Grothendieckian Programme",
+   "url": "https://grothendiecklab.com/zh/programme/"
+  }
+ ],
+ "publisher": {
+  "@type": "Organization",
+  "name": "Zenodo",
+  "url": "https://zenodo.org"
+ },
+ "bookFormat": "https://schema.org/EBook",
+ "isAccessibleForFree": true,
+ "keywords": "Riemann Hypothesis, Riemann zeta function, generalized Riemann hypothesis, explicit formula, Weil positivity, spectral realization of zeros, Hilbert–Pólya programme, Krein spaces, indefinite inner product, Hodge–Krein realization, no-go theorems, function-field Riemann hypothesis, Weil conjectures, topological Hochschild homology, topological cyclic homology, prismatic cohomology, absolute arithmetic geometry, de Bruijn–Newman constant, certified computation, Grothendieckian Programme, recursive mathematical discovery, AI for mathematics",
+ "abstract": "Arithmetic Spectral Descent is the third work in the WiseMotif Monograph of Mathematical Intelligence. It belongs to the Grothendieckian Programme as a self-contained system and one of the Programme's research subjects: a problem on which the method of recursive mathematical discovery is carried through in full. A proposed structure is tested; what survives is abstracted and the question is posed again, in the manner of Grothendieck's rising sea. The problem is the Riemann Hypothesis, and the question is whether local arithmetic can descend to a spectral object that bears the zeros of the zeta function and controls where they lie.",
+ "image": "https://grothendiecklab.com/static/img/covers/series-03.jpg",
+ "sameAs": [
+  "https://doi.org/10.5281/zenodo.23564899",
+  "https://github.com/AlienMuse/arithmetic-spectral-descent"
+ ]
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "name": "Grothendieck Lab",
+   "item": "https://grothendiecklab.com/zh/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "name": "格罗滕迪克纲领",
+   "item": "https://grothendiecklab.com/zh/programme/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 3,
+   "name": "Arithmetic Spectral Descent",
+   "item": "https://grothendiecklab.com/zh/works/arithmetic-spectral-descent/"
+  }
+ ]
+}
+</script>
+<script type="module" src="/static/js/main-PB52Z2DD.js"></script>
+</head>
+<body class="page-work l-zh">
+<a class="skip" href="#main">跳到正文</a>
+<header class="top">
+  <div class="bar">
+    <div class="brand">
+      <a class="brand-home" href="/zh/" aria-label="{&#39;machine_more&#39;: &#39;中心与内核&#39;, &#39;open_more&#39;: &#39;论文、论纲与问题&#39;, &#39;lab_more&#39;: &#39;实验室&#39;}">
+        <img src="/static/img/favicon.svg" alt="" width="26" height="26">
+        <span class="brand-name">Grothendieck Lab</span>
+      </a>
+      <span class="brand-sep" aria-hidden="true">·</span>
+      <a class="brand-org" href="https://wisemotif.ai" title="WiseMotif.ai，公司主站">WiseMotif.ai</a>
+    </div>
+    <div class="bar-r">
+      <nav class="nav" aria-label="主导航">
+        <a href="/zh/programme/">纲领</a>
+        <a href="/zh/method/">方法</a>
+        <a href="/zh/machine/">机器</a>
+        <a href="/zh/open/">开放</a>
+        <a href="/zh/lab/">实验室</a>
+      </nav>
+      <a class="lang" href="/works/arithmetic-spectral-descent/" hreflang="en" lang="en" title="本页的英文版">English</a>
+    </div>
+  </div>
+</header>
+<main id="main">
+<section class="work-head blue" aria-labelledby="title">
+  <div class="wrap work-grid">
+    <div class="work-id">
+      <p class="kicker"><span class="wk-n">SERIES 03</span> · 研究课题 1 · RH 与 GRH</p>
+      <h1 id="title" lang="en">Arithmetic Spectral Descent</h1>
+      <p class="subtitle" lang="en">Obstruction Theory, Hodge–Krein Realization, and a Falsifiable Architecture for the Riemann Hypothesis</p>
+      <p class="series-line" lang="en">WiseMotif Monograph of Mathematical Intelligence, Series 03 · Mathematics and Artificial Intelligence</p>
+      <div class="status-card">
+        <p class="wk-label">中心主张的状态（各书自己的说法）</p>
+        <p class="wk-status">AHK-1–AHK-3 ⇒ RH 已证 <span class="tag">[T]</span>；满足它们的算术系统未构造 <span class="tag">[O]</span></p>
+        <p class="src">来源：<a href="/zh/programme/">Series 00</a>，表 1</p>
+      </div>
+      <p class="actions">
+        <a class="btn btn-primary" href="https://github.com/AlienMuse/arithmetic-spectral-descent/releases/download/v1.0.0/Arithmetic-Spectral-Descent-v1.0.0-Complete.pdf">完整 PDF</a>
+        <a class="btn" href="https://doi.org/10.5281/zenodo.23564898">Zenodo 记录</a>
+        <a class="btn" href="https://github.com/AlienMuse/arithmetic-spectral-descent">GitHub 仓库</a>
+      </p>
+    </div>
+    <div class="work-aside">
+      <img class="cover" src="/static/img/covers/series-03.webp" width="480" height="678" alt="封面：Arithmetic Spectral Descent">
+      <figure class="fig fig-honeycomb" data-fig="honeycomb" data-label="七部著作，画成同一个蜂巢的七格">
+  <div class="hc-stack">
+    <div class="fig-box"></div>
+    <svg class="hc-links has-here" viewBox="0 0 130 130" role="group" aria-label="七部著作，画成同一个蜂巢的七格">
+<a href="/zh/works/grothendieckian-machine/" aria-label="Series 01 · GAI-MUA: The Grothendieckian Machine"><title>Series 01 · GAI-MUA: The Grothendieckian Machine</title><polygon points="88.95,65.00 76.98,85.74 53.02,85.74 41.05,65.00 53.02,44.26 76.98,44.26"/><text class="fb" x="65.0" y="62.8">SERIES 01</text><text class="fb r" x="65.0" y="68.6">GAI-MUA</text></a><a href="/zh/works/topos-native-intelligence/" aria-label="Series 02 · GM-Omega-Infinity: Topos-Native Intelligence"><title>Series 02 · GM-Omega-Infinity: Topos-Native Intelligence</title><polygon points="88.95,22.75 76.98,43.49 53.02,43.49 41.05,22.75 53.02,2.01 76.98,2.01"/><text class="fb" x="65.0" y="20.55">SERIES 02</text><text class="fb r" x="65.0" y="26.35">TOPOS-NATIVE</text></a><a href="/zh/works/arithmetic-spectral-descent/" class="here" aria-current="page" aria-label="Series 03 · Arithmetic Spectral Descent"><title>Series 03 · Arithmetic Spectral Descent</title><polygon points="125.54,43.88 113.57,64.62 89.61,64.62 77.64,43.88 89.61,23.13 113.57,23.13"/><text class="fb" x="101.59" y="41.68">SERIES 03</text><text class="fb r" x="101.59" y="47.480000000000004">RIEMANN · GRH</text></a><a href="/zh/works/fractured-adelic-geometry/" aria-label="Series 04 · Fractured Adelic Geometry"><title>Series 04 · Fractured Adelic Geometry</title><polygon points="125.54,86.12 113.57,106.87 89.61,106.87 77.64,86.12 89.61,65.38 113.57,65.38"/><text class="fb" x="101.59" y="83.92">SERIES 04</text><text class="fb r" x="101.59" y="89.72">BSD</text></a><a href="/zh/works/the-archimedean-prism/" aria-label="Series 05 · The Archimedean Prism"><title>Series 05 · The Archimedean Prism</title><polygon points="88.95,107.25 76.98,127.99 53.02,127.99 41.05,107.25 53.02,86.51 76.98,86.51"/><text class="fb" x="65.0" y="105.05">SERIES 05</text><text class="fb r" x="65.0" y="110.85">HODGE</text></a><a href="/zh/works/strained-prismatic-geometry/" aria-label="Series 06 · Strained Prismatic Geometry"><title>Series 06 · Strained Prismatic Geometry</title><polygon points="52.36,86.12 40.39,106.87 16.43,106.87 4.46,86.12 16.43,65.38 40.39,65.38"/><text class="fb" x="28.41" y="83.92">SERIES 06</text><text class="fb r" x="28.41" y="89.72">abc</text></a><a href="/zh/works/the-arithmetic-topos/" aria-label="Series 07 · The Arithmetic Topos"><title>Series 07 · The Arithmetic Topos</title><polygon points="52.36,43.88 40.39,64.62 16.43,64.62 4.46,43.88 16.43,23.13 40.39,23.13"/><text class="fb" x="28.41" y="41.68">SERIES 07</text><text class="fb r" x="28.41" y="47.480000000000004">LANGLANDS</text></a>    </svg>
+  </div>
+</figure>
+    </div>
+  </div>
+</section>
+
+<div class="wrap prose">
+  <section class="block boundary" aria-labelledby="boundary">
+    <h2 id="boundary">该书的边界，用它自己的话</h2>
+    <blockquote class="q q-lead"><p>黎曼猜想仍未解决。本书不声称证明了它，也不声称证明了广义黎曼猜想或任何等价命题。</p><footer class="src">——<cite>Arithmetic Spectral Descent</cite>，Series Note</footer><details class="orig"><summary>英文原文</summary><p lang="en">The Riemann Hypothesis remains open. This work does not claim a proof of it, of the generalized Riemann hypotheses, or of any equivalent statement.</p></details></blockquote>
+  </section>
+
+  <section class="block" aria-labelledby="move">
+    <h2 id="move">这部书迈出的一步</h2>
+    <dl class="move">
+<div><dt>问题原来卡在哪里</dt><dd>正定性证明得太多且有余量，而 RH 若成立则毫无余地</dd></div><div><dt>换掉了什么</dt><dd>正定性条件被指标条件取代</dd></div><div><dt>由此变得自然的东西</dt><dd>负指标为一，且在 (0, 1) 中无实零点，使临界线外不留零点</dd></div><div><dt>代价；仍然开放的</dt><dd>算术实现与 Problem A2<sup>⋆</sup> 仍未解决</dd></div>    </dl>
+    <p class="src">来源：<a href="/zh/programme/">Series 00</a>，表 2</p>
+  </section>
+
+  <section class="block" aria-labelledby="abstract">
+    <h2 id="abstract">摘要</h2>
+<p>Arithmetic Spectral Descent 是 WiseMotif Monograph of Mathematical Intelligence 的第三部著作。它属于 Grothendieckian Programme，自成独立体系，是该 Programme 的研究课题之一：在一个问题上把递归式数学发现（recursive mathematical discovery）的方法完整地走一遍。提出的结构接受检验；经受住检验的部分被抽象出来，问题再被重新提出——正如 Grothendieck 的“上涨的海”（rising sea）。所选的问题是黎曼猜想；所问的是：局部算术能否下降为一个谱对象，它承载 zeta 函数的零点，并控制这些零点的位置。</p><p>回答分四卷给出。第 I 卷确立什么行不通：二十三个有范围的 no-go 定理，以及由四个已发表的反例模型构成的“防火墙”，定位了特定的证明机制在何处丢失了临界线上所需的信息。第 II 卷把 Weil 在函数域上的证明分解为它实际用到的几何输入，并以该模型为准，审查球谱底、分圆结构与 prismatic 结构，以及一个拟议的 adelic 叠。第 III 卷证明有条件成立的结论。它的正面输入是 Krein Index Theorem：若对一个惯性为 (n₊, n₋) 的非退化 Hermite 形式 G 有 Θ*G + GΘ = G，则 Θ 在 Re λ &gt; ½ 中的代数重数至多为 min(n₊, n₋)。结合稳定的谱穷竭、中心化的对偶性以及至多为一的相容负指标，它给出 Index-One Exhaustion Theorem：由三个实现假设 AHK-1、AHK-2 与 AHK-3 出发对黎曼猜想的一个已证明的推导，而这三个假设尚无人构造出来；等价性审查表明，这三者本身并不弱于结论，因此算术内容必须经由 AHK-4 至 AHK-6 进入。第 IV 卷把认证的有限计算与渐近论断分开，并把剩下的两项义务——Arithmetic Hodge–Krein Realization Problem 与 Problem A2⋆——分解为可以着手攻克的问题、决策关口与证伪检验。</p><p>否定路线给出的结果可以独立于有条件路线加以检验：Amplification Invariance Theorem，σ_c − Re(amplified singularity) = k(½ − δ)，表明单靠放大在零点指数上一无所得；其他定理分别刻画了层级坍缩、支撑加倍、正定性上限、临界性以及有限数据下的谱障碍。数值部分计算了六十三个 Guinand–Weil Gram 矩阵；去掉极点后的形式在每一种配置下都恰有一个测得的负方向。这一证据只作为有限证据报告，从不被放进有条件的定理之中。</p><p>任何结果都不以高于其证明的强度呈现，每一项实质性论断都在提出之处标明其状态。黎曼猜想仍未解决。本书不声称证明了它，也不声称证明了广义黎曼猜想或任何等价命题。</p>    <details class="orig"><summary>英文原文</summary><p lang="en">Arithmetic Spectral Descent is the third work in the WiseMotif Monograph of Mathematical Intelligence. It belongs to the Grothendieckian Programme as a self-contained system and one of the Programme&#39;s research subjects: a problem on which the method of recursive mathematical discovery is carried through in full. A proposed structure is tested; what survives is abstracted and the question is posed again, in the manner of Grothendieck&#39;s rising sea. The problem is the Riemann Hypothesis, and the question is whether local arithmetic can descend to a spectral object that bears the zeros of the zeta function and controls where they lie.</p><p lang="en">The answer is given in four volumes. Volume I establishes what cannot work: twenty-three scoped no-go theorems and a firewall of four published counter-models locate the points at which specified proof mechanisms lose the information needed at the critical line. Volume II decomposes Weil&#39;s function-field proof into its actual geometric inputs and audits the sphere base, the cyclotomic and prismatic structures, and a proposed adelic stack against that model. Volume III proves what holds conditionally. Its positive input is the Krein Index Theorem: if Θ*G + GΘ = G for a nondegenerate Hermitian form G of inertia (n₊, n₋), the algebraic multiplicity of Θ in Re λ &gt; ½ is at most min(n₊, n₋). With stable spectral exhaustion, centered duality and compatible negative index at most one, it yields the Index-One Exhaustion Theorem, a proved derivation of the Riemann Hypothesis from three realization hypotheses AHK-1, AHK-2 and AHK-3, which nobody has constructed; an equivalence audit shows that these three are not by themselves weaker than the conclusion, so that arithmetic content must enter through AHK-4 to AHK-6. Volume IV separates certified finite computation from asymptotic claims and decomposes the two remaining obligations, the Arithmetic Hodge–Krein Realization Problem and Problem A2⋆, into attackable problems, decision gates and falsification tests.</p><p lang="en">The negative line supplies results that can be checked independently of the conditional one: the Amplification Invariance Theorem, σ_c − Re(amplified singularity) = k(½ − δ), shows that amplification alone gains nothing in the zero exponent, and further theorems isolate level collapse, support doubling, positivity ceilings, criticality and finite-data spectral obstructions. The numerical component evaluates sixty-three Guinand–Weil Gram matrices; the pole-removed form has exactly one measured negative direction in every configuration. That evidence is reported as finite evidence and is never inserted into the conditional theorem.</p><p lang="en">No result is presented at a strength greater than its proof, and every substantive claim carries its status where it is made. The Riemann Hypothesis remains open. This work does not claim a proof of it, of the generalized Riemann hypotheses, or of any equivalent statement.</p></details>
+  </section>
+
+  <section class="block" aria-labelledby="structure">
+    <h2 id="structure">核心结构</h2>
+    <p>以指标代替正定性：Krein 指标定理；23 个有范围的不可行定理</p>
+    <ul class="vols" lang="en"><li>Volume I — Barrier Theory: What specified proof mechanisms cannot do (Parts I–II)</li><li>Volume II — The Proof Architecture: From the paradigm to a construction problem (Parts III–V)</li><li>Volume III — Reductions of RH and GRH: Conditional chains and the equivalence audit (Parts VI–VIII)</li><li>Volume IV — The Remaining Obligations: Construction, certification, and falsification (Parts IX–X)</li><li>Apparatus — Appendices A–J, glossary, chronology, open-problem register, indexes</li></ul>
+  </section>
+
+  <section class="block" aria-labelledby="labels">
+    <h2 id="labels">状态标签（按原书印出）</h2>
+    <p lang="en"><strong>[T]</strong> theorem · <strong>[C]</strong> conjecture or conditional statement · <strong>[O]</strong> open construction · <strong>[E]</strong> evidence · <strong>[N]</strong> proved impossibility · <strong>[K]</strong> known background</p>
+    <p class="src">来源：<a href="/zh/programme/">Series 00</a>，表 3</p>
+  </section>
+
+  <section class="block" aria-labelledby="record">
+    <h2 id="record">引用</h2>
+    <dl class="meta">
+      <div><dt>规模</dt><dd>4 卷 · 1,549 页</dd></div>
+      <div><dt>概念 DOI（所有版本）</dt><dd><a href="https://doi.org/10.5281/zenodo.23564898">10.5281/zenodo.23564898</a></dd></div>
+      <div><dt>版本 DOI 1.0.0</dt><dd><a href="https://doi.org/10.5281/zenodo.23564899">10.5281/zenodo.23564899</a></dd></div>
+      <div><dt>发布日期</dt><dd>2026-10-22 · Research Architecture Edition 1</dd></div>
+      <div><dt>许可</dt><dd>CC BY-NC-ND 4.0；代码清单与配套代码另以 Apache-2.0 授权</dd></div>
+    </dl>
+    <pre class="bibtex"><code>@book{liu2026series03,
+  author    = {Liu, Vincent},
+  title     = {Arithmetic Spectral Descent --- Obstruction Theory, Hodge–Krein Realization, and a Falsifiable Architecture for the Riemann Hypothesis},
+  series    = {WiseMotif Monograph of Mathematical Intelligence, Series 03},
+  edition   = {Research Architecture Edition 1},
+  version   = {1.0.0},
+  year      = {2026},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.23564898},
+  url       = {https://doi.org/10.5281/zenodo.23564898}
+}</code></pre>
+  </section>
+</div>
+</main>
+<footer class="foot">
+  <div class="wrap foot-grid">
+    <div>
+      <p class="foot-lab"><a href="/zh/lab/">Grothendieck Lab · WiseMotif.ai</a></p>
+      <p>Grothendieck Lab 与 Grothendieckian Programme 的官方网站。</p>
+      <p><a href="https://wisemotif.ai">WiseMotif.ai</a> · © 2026 Vincent Liu · <a href="https://orcid.org/0009-0000-8718-222X">ORCID 0009-0000-8718-222X</a></p>
+      <p><a href="/zh/lab/#name">名称</a> · <a href="/zh/lab/#licence">许可</a> · <a href="/works/arithmetic-spectral-descent/" hreflang="en" lang="en">English</a></p>
+<p class="foot-note">中文为译文，以英文原文为准；书名、卷名、体系专名与无稳定中文译名的术语保留英文。</p>    </div>
+    <nav class="foot-works" aria-label="七部著作">
+      <ul>
+        <li><a href="/zh/works/grothendieckian-machine/"><span class="sn">01</span> <span lang="en">GAI-MUA: The Grothendieckian Machine</span></a></li>
+        <li><a href="/zh/works/topos-native-intelligence/"><span class="sn">02</span> <span lang="en">GM-Omega-Infinity: Topos-Native Intelligence</span></a></li>
+        <li><a href="/zh/works/arithmetic-spectral-descent/"><span class="sn">03</span> <span lang="en">Arithmetic Spectral Descent</span></a></li>
+        <li><a href="/zh/works/fractured-adelic-geometry/"><span class="sn">04</span> <span lang="en">Fractured Adelic Geometry</span></a></li>
+        <li><a href="/zh/works/the-archimedean-prism/"><span class="sn">05</span> <span lang="en">The Archimedean Prism</span></a></li>
+        <li><a href="/zh/works/strained-prismatic-geometry/"><span class="sn">06</span> <span lang="en">Strained Prismatic Geometry</span></a></li>
+        <li><a href="/zh/works/the-arithmetic-topos/"><span class="sn">07</span> <span lang="en">The Arithmetic Topos</span></a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

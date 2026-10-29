@@ -1,0 +1,536 @@
+<!doctype html>
+<html lang="zh-Hans" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src &#39;self&#39;; script-src &#39;self&#39;; style-src &#39;self&#39;; img-src &#39;self&#39; data:; font-src &#39;self&#39;; connect-src &#39;self&#39;; object-src &#39;none&#39;; base-uri &#39;none&#39;; form-action &#39;none&#39;">
+<title>The Grothendieckian Programme（总纲）· Series 00 · 格罗滕迪克纲领</title>
+<meta name="description" content="格罗滕迪克纲领的总纲（Series 00）：关于机器如何推理数学的七部著作的思想、架构与共同纪律。DOI 10.5281/zenodo.23669107">
+<meta name="author" content="Vincent Liu">
+<meta name="keywords" content="格罗滕迪克纲领, Grothendieck, 递归式数学发现, 机器推理, 元推理内核, 研究课题, 黎曼猜想, BSD 猜想, Hodge 猜想, abc 猜想, Langlands 纲领">
+<meta name="tdm-reservation" content="1">
+<meta name="tdm-policy" content="https://github.com/AlienMuse/grothendieckian-programme/blob/main/TDM-AND-AI-POLICY.md">
+<link rel="canonical" href="https://grothendiecklab.com/zh/programme/">
+<link rel="alternate" hreflang="en" href="https://grothendiecklab.com/programme/">
+<link rel="alternate" hreflang="zh-Hans" href="https://grothendiecklab.com/zh/programme/">
+<link rel="alternate" hreflang="x-default" href="https://grothendiecklab.com/programme/">
+<meta property="og:site_name" content="Grothendieck Lab · WiseMotif.ai">
+<meta property="og:type" content="book">
+<meta property="og:title" content="The Grothendieckian Programme（总纲）· Series 00 · 格罗滕迪克纲领">
+<meta property="og:description" content="格罗滕迪克纲领的总纲（Series 00）：关于机器如何推理数学的七部著作的思想、架构与共同纪律。DOI 10.5281/zenodo.23669107">
+<meta property="og:url" content="https://grothendiecklab.com/zh/programme/">
+<meta property="og:image" content="https://grothendiecklab.com/static/img/covers/series-00.jpg">
+<meta property="og:image:alt" content="封面：The Grothendieckian Programme">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#040a10">
+<link rel="icon" href="/static/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/static/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/static/img/apple-touch-icon.png">
+<link rel="preload" href="/static/fonts/pagella-regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/static/fonts/pagella-italic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/static/css/lab-09a47c6f56.css">
+<meta name="citation_title" content="The Grothendieckian Programme: Recursive Mathematical Discovery in the Age of Machine Reasoning">
+<meta name="citation_author" content="Liu, Vincent">
+<meta name="citation_author_institution" content="WiseMotif.ai">
+<meta name="citation_author_orcid" content="https://orcid.org/0009-0000-8718-222X">
+<meta name="citation_publication_date" content="2026/10/26">
+<meta name="citation_publisher" content="Zenodo">
+<meta name="citation_doi" content="10.5281/zenodo.23669108">
+<meta name="citation_language" content="en">
+<meta name="citation_pdf_url" content="https://zenodo.org/records/23669108/files/The-Grothendieckian-Programme-v1.0.0.pdf">
+<meta name="citation_abstract_html_url" content="https://grothendiecklab.com/zh/programme/">
+<meta name="citation_keywords" content="Grothendieckian Programme">
+<meta name="citation_keywords" content="recursive mathematical discovery">
+<meta name="citation_keywords" content="machine reasoning">
+<meta name="citation_keywords" content="mathematical worlds">
+<meta name="citation_keywords" content="verification-first architecture">
+<meta name="citation_keywords" content="topos theory">
+<meta name="citation_keywords" content="descent">
+<meta name="citation_keywords" content="Riemann Hypothesis">
+<meta name="citation_keywords" content="Birch and Swinnerton-Dyer conjecture">
+<meta name="citation_keywords" content="Hodge conjecture">
+<meta name="citation_keywords" content="abc conjecture">
+<meta name="citation_keywords" content="Langlands programme">
+<meta name="citation_keywords" content="AI for mathematics">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Book",
+ "@id": "https://doi.org/10.5281/zenodo.23669107",
+ "name": "The Grothendieckian Programme",
+ "alternativeHeadline": "Recursive Mathematical Discovery in the Age of Machine Reasoning",
+ "author": {
+  "@type": "Person",
+  "@id": "https://grothendiecklab.com/lab/#person",
+  "name": "Vincent Liu",
+  "url": "https://grothendiecklab.com/zh/lab/",
+  "jobTitle": "Chief AI Mathematician",
+  "worksFor": {
+   "@type": "Organization",
+   "name": "WiseMotif.ai",
+   "url": "https://wisemotif.ai"
+  },
+  "affiliation": {
+   "@id": "https://grothendiecklab.com/#lab"
+  },
+  "sameAs": [
+   "https://orcid.org/0009-0000-8718-222X",
+   "https://scholar.google.com/citations?user=t0sMkU0AAAAJ",
+   "https://github.com/AlienMuse",
+   "https://zenodo.org/communities/grothendieckian-programme",
+   "https://alienmuse.github.io/"
+  ]
+ },
+ "url": "https://grothendiecklab.com/zh/programme/",
+ "bookEdition": "Research Architecture Edition 1",
+ "version": "1.0.0",
+ "datePublished": "2026-10-26",
+ "inLanguage": "en",
+ "numberOfPages": 53,
+ "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+ "identifier": [
+  {
+   "@type": "PropertyValue",
+   "propertyID": "DOI",
+   "value": "10.5281/zenodo.23669107"
+  },
+  {
+   "@type": "PropertyValue",
+   "propertyID": "DOI (version)",
+   "value": "10.5281/zenodo.23669108"
+  }
+ ],
+ "isPartOf": [
+  {
+   "@type": "CreativeWorkSeries",
+   "name": "WiseMotif Monograph of Mathematical Intelligence"
+  },
+  {
+   "@type": "CreativeWorkSeries",
+   "name": "The Grothendieckian Programme",
+   "url": "https://grothendiecklab.com/zh/programme/"
+  }
+ ],
+ "publisher": {
+  "@type": "Organization",
+  "name": "Zenodo",
+  "url": "https://zenodo.org"
+ },
+ "bookFormat": "https://schema.org/EBook",
+ "isAccessibleForFree": true,
+ "keywords": "Grothendieckian Programme, recursive mathematical discovery, machine reasoning, mathematical worlds, verification-first architecture, topos theory, descent, Riemann Hypothesis, Birch and Swinnerton-Dyer conjecture, Hodge conjecture, abc conjecture, Langlands programme, AI for mathematics",
+ "abstract": "The Grothendieckian Programme is a programme for machine reasoning about mathematics, set out in seven works of the WiseMotif Monograph of Mathematical Intelligence. This book is their overview, and it adds no mathematical result to them.",
+ "image": "https://grothendiecklab.com/static/img/covers/series-00.jpg",
+ "sameAs": [
+  "https://doi.org/10.5281/zenodo.23669108",
+  "https://github.com/AlienMuse/grothendieckian-programme"
+ ]
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "ItemList",
+ "name": "Three papers on the Programme",
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "item": {
+    "@type": "ScholarlyArticle",
+    "@id": "https://doi.org/10.5281/zenodo.23734421",
+    "headline": "The Grothendieckian Programme: An Overview",
+    "alternativeHeadline": "Seven Open Works on Mathematics and Machine Reasoning",
+    "author": {
+     "@type": "Person",
+     "@id": "https://alienmuse.github.io/about/#person",
+     "name": "Vincent Liu",
+     "url": "https://alienmuse.github.io/about/",
+     "jobTitle": "Chief AI Mathematician",
+     "worksFor": {
+      "@type": "Organization",
+      "name": "WiseMotif.ai",
+      "url": "https://wisemotif.ai"
+     },
+     "affiliation": {
+      "@type": "Organization",
+      "name": "WiseMotif.ai",
+      "url": "https://wisemotif.ai"
+     },
+     "knowsAbout": [
+      "Mathematics",
+      "Machine reasoning",
+      "The Grothendieckian Programme"
+     ],
+     "sameAs": [
+      "https://orcid.org/0009-0000-8718-222X",
+      "https://scholar.google.com/citations?user=t0sMkU0AAAAJ",
+      "https://github.com/AlienMuse",
+      "https://zenodo.org/communities/grothendieckian-programme"
+     ]
+    },
+    "datePublished": "2026-10-28",
+    "inLanguage": "en",
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "isAccessibleForFree": true,
+    "publisher": {
+     "@type": "Organization",
+     "name": "Zenodo",
+     "url": "https://zenodo.org"
+    },
+    "url": "https://doi.org/10.5281/zenodo.23734421",
+    "identifier": [
+     {
+      "@type": "PropertyValue",
+      "propertyID": "DOI",
+      "value": "10.5281/zenodo.23734421"
+     },
+     {
+      "@type": "PropertyValue",
+      "propertyID": "DOI (version)",
+      "value": "10.5281/zenodo.23734422"
+     }
+    ],
+    "encoding": {
+     "@type": "MediaObject",
+     "contentUrl": "https://zenodo.org/records/23734422/files/The-Grothendieckian-Programme-An-Overview.pdf",
+     "encodingFormat": "application/pdf"
+    },
+    "about": {
+     "@id": "https://doi.org/10.5281/zenodo.23669107"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "item": {
+    "@type": "ScholarlyArticle",
+    "@id": "https://doi.org/10.5281/zenodo.23734423",
+    "headline": "The Rising-Sea Theses",
+    "alternativeHeadline": "Twelve Theses on Mathematics and Machine Reasoning",
+    "author": {
+     "@type": "Person",
+     "@id": "https://alienmuse.github.io/about/#person",
+     "name": "Vincent Liu",
+     "url": "https://alienmuse.github.io/about/",
+     "jobTitle": "Chief AI Mathematician",
+     "worksFor": {
+      "@type": "Organization",
+      "name": "WiseMotif.ai",
+      "url": "https://wisemotif.ai"
+     },
+     "affiliation": {
+      "@type": "Organization",
+      "name": "WiseMotif.ai",
+      "url": "https://wisemotif.ai"
+     },
+     "knowsAbout": [
+      "Mathematics",
+      "Machine reasoning",
+      "The Grothendieckian Programme"
+     ],
+     "sameAs": [
+      "https://orcid.org/0009-0000-8718-222X",
+      "https://scholar.google.com/citations?user=t0sMkU0AAAAJ",
+      "https://github.com/AlienMuse",
+      "https://zenodo.org/communities/grothendieckian-programme"
+     ]
+    },
+    "datePublished": "2026-10-28",
+    "inLanguage": "en",
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "isAccessibleForFree": true,
+    "publisher": {
+     "@type": "Organization",
+     "name": "Zenodo",
+     "url": "https://zenodo.org"
+    },
+    "url": "https://doi.org/10.5281/zenodo.23734423",
+    "identifier": [
+     {
+      "@type": "PropertyValue",
+      "propertyID": "DOI",
+      "value": "10.5281/zenodo.23734423"
+     },
+     {
+      "@type": "PropertyValue",
+      "propertyID": "DOI (version)",
+      "value": "10.5281/zenodo.23734424"
+     }
+    ],
+    "encoding": {
+     "@type": "MediaObject",
+     "contentUrl": "https://zenodo.org/records/23734424/files/The-Rising-Sea-Theses.pdf",
+     "encodingFormat": "application/pdf"
+    },
+    "about": {
+     "@id": "https://doi.org/10.5281/zenodo.23669107"
+    }
+   }
+  },
+  {
+   "@type": "ListItem",
+   "position": 3,
+   "item": {
+    "@type": "ScholarlyArticle",
+    "@id": "https://doi.org/10.5281/zenodo.23734426",
+    "headline": "The 57 Grothendieckian Problems",
+    "alternativeHeadline": "Open Problems for Mathematics and Machine Reasoning from the Grothendieckian Programme",
+    "author": {
+     "@type": "Person",
+     "@id": "https://alienmuse.github.io/about/#person",
+     "name": "Vincent Liu",
+     "url": "https://alienmuse.github.io/about/",
+     "jobTitle": "Chief AI Mathematician",
+     "worksFor": {
+      "@type": "Organization",
+      "name": "WiseMotif.ai",
+      "url": "https://wisemotif.ai"
+     },
+     "affiliation": {
+      "@type": "Organization",
+      "name": "WiseMotif.ai",
+      "url": "https://wisemotif.ai"
+     },
+     "knowsAbout": [
+      "Mathematics",
+      "Machine reasoning",
+      "The Grothendieckian Programme"
+     ],
+     "sameAs": [
+      "https://orcid.org/0009-0000-8718-222X",
+      "https://scholar.google.com/citations?user=t0sMkU0AAAAJ",
+      "https://github.com/AlienMuse",
+      "https://zenodo.org/communities/grothendieckian-programme"
+     ]
+    },
+    "datePublished": "2026-10-28",
+    "inLanguage": "en",
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "isAccessibleForFree": true,
+    "publisher": {
+     "@type": "Organization",
+     "name": "Zenodo",
+     "url": "https://zenodo.org"
+    },
+    "url": "https://doi.org/10.5281/zenodo.23734426",
+    "identifier": [
+     {
+      "@type": "PropertyValue",
+      "propertyID": "DOI",
+      "value": "10.5281/zenodo.23734426"
+     },
+     {
+      "@type": "PropertyValue",
+      "propertyID": "DOI (version)",
+      "value": "10.5281/zenodo.23734427"
+     }
+    ],
+    "encoding": {
+     "@type": "MediaObject",
+     "contentUrl": "https://zenodo.org/records/23734427/files/The-57-Grothendieckian-Problems.pdf",
+     "encodingFormat": "application/pdf"
+    },
+    "about": {
+     "@id": "https://doi.org/10.5281/zenodo.23669107"
+    }
+   }
+  }
+ ]
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "name": "Grothendieck Lab",
+   "item": "https://grothendiecklab.com/zh/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "name": "格罗滕迪克纲领",
+   "item": "https://grothendiecklab.com/zh/programme/"
+  }
+ ]
+}
+</script>
+<script type="module" src="/static/js/main-PB52Z2DD.js"></script>
+</head>
+<body class="page-programme l-zh">
+<a class="skip" href="#main">跳到正文</a>
+<header class="top">
+  <div class="bar">
+    <div class="brand">
+      <a class="brand-home" href="/zh/" aria-label="{&#39;machine_more&#39;: &#39;中心与内核&#39;, &#39;open_more&#39;: &#39;论文、论纲与问题&#39;, &#39;lab_more&#39;: &#39;实验室&#39;}">
+        <img src="/static/img/favicon.svg" alt="" width="26" height="26">
+        <span class="brand-name">Grothendieck Lab</span>
+      </a>
+      <span class="brand-sep" aria-hidden="true">·</span>
+      <a class="brand-org" href="https://wisemotif.ai" title="WiseMotif.ai，公司主站">WiseMotif.ai</a>
+    </div>
+    <div class="bar-r">
+      <nav class="nav" aria-label="主导航">
+        <a href="/zh/programme/" aria-current="page">纲领</a>
+        <a href="/zh/method/">方法</a>
+        <a href="/zh/machine/">机器</a>
+        <a href="/zh/open/">开放</a>
+        <a href="/zh/lab/">实验室</a>
+      </nav>
+      <a class="lang" href="/programme/" hreflang="en" lang="en" title="本页的英文版">English</a>
+    </div>
+  </div>
+</header>
+<main id="main">
+<section class="work-head gold" aria-labelledby="title">
+  <div class="wrap work-grid">
+    <div class="work-id">
+      <p class="kicker"><span class="wk-n">SERIES 00</span> · 纲领的总纲</p>
+      <h1 id="title" lang="en">The Grothendieckian Programme</h1>
+      <p class="subtitle" lang="en">Recursive Mathematical Discovery in the Age of Machine Reasoning</p>
+      <p class="series-line" lang="en">WiseMotif Monograph of Mathematical Intelligence, Series 00 · Mathematics and Artificial Intelligence</p>
+      <blockquote class="q q-lead q-head"><p>七部著作都不声称证明了它所研究的问题。</p><footer class="src">——<a href="/zh/programme/">Series 00</a>，§1.5</footer><details class="orig"><summary>英文原文</summary><p lang="en">None of the seven works claims a proof of the problems it studies.</p></details></blockquote>
+      <p class="actions">
+        <a class="btn btn-primary" href="https://github.com/AlienMuse/grothendieckian-programme/releases/download/v1.0.0/The-Grothendieckian-Programme-v1.0.0.pdf">完整 PDF</a>
+        <a class="btn" href="https://doi.org/10.5281/zenodo.23669107">Zenodo 记录</a>
+        <a class="btn" href="https://github.com/AlienMuse/grothendieckian-programme">GitHub 仓库</a>
+        <a class="btn" href="https://zenodo.org/communities/grothendieckian-programme">Zenodo 社区</a>
+      </p>
+    </div>
+    <div class="work-aside">
+      <img class="cover" src="/static/img/covers/series-00.webp" width="480" height="674" alt="封面：The Grothendieckian Programme">
+    </div>
+  </div>
+</section>
+
+<nav class="toc wrap" aria-label="本页内容">
+  <a href="#abstract">摘要</a> <a href="#s1-1">§1.1 问题</a> <a href="#s1-3">§1.3 架构</a> <a href="#s1-4">§1.4 七部著作的数字</a> <a href="#s1-5">§1.5 边界</a> <a href="#s10-1">§10.1 各书的边界，用它自己的话</a> <a href="#s10-2">§10.2 本书主张什么</a> <a href="#works">七部并列</a> <a href="#papers">关于纲领的三篇论文</a> <a href="#cite">引用</a>
+</nav>
+
+<div class="wrap prose">
+  <section class="block" aria-labelledby="abstract">
+    <h2 id="abstract">摘要</h2>
+<p>The Grothendieckian Programme 是一个关于机器如何推理数学的纲领，由 WiseMotif Monograph of Mathematical Intelligence 的七部著作阐述。本书是这七部著作的总纲，不在七部之外增加任何数学结果。</p><p>现今的语言模型以预测下一个 token 为训练目标。七部著作并不主张取代它们。它们追问的是：任何基于局部证据进行推理的机器必须遵从什么；以及一台机器要怎样才能像 Grothendieck 对待难题那样工作——建立使问题变得自然的环境，并在那里提出下一个问题。</p><p>回答以一个架构的形式给出。在其中心，The Grothendieckian Machine（Series 01）把数学世界作为有类型、有版本、可验证的对象来持有，每一项论断的状态都是其类型的一部分。在它之上，Topos-Native Intelligence（Series 02）在一个世界内部像在一个拓扑斯（topos）内部那样推理：上下文是一个 site，证据是一个层，结论是一个整体截面——它只在局部数据能够粘合之处存在——而粘合的失败则是一个可以定位的障碍。在两者周围，五个研究课题（Series 03–07）——黎曼猜想及其推广、Birch–Swinnerton-Dyer 猜想、Hodge 猜想、abc 猜想与 Langlands 纲领——把递归式数学发现（recursive mathematical discovery）的方法完整地走一遍：提出一个结构，用答案已知的情形检验它，在它经受住检验之处加以抽象，再重新提出问题；失败的部分被保留下来，成为一个障碍、一个缺口或一项检验。</p><p>本书逐一阅读七部著作，看每一部改变了什么——在每一种情形下改变的都是对象，而不是命题；陈述它们共有的原则；并阐明维系它们的纪律：状态标签、台账与证伪测试。七部著作都不声称证明了它所研究的问题。每一部都说明它证明了什么、把什么归结为明确陈述的假设、在哪里停下。</p>    <details class="orig"><summary>英文原文</summary><p lang="en">The Grothendieckian Programme is a programme for machine reasoning about mathematics, set out in seven works of the WiseMotif Monograph of Mathematical Intelligence. This book is their overview, and it adds no mathematical result to them.</p><p lang="en">Present language models are trained to predict the next token. The seven works do not propose to replace them. They ask what any machine that reasons over local evidence must answer to, and what it would take for a machine to do what Grothendieck did with a hard problem: to build the setting in which the problem becomes natural, and to pose the next question there.</p><p lang="en">The answer is given as an architecture. At its centre, The Grothendieckian Machine (Series 01) holds mathematical worlds as typed, versioned and verifiable objects, with the status of every claim part of its type. Over it, Topos-Native Intelligence (Series 02) reasons inside a world as inside a topos: a context is a site, the evidence a sheaf, a conclusion a global section that exists only where the local data glue, and a failure to glue an obstruction that can be located. Around them, five research subjects (Series 03–07) — the Riemann Hypothesis and its generalisation, the conjecture of Birch and Swinnerton-Dyer, the Hodge conjecture, the abc conjecture and the Langlands programme — carry the method of recursive mathematical discovery through in full: a structure is proposed, tested against the cases in which the answer is known and abstracted where it survives, and the question is posed again; what fails is kept, as an obstruction, a gap or a test.</p><p lang="en">The book reads the seven works for what each of them changes — in every case the object rather than the statement — states the principles they share, and sets out the discipline of status labels, ledgers and falsification tests by which they are held. None of the seven works claims a proof of the problems it studies. Each says what it proves, what it reduces to stated hypotheses, and where it stops.</p></details>
+  </section>
+
+<section class="book-sec" id="s1-1" aria-labelledby="s1-1-h">
+<h2 id="s1-1-h"><span class="sn">§1.1</span> 问题</h2><p>一个以预测下一个 token 为训练目标的系统，能回答的问题范围相当广；2026 年 10 月，还有报道称，一个未公开发布的模型写出了数以百计的研究手稿（第 2 章）。The Grothendieckian Programme 关心的是另一种能力。Grothendieck 对待难题，很少在问题原地强攻：他建立让问题变得自然的环境，让答案自己到来<span class="cite">（<span class="c1">Series 02, Preface</span>）</span>。本纲领要问：机器能否参与这样的数学——能否构造一个让问题变得自然的世界，用已知的一切检验这个世界，准确说出它在哪里失败，再在那里提出下一个问题——以及，若要它得出的任何结论值得信任，这样的机器内部必须是什么。</p>
+<p>问题不在于机器能否就一个著名问题写出文字。本纲领的五个研究课题用同一句话表述了它：问题在于这个方法能否在问题周围建起一个结构，用已知的一切检验这个结构，并准确说出它在哪里失败<span class="cite">（<span class="c1">Series 07, Preface</span>）</span>。</p>
+  <p class="src">译自总纲 §1.1 · <a href="/programme/#s1-1" hreflang="en">英文原文：<span lang="en">The question</span></a></p>
+</section><section class="book-sec" id="s1-3" aria-labelledby="s1-3-h">
+<h2 id="s1-3-h"><span class="sn">§1.3</span> 架构</h2><p>七部著作承载本纲领，图 1 把它们画成同一个蜂巢的七格（图 1）。居于中心的是 <em>The Grothendieckian Machine</em><span class="cite">（<span class="c1">Series 01</span>）</span>，它阐明数学世界如何被构造、比较并从一个情境搬运到另一个情境，以及机器如何把它们作为有类型、有版本、可验证的对象来持有。在它之上、与它共享一条边的是 <em>Topos-Native Intelligence</em><span class="cite">（<span class="c1">Series 02</span>）</span>，它说明一个智能若要在这样的世界内部推理，其内部必须是什么：原生于拓扑斯（topos）的推理，结论只在局部证据能够粘合之处存在。两者周围是五个研究课题——黎曼猜想及其推广<span class="cite">（<span class="c1">Series 03</span>）</span>、Birch–Swinnerton-Dyer 猜想<span class="cite">（<span class="c1">Series 04</span>）</span>、Hodge 猜想<span class="cite">（<span class="c1">Series 05</span>）</span>、abc 猜想 Series 06 与 Langlands 纲领<span class="cite">（<span class="c1">Series 07</span>）</span>——每一个都把方法完整地走一遍，每一步都以数学家可以检查、机器可以执行的形式记录下来<span class="cite">（<span class="c1">Series 07, Series Note</span>）</span>。表 1 把七部并列。</p>
+<figure class="fig fig-programme cropped" data-fig="programme" data-crop="112" data-label="The Grothendieckian Programme。每部著作占一格：核心（Series 01）居中，元推理内核（Series 02）在其上方、与它共享一条边，五个研究课题（Series 03–07）环绕它们；每一格写着该书封面中心的公式。共享边上的端口表示一个接口，而不是一个证明。">
+  <div class="fig-box"><p class="fig-fallback">这幅总纲原图由页面本身以矢量和光绘制，需要 JavaScript。</p></div>
+  <figcaption><b>图 1</b>The Grothendieckian Programme。每部著作占一格：核心（Series 01）居中，元推理内核（Series 02）在其上方、与它共享一条边，五个研究课题（Series 03–07）环绕它们；每一格写着该书封面中心的公式。共享边上的端口表示一个接口，而不是一个证明。 <span class="cite">（Series 00）图为总纲原图（英文）。</span></figcaption>
+</figure>
+  <p class="src">译自总纲 §1.3 · <a href="/programme/#s1-3" hreflang="en">英文原文：<span lang="en">The architecture</span></a></p>
+</section><section class="book-sec" id="s1-4" aria-labelledby="s1-4-h">
+<h2 id="s1-4-h"><span class="sn">§1.4</span> 七部著作的数字</h2><p>七部著作共 34 卷、26,021 页、995 章。其中有 349,000 多个公式，10,500 多个编号的定理、命题、引理、推论、定义与猜想，714 个算法，以及 1,434 幅图与 plate。每一个数字都由两种独立方法从封签版统计；某部著作自己公布了计数的，采用它自己的计数；两种方法结果不同时，取较小者作为下界。图 3 把这些计数并列。这些数字衡量的是规模，不是成就；七部确立了什么，本书第二部分按各书自己的说法陈述。</p>
+<figure class="fig fig-numbers" data-fig="numbers" data-label="七部著作的数字。上方是本纲领的总计；下方是每部的页数、公式与编号陈述，每个面板一个刻度。每一个数字都由两种独立方法从封签版统计；+ 表示下界。">
+  <div class="fig-box"><p class="fig-fallback">这幅总纲原图由页面本身以矢量和光绘制，需要 JavaScript。</p></div>
+  <figcaption><b>图 3 </b>七部著作的数字。上方是本纲领的总计；下方是每部的页数、公式与编号陈述，每个面板一个刻度。每一个数字都由两种独立方法从封签版统计；+ 表示下界。 <span class="cite">（Series 00）图为总纲原图（英文）。</span></figcaption>
+</figure>
+  <p class="src">译自总纲 §1.4 · <a href="/programme/#s1-4" hreflang="en">英文原文：<span lang="en">The seven works in numbers</span></a></p>
+</section><section class="book-sec" id="s1-5" aria-labelledby="s1-5-h">
+<h2 id="s1-5-h"><span class="sn">§1.5</span> 边界</h2><p>七部著作都不声称证明了它所研究的问题。黎曼猜想、Birch–Swinnerton-Dyer 猜想、Hodge 猜想和 abc 猜想仍未解决；在文献已证明的情形之外，数域上的 Langlands 对应也仍未解决；每一部都在开头几页用自己的一句话写明这一点。每一部给出的，用五个研究课题共有的话说，是这个方法被毫不让步地用到底之后问题所处的状态：哪些已证明，哪些归结为明确陈述的假设，每条路线在哪里停下<span class="cite">（<span class="c1">Series 03, Series Note</span>; <span class="c1">Series 07, Series Note</span>）</span>。第 10 章用各书自己的原话引述每一部的边界。</p>
+<p>七部著作在 WiseMotif Monograph of Mathematical Intelligence 中编号为 01 至 07。本书编号为 00，因为它作为七部的总纲位于它们之前；它不是本纲领的第八部著作，它关于七部所说的一切，都取自七部已出版的版本。</p>
+<p>本书不在七部之外增加任何数学结果。它是七部的总纲：第一部分阐述纲领的思想与原则，第二部分阐述其架构与五个研究课题，第三部分阐述七部共有的东西——每一部迈出的一步、维系它们的纪律、它们主张什么与不主张什么，以及读者可以从哪里进入、做出贡献。</p>
+  <p class="src">译自总纲 §1.5 · <a href="/programme/#s1-5" hreflang="en">英文原文：<span lang="en">The boundary</span></a></p>
+</section><section class="book-sec" id="s10-1" aria-labelledby="s10-1-h">
+<h2 id="s10-1-h"><span class="sn">§10.1</span> 各书的边界，用它自己的话</h2><p>本纲领的每一部著作都在开头几页陈述自己的边界。以下照各书印出的原话引述（中文为译文）。</p>
+<ul class="blist"><li><em>The Grothendieckian Machine</em>：““Grothendieckian Machine”这一名称指一个研究架构，而不是一个已完成的通用求解器。”<span class="cite">（<span class="c1">Series 01, Series Note</span>）</span></li><li><em>Topos-Native Intelligence</em>：“本书“已证明若干局部特化，而没有已证明的整体包含结果或替代结果”。”<span class="cite">（<span class="c1">Series 02, Abstract</span>）</span></li><li><em>Arithmetic Spectral Descent</em>：“黎曼猜想仍未解决。本书不声称证明了它，也不声称证明了广义黎曼猜想或任何等价命题。”<span class="cite">（<span class="c1">Series 03, Series Note</span>）</span></li><li><em>Fractured Adelic Geometry</em>：“Birch–Swinnerton-Dyer 猜想仍未解决。本书没有证明它，没有证明任何此前未知的情形，也没有对任何一条曲线证明 Ш（Tate–Shafarevich 群）的有限性。”<span class="cite">（<span class="c1">Series 04, Series Note</span>）</span></li><li><em>The Archimedean Prism</em>：“Hodge 猜想仍未解决。本书没有证明它，也没有证明任何此前未知的情形。”<span class="cite">（<span class="c1">Series 05, Series Note</span>）</span></li><li><em>Strained Prismatic Geometry</em>：“abc 猜想仍未解决。本书没有证明它。”<span class="cite">（<span class="c1">Series 06, Series Note</span>）</span></li><li><em>The Arithmetic Topos</em>：“本书没有证明 Langlands 对应，书中也没有无条件地确立其主猜想的任何一种情形。”<span class="cite">（<span class="c1">Series 07, Series Note</span>）</span></li></ul>
+  <p class="src">译自总纲 §10.1 · <a href="/programme/#s10-1" hreflang="en">英文原文：<span lang="en">The boundary of each work, in its own words</span></a></p>
+</section><section class="book-sec" id="s10-2" aria-labelledby="s10-2-h">
+<h2 id="s10-2-h"><span class="sn">§10.2</span> 本书主张什么</h2><p>本书只主张一本总纲所能主张的，不多于此。它按七部各自赋予其陈述的状态来报告七部；它不在七部之外增加任何数学结果；它比较七部时，比较的是七部所说的话。第 3 章陈述那些原则，是因为每一条都至少在其中四部里被陈述过，而不是因为本书证明了它们；第 8 章把七部迈出的一步并列，是因为七部自己迈出了这些步，而不是因为本书评判了它们。</p>
+<p>它还克制了三件事。它不抬高任何陈述的状态：七部中某一部的猜想，在这里仍是猜想；条件定理保留它的前提；计算仍然是计算。它不把七部的标签体系合并起来，七部自己声明的对应关系之外，一概不并。它也不评判他人的工作。报告七部之外的结果时，它按作者自己的描述报告这个结果，并给出原始出处。</p>
+<p>本纲领陈述了一个目标，并且是作为目标来陈述的：EGA 与 SGA 为代数几何所做的——提供让问题变得自然的环境世界——本纲领要为机器对数学的推理去做。它是否做到，将由随后的工作以及检验它的读者来决定。</p>
+  <p class="src">译自总纲 §10.2 · <a href="/programme/#s10-2" hreflang="en">英文原文：<span lang="en">What this book claims</span></a></p>
+</section>
+  <section class="block wide" aria-labelledby="works">
+    <h2 id="works">七部并列</h2>
+    <div class="tbl"><table class="t1">
+      <thead><tr><th scope="col">编号</th><th scope="col">著作</th><th scope="col">位置 · 问题</th><th scope="col">核心结构</th><th scope="col">中心主张的状态（各书自己的说法）</th><th scope="col">卷</th><th scope="col">页</th></tr></thead>
+      <tbody><tr class="cyan"><td>01</td><td><a href="/zh/works/grothendieckian-machine/"><em>GAI-MUA: The Grothendieckian Machine</em></a></td><td>核心</td><td>世界、桥与义务；GMUS 与 GMLS；五个权威平面</td><td>规范性的研究架构，其合约主要为 D、R、O</td><td>6</td><td>14,905</td></tr><tr class="cyan"><td>02</td><td><a href="/zh/works/topos-native-intelligence/"><em>GM-Omega-Infinity: Topos-Native Intelligence</em></a></td><td>元推理内核</td><td>原生于 topos 的推理：site、层、整体截面；九层；Topos-MoE</td><td>若干局部特化已证明；无整体包含或替代结果</td><td>5</td><td>4,020</td></tr><tr class="blue"><td>03</td><td><a href="/zh/works/arithmetic-spectral-descent/"><em>Arithmetic Spectral Descent</em></a></td><td>研究课题 1 · RH 与 GRH</td><td>以指标代替正定性：Krein 指标定理；23 个有范围的不可行定理</td><td>AHK-1–AHK-3 ⇒ RH 已证 [T]；满足它们的算术系统未构造 [O]</td><td>4</td><td>1,549</td></tr><tr class="violet"><td>04</td><td><a href="/zh/works/fractured-adelic-geometry/"><em>Fractured Adelic Geometry</em></a></td><td>研究课题 2 · BSD</td><td>一个对象、两种描述：FAP 空间、谱 X<sub>E</sub>、线 Δ(X<sub>E</sub>)</td><td>由 Conjecture A 与公理推出秩与首项系数公式 [CONDITIONAL]</td><td>4</td><td>571</td></tr><tr class="blue"><td>05</td><td><a href="/zh/works/the-archimedean-prism/"><em>The Archimedean Prism</em></a></td><td>研究课题 3 · Hodge</td><td>代数性即沿棱镜 Δ(X) 的下降；公理 AP1–AP12</td><td>由十条无条件公理证明五种表述等价 [NEW]；五者均未证明</td><td>5</td><td>1,309</td></tr><tr class="violet"><td>06</td><td><a href="/zh/works/strained-prismatic-geometry/"><em>Strained Prismatic Geometry</em></a></td><td>研究课题 4 · abc</td><td>为 Spec ℤ 提供一个底：基底 𝔖、应变、Θ-伸缩</td><td>定理 C 无条件 [NEW]；定理 A、B 依赖已命名的义务</td><td>5</td><td>1,666</td></tr><tr class="blue"><td>07</td><td><a href="/zh/works/the-arithmetic-topos/"><em>The Arithmetic Topos</em></a></td><td>研究课题 5 · Langlands</td><td>一个底、一个迹：曲线 𝔛<sub>ℤ</sub> 与主猜想</td><td>主猜想无一情形被无条件确立</td><td>5</td><td>2,001</td></tr><tr class="total"><td></td><td><strong>七部合计</strong></td><td></td><td></td><td></td><td><strong>34</strong></td><td><strong>26,021</strong></td></tr></tbody>
+    </table></div>
+    <p class="src">来源：Series 00，表 1</p>
+  </section>
+
+  <section class="block wide" aria-labelledby="papers">
+    <h2 id="papers">关于纲领的三篇论文</h2>
+    <p>三篇论文以学术论文的形式介绍本纲领：一篇概览、十二条论纲和五十七个开放问题。它们于 2026-10-28 在 Zenodo 发布，采用 CC BY 4.0 许可，各有 DOI；论纲与问题两篇都引用概览。它们的仓库把 57 个问题逐一列为 issue，并收有论文的源文件、数据和图。</p>
+    <ol class="papers">
+  <li class="paper gold">
+    <p class="pp-label"><span class="wk-n">概览</span> · 2026-10-28 · 10 页 · CC BY 4.0</p>
+    <h3><a href="https://doi.org/10.5281/zenodo.23734421" lang="en">The Grothendieckian Programme: An Overview</a></h3>
+    <p class="pp-sub" lang="en">Seven Open Works on Mathematics and Machine Reasoning</p>
+<p>这些著作中的两部给出一个推理架构：一个核心，把数学世界作为有类型、有版本、可验证的对象来保存；一个内核，用 site、层与下降在这些世界内部推理。</p><p>本文介绍这一架构、五个研究主题、方法、已发布的文本，以及审阅与续写这些著作所遵循的开放流程。</p>    <p class="pp-links"><a href="https://zenodo.org/records/23734422/files/The-Grothendieckian-Programme-An-Overview.pdf">PDF</a> · <a href="https://doi.org/10.5281/zenodo.23734421">doi:10.5281/zenodo.23734421</a></p>
+  </li>
+  <li class="paper cyan">
+    <p class="pp-label"><span class="wk-n">论纲</span> · 2026-10-28 · 26 页 · CC BY 4.0</p>
+    <h3><a href="https://doi.org/10.5281/zenodo.23734423" lang="en">The Rising-Sea Theses</a></h3>
+    <p class="pp-sub" lang="en">Twelve Theses on Mathematics and Machine Reasoning</p>
+<p>每条论纲用一句话陈述，给出论证，标明它所依据的七部著作中的段落，联系已有工作，并配有一个可以推翻它的观察。</p><p>论纲涉及推理系统的数学知识单位、认识论状态的位置、数学推理的潜空间、注意力、失败、权威，以及发现的方法。</p>    <p class="pp-links"><a href="https://zenodo.org/records/23734424/files/The-Rising-Sea-Theses.pdf">PDF</a> · <a href="https://doi.org/10.5281/zenodo.23734423">doi:10.5281/zenodo.23734423</a></p>
+  </li>
+  <li class="paper blue">
+    <p class="pp-label"><span class="wk-n">问题</span> · 2026-10-28 · 54 页 · CC BY 4.0</p>
+    <h3><a href="https://doi.org/10.5281/zenodo.23734426" lang="en">The 57 Grothendieckian Problems</a></h3>
+    <p class="pp-sub" lang="en">Open Problems for Mathematics and Machine Reasoning from the Grothendieckian Programme</p>
+<p>其中三十五个出自关于推理系统架构的两部著作，二十二个出自各以一个具名猜想或纲领为研究主题的五部著作；没有一个问题是这些猜想本身。</p><p>每个问题都用出处的原话陈述，标明著作、章与页，给出出处赋予它的状态，并配有判定何时算作解决的标准、关于已有工作的说明和文献核查的日期。</p>    <p class="pp-links"><a href="https://zenodo.org/records/23734427/files/The-57-Grothendieckian-Problems.pdf">PDF</a> · <a href="https://doi.org/10.5281/zenodo.23734426">doi:10.5281/zenodo.23734426</a> · <a href="https://github.com/AlienMuse/grothendieckian-problems">GitHub 仓库</a></p>
+  </li>
+</ol>
+    <p class="src">每个题名下的文字译自该篇已发布的英文摘要；题名保留英文。概念 DOI 总是指向各篇的最新版本。</p>
+  </section>
+
+  <section class="block" aria-labelledby="cite">
+    <h2 id="cite">引用</h2>
+    <dl class="meta">
+      <div><dt>规模</dt><dd>一本书 · 53 页</dd></div>
+      <div><dt>概念 DOI（所有版本）</dt><dd><a href="https://doi.org/10.5281/zenodo.23669107">10.5281/zenodo.23669107</a></dd></div>
+      <div><dt>版本 DOI 1.0.0</dt><dd><a href="https://doi.org/10.5281/zenodo.23669108">10.5281/zenodo.23669108</a></dd></div>
+      <div><dt>发布日期</dt><dd>2026-10-26 · Research Architecture Edition 1</dd></div>
+      <div><dt>许可</dt><dd>CC BY-NC-ND 4.0</dd></div>
+    </dl>
+    <pre class="bibtex"><code>@book{liu2026grothendieckianprogramme,
+  author    = {Liu, Vincent},
+  title     = {The Grothendieckian Programme --- Recursive Mathematical Discovery in the Age of Machine Reasoning},
+  series    = {WiseMotif Monograph of Mathematical Intelligence, Series 00},
+  edition   = {Research Architecture Edition 1},
+  version   = {1.0.0},
+  year      = {2026},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.23669107},
+  url       = {https://doi.org/10.5281/zenodo.23669107}
+}</code></pre>
+  </section>
+</div>
+</main>
+<footer class="foot">
+  <div class="wrap foot-grid">
+    <div>
+      <p class="foot-lab"><a href="/zh/lab/">Grothendieck Lab · WiseMotif.ai</a></p>
+      <p>Grothendieck Lab 与 Grothendieckian Programme 的官方网站。</p>
+      <p><a href="https://wisemotif.ai">WiseMotif.ai</a> · © 2026 Vincent Liu · <a href="https://orcid.org/0009-0000-8718-222X">ORCID 0009-0000-8718-222X</a></p>
+      <p><a href="/zh/lab/#name">名称</a> · <a href="/zh/lab/#licence">许可</a> · <a href="/programme/" hreflang="en" lang="en">English</a></p>
+<p class="foot-note">中文为译文，以英文原文为准；书名、卷名、体系专名与无稳定中文译名的术语保留英文。</p>    </div>
+    <nav class="foot-works" aria-label="七部著作">
+      <ul>
+        <li><a href="/zh/works/grothendieckian-machine/"><span class="sn">01</span> <span lang="en">GAI-MUA: The Grothendieckian Machine</span></a></li>
+        <li><a href="/zh/works/topos-native-intelligence/"><span class="sn">02</span> <span lang="en">GM-Omega-Infinity: Topos-Native Intelligence</span></a></li>
+        <li><a href="/zh/works/arithmetic-spectral-descent/"><span class="sn">03</span> <span lang="en">Arithmetic Spectral Descent</span></a></li>
+        <li><a href="/zh/works/fractured-adelic-geometry/"><span class="sn">04</span> <span lang="en">Fractured Adelic Geometry</span></a></li>
+        <li><a href="/zh/works/the-archimedean-prism/"><span class="sn">05</span> <span lang="en">The Archimedean Prism</span></a></li>
+        <li><a href="/zh/works/strained-prismatic-geometry/"><span class="sn">06</span> <span lang="en">Strained Prismatic Geometry</span></a></li>
+        <li><a href="/zh/works/the-arithmetic-topos/"><span class="sn">07</span> <span lang="en">The Arithmetic Topos</span></a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

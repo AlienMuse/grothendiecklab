@@ -1,0 +1,651 @@
+<!doctype html>
+<html lang="zh-Hans" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src &#39;self&#39;; script-src &#39;self&#39;; style-src &#39;self&#39;; img-src &#39;self&#39; data:; font-src &#39;self&#39;; connect-src &#39;self&#39;; object-src &#39;none&#39;; base-uri &#39;none&#39;; form-action &#39;none&#39;">
+<title>邀请 · 57 个问题、12 条论纲、3 篇论文 · Grothendieck Lab</title>
+<meta name="description" content="格罗滕迪克纲领留下的开放问题：三篇论文、12 条各附反驳条件的论纲，以及 57 个问题，每个都是一个 GitHub issue。">
+<meta name="author" content="Vincent Liu">
+<meta name="keywords" content="Grothendieck Lab, 格罗滕迪克纲领, Grothendieck, 递归式数学发现, 机器推理, Grothendieckian Machine, Topos-Native Intelligence, 元推理内核, 面向数学的人工智能, 形式化验证, 拓扑斯, 层, 下降, 可验证, WiseMotif.ai">
+<meta name="tdm-reservation" content="1">
+<meta name="tdm-policy" content="https://github.com/AlienMuse/grothendieckian-programme/blob/main/TDM-AND-AI-POLICY.md">
+<link rel="canonical" href="https://grothendiecklab.com/zh/open/">
+<link rel="alternate" hreflang="en" href="https://grothendiecklab.com/open/">
+<link rel="alternate" hreflang="zh-Hans" href="https://grothendiecklab.com/zh/open/">
+<link rel="alternate" hreflang="x-default" href="https://grothendiecklab.com/open/">
+<meta property="og:site_name" content="Grothendieck Lab · WiseMotif.ai">
+<meta property="og:type" content="website">
+<meta property="og:title" content="邀请 · 57 个问题、12 条论纲、3 篇论文 · Grothendieck Lab">
+<meta property="og:description" content="格罗滕迪克纲领留下的开放问题：三篇论文、12 条各附反驳条件的论纲，以及 57 个问题，每个都是一个 GitHub issue。">
+<meta property="og:url" content="https://grothendiecklab.com/zh/open/">
+<meta property="og:image" content="https://grothendiecklab.com/static/img/og.jpg">
+<meta property="og:image:alt" content="七部著作，画成同一个蜂巢的七格">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#040a10">
+<link rel="icon" href="/static/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/static/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/static/img/apple-touch-icon.png">
+<link rel="preload" href="/static/fonts/pagella-regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/static/fonts/pagella-italic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/static/css/lab-09a47c6f56.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "name": "Grothendieck Lab",
+   "item": "https://grothendiecklab.com/zh/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "name": "开放",
+   "item": "https://grothendiecklab.com/zh/open/"
+  }
+ ]
+}
+</script>
+<script type="module" src="/static/js/main-PB52Z2DD.js"></script>
+</head>
+<body class="page-open l-zh">
+<a class="skip" href="#main">跳到正文</a>
+<header class="top">
+  <div class="bar">
+    <div class="brand">
+      <a class="brand-home" href="/zh/" aria-label="{&#39;machine_more&#39;: &#39;中心与内核&#39;, &#39;open_more&#39;: &#39;论文、论纲与问题&#39;, &#39;lab_more&#39;: &#39;实验室&#39;}">
+        <img src="/static/img/favicon.svg" alt="" width="26" height="26">
+        <span class="brand-name">Grothendieck Lab</span>
+      </a>
+      <span class="brand-sep" aria-hidden="true">·</span>
+      <a class="brand-org" href="https://wisemotif.ai" title="WiseMotif.ai，公司主站">WiseMotif.ai</a>
+    </div>
+    <div class="bar-r">
+      <nav class="nav" aria-label="主导航">
+        <a href="/zh/programme/">纲领</a>
+        <a href="/zh/method/">方法</a>
+        <a href="/zh/machine/">机器</a>
+        <a href="/zh/open/" aria-current="page">开放</a>
+        <a href="/zh/lab/">实验室</a>
+      </nav>
+      <a class="lang" href="/open/" hreflang="en" lang="en" title="本页的英文版">English</a>
+    </div>
+  </div>
+</header>
+<main id="main">
+<section class="page-head" aria-labelledby="title">
+  <div class="wrap">
+    <p class="kicker">GROTHENDIECK LAB · WISEMOTIF.AI · 开放</p>
+    <h1 id="title">邀请</h1>
+    <blockquote class="q q-lead q-head"><p>本纲领的每一部著作，都以一份它没有做到的事的清单结尾，陈述得足够精确，可以被接手。</p><footer class="src">——<a href="/zh/programme/">Series 00</a>，§11.1</footer><details class="orig"><summary>英文原文</summary><p lang="en">Every work of the Programme ends with a list of what it has not done, stated precisely enough to be taken up.</p></details></blockquote>
+    <ul class="tally">
+      <li><span class="n">3</span><span class="l">篇论文</span></li>
+      <li><span class="n">12</span><span class="l">条论纲，各附“什么会推翻它”</span></li>
+      <li><span class="n">57</span><span class="l">个开放问题，各是一个 GitHub issue</span></li>
+    </ul>
+  </div>
+</section>
+
+<nav class="toc wrap" aria-label="本页内容">
+  <a href="#papers">关于纲领的三篇论文</a> <a href="#theses">十二条论纲</a> <a href="#problems">57 个问题</a> <a href="#s11-1">§11.1 开放的问题</a> <a href="#s11-2">§11.2 三类贡献</a> <a href="#s11-3">§11.3 从哪里开始</a> <a href="#s11-4">§11.4 更正</a></nav>
+
+<div class="wrap prose">
+  <section class="block wide" aria-labelledby="papers">
+    <h2 id="papers">关于纲领的三篇论文</h2>
+    <p>三篇论文以学术论文的形式介绍本纲领：一篇概览、十二条论纲和五十七个开放问题。它们于 2026-10-28 在 Zenodo 发布，采用 CC BY 4.0 许可，各有 DOI；论纲与问题两篇都引用概览。它们的仓库把 57 个问题逐一列为 issue，并收有论文的源文件、数据和图。</p>
+    <ol class="papers">
+  <li class="paper gold">
+    <p class="pp-label"><span class="wk-n">概览</span> · 2026-10-28 · 10 页 · CC BY 4.0</p>
+    <h3><a href="https://doi.org/10.5281/zenodo.23734421" lang="en">The Grothendieckian Programme: An Overview</a></h3>
+    <p class="pp-sub" lang="en">Seven Open Works on Mathematics and Machine Reasoning</p>
+<p>这些著作中的两部给出一个推理架构：一个核心，把数学世界作为有类型、有版本、可验证的对象来保存；一个内核，用 site、层与下降在这些世界内部推理。</p><p>本文介绍这一架构、五个研究主题、方法、已发布的文本，以及审阅与续写这些著作所遵循的开放流程。</p>    <p class="pp-links"><a href="https://zenodo.org/records/23734422/files/The-Grothendieckian-Programme-An-Overview.pdf">PDF</a> · <a href="https://doi.org/10.5281/zenodo.23734421">doi:10.5281/zenodo.23734421</a></p>
+  </li>
+  <li class="paper cyan">
+    <p class="pp-label"><span class="wk-n">论纲</span> · 2026-10-28 · 26 页 · CC BY 4.0</p>
+    <h3><a href="https://doi.org/10.5281/zenodo.23734423" lang="en">The Rising-Sea Theses</a></h3>
+    <p class="pp-sub" lang="en">Twelve Theses on Mathematics and Machine Reasoning</p>
+<p>每条论纲用一句话陈述，给出论证，标明它所依据的七部著作中的段落，联系已有工作，并配有一个可以推翻它的观察。</p><p>论纲涉及推理系统的数学知识单位、认识论状态的位置、数学推理的潜空间、注意力、失败、权威，以及发现的方法。</p>    <p class="pp-links"><a href="https://zenodo.org/records/23734424/files/The-Rising-Sea-Theses.pdf">PDF</a> · <a href="https://doi.org/10.5281/zenodo.23734423">doi:10.5281/zenodo.23734423</a></p>
+  </li>
+  <li class="paper blue">
+    <p class="pp-label"><span class="wk-n">问题</span> · 2026-10-28 · 54 页 · CC BY 4.0</p>
+    <h3><a href="https://doi.org/10.5281/zenodo.23734426" lang="en">The 57 Grothendieckian Problems</a></h3>
+    <p class="pp-sub" lang="en">Open Problems for Mathematics and Machine Reasoning from the Grothendieckian Programme</p>
+<p>其中三十五个出自关于推理系统架构的两部著作，二十二个出自各以一个具名猜想或纲领为研究主题的五部著作；没有一个问题是这些猜想本身。</p><p>每个问题都用出处的原话陈述，标明著作、章与页，给出出处赋予它的状态，并配有判定何时算作解决的标准、关于已有工作的说明和文献核查的日期。</p>    <p class="pp-links"><a href="https://zenodo.org/records/23734427/files/The-57-Grothendieckian-Problems.pdf">PDF</a> · <a href="https://doi.org/10.5281/zenodo.23734426">doi:10.5281/zenodo.23734426</a> · <a href="https://github.com/AlienMuse/grothendieckian-problems">GitHub 仓库</a></p>
+  </li>
+</ol>
+    <p class="src">每个题名下的文字译自该篇已发布的英文摘要；题名保留英文。概念 DOI 总是指向各篇的最新版本。</p>
+  </section>
+
+  <section class="block wide" aria-labelledby="theses">
+    <h2 id="theses">十二条论纲</h2>
+    <p>每条论纲用一句话陈述，给出论证，标明它所依据的七部著作中的段落，联系已有工作，并配有一个可以推翻它的观察。 <span class="cite">（<a href="https://doi.org/10.5281/zenodo.23734423"><cite lang="en">The Rising-Sea Theses</cite></a>，摘要）</span></p>
+    <ol class="theses">
+      <li id="thesis-1">
+        <p class="th-head"><span class="wk-n">论纲 1</span> 世界，而不是孤立的定理 <span class="th-en" lang="en">Worlds, not isolated theorems</span></p>
+        <p class="th-claim">对一个推理系统而言，数学知识的单位是一个有类型、可验证的世界，而不是一条孤立的定理。</p>
+        <p class="th-ref"><span class="wk-label">什么会推翻它</span> 一个不带世界记录地存储命题的系统，在问题 15 所规定的那类语料上，所犯的搬运错误——基变换、系数改变或变性改变之后的错误——并不比存储世界的系统更多。</p>
+<p class="th-probs">对应问题 <a href="#problem-4">4</a> · <a href="#problem-15">15</a></p>      </li>
+      <li id="thesis-2">
+        <p class="th-head"><span class="wk-n">论纲 2</span> 状态是类型的一部分 <span class="th-en" lang="en">Status is part of the type</span></p>
+        <p class="th-claim">一个命题的认识论状态，属于它的类型。</p>
+        <p class="th-ref"><span class="wk-label">什么会推翻它</span> 一种对命题的标量排序，在<span class="cite">（<span class="c1">Series 01, Vol. III, §56.15</span>）</span>的复合规则下，保持七种代码所作的每一项区分；或者一项对照研究，表明一个经过校准的置信度分数支持同样的下游决策，而错误并不更多。</p>
+<p class="th-probs">对应问题 <a href="#problem-7">7</a> · <a href="#problem-8">8</a> · <a href="#problem-31">31</a></p>      </li>
+      <li id="thesis-3">
+        <p class="th-head"><span class="wk-n">论纲 3</span> 结构化的潜空间 <span class="th-en" lang="en">A structured latent space</span></p>
+        <p class="th-claim">数学推理需要一个结构化、非向量的潜空间。</p>
+        <p class="th-ref"><span class="wk-label">什么会推翻它</span> 一种向量表示，在需要搬运与失败报告的任务上——问题 13 的基准中的反例层与证明层——表现得与有类型的载体一样好；或者一个证明，表明有类型的结构可以从嵌入中无损地恢复。</p>
+<p class="th-probs">对应问题 <a href="#problem-6">6</a> · <a href="#problem-18">18</a></p>      </li>
+      <li id="thesis-4">
+        <p class="th-head"><span class="wk-n">论纲 4</span> 注意力作为下降 <span class="th-en" lang="en">Attention as descent</span></p>
+        <p class="th-claim">注意力可以被重建为下降。</p>
+        <p class="th-ref"><span class="wk-label">什么会推翻它</span> 问题 19、20 与 22 的登记比较得到零结果；或者一个证明，表明在一个陈述的类中，沿限制映射的搬运相对于注意力不增加任何表达力。</p>
+<p class="th-probs">对应问题 <a href="#problem-19">19</a> · <a href="#problem-20">20</a> · <a href="#problem-22">22</a> · <a href="#problem-24">24</a> · <a href="#problem-25">25</a> · <a href="#problem-27">27</a> · <a href="#problem-28">28</a> · <a href="#problem-35">35</a></p>      </li>
+      <li id="thesis-5">
+        <p class="th-head"><span class="wk-n">论纲 5</span> 报告失败；没有证据时弃权 <span class="th-en" lang="en">Report failure; abstain without evidence</span></p>
+        <p class="th-claim">一个推理系统应当报告局部信息在哪里不能粘合，并在缺少独立的重叠数据时弃权。</p>
+        <p class="th-ref"><span class="wk-label">什么会推翻它</span> 一个从不弃权、只报告分数的系统，在同等覆盖率下所犯的错误，少于一个报告障碍并弃权的系统；或者一个证明，表明障碍无法以有用的代价计算出来（问题 21）。</p>
+<p class="th-probs">对应问题 <a href="#problem-9">9</a> · <a href="#problem-16">16</a> · <a href="#problem-17">17</a> · <a href="#problem-21">21</a> · <a href="#problem-23">23</a> · <a href="#problem-30">30</a> · <a href="#problem-32">32</a> · <a href="#problem-47">47</a></p>      </li>
+      <li id="thesis-6">
+        <p class="th-head"><span class="wk-n">论纲 6</span> 一条不蕴含链 <span class="th-en" lang="en">A chain of non-implications</span></p>
+        <p class="th-claim">运行完成不蕴含数学有效，数学有效不蕴含认识论上的升级，认识论上的升级不蕴含发布。</p>
+        <p class="th-ref"><span class="wk-label">什么会推翻它</span> 一类问题，其中这几步之一被证明不需要单独的输入——例如一个保真度检查器，使形式命题的有效蕴含所意图的数学的有效（问题 5）。</p>
+<p class="th-probs">对应问题 <a href="#problem-5">5</a> · <a href="#problem-12">12</a> · <a href="#problem-26">26</a> · <a href="#problem-29">29</a> · <a href="#problem-34">34</a></p>      </li>
+      <li id="thesis-7">
+        <p class="th-head"><span class="wk-n">论纲 7</span> 机器提议；人类授权 <span class="th-en" lang="en">Machines propose; humans authorize</span></p>
+        <p class="th-claim">机器可以提议；人类授权发布。</p>
+        <p class="th-ref"><span class="wk-label">什么会推翻它</span> 一个没有人类授权的发布流程，在可比的工作上，其撤回与更正的比率不高于由人类授权的流程；或者一种能力模型，在其中这种分离无法被强制执行。</p>
+<p class="th-probs">对应问题 <a href="#problem-10">10</a> · <a href="#problem-11">11</a></p>      </li>
+      <li id="thesis-8">
+        <p class="th-head"><span class="wk-n">论纲 8</span> 涨潮 <span class="th-en" lang="en">The rising sea</span></p>
+        <p class="th-claim">对难题而言，抬高周围的理论比直接攻击更好。</p>
+        <p class="th-ref"><span class="wk-label">什么会推翻它</span> 比较性的证据，表明对一个推理系统而言，在同等代价下，直接搜索比建造理论解决更多的问题；或者本纲领的各研究课题都没有产生由扩展后的情境变得可处理的结果。</p>
+<p class="th-probs">对应问题 <a href="#problem-1">1</a> · <a href="#problem-36">36</a> · <a href="#problem-37">37</a> · <a href="#problem-38">38</a> · <a href="#problem-41">41</a> · <a href="#problem-51">51</a> · <a href="#problem-52">52</a> · <a href="#problem-55">55</a> · <a href="#problem-56">56</a></p>      </li>
+      <li id="thesis-9">
+        <p class="th-head"><span class="wk-n">论纲 9</span> 说明什么没有确立 <span class="th-en" lang="en">State what is not established</span></p>
+        <p class="th-claim">一个结果，在说明它没有确立什么之前，并不完整。</p>
+        <p class="th-ref"><span class="wk-label">什么会推翻它</span> 证据表明，关于什么没有确立的陈述，没有增加正面陈述的假设所未传达的任何东西——例如它们可以从假设中机械地生成——或者表明，没有这些陈述时，读者误用结果的频率并不更低。</p>
+<p class="th-probs">对应问题 <a href="#problem-33">33</a> · <a href="#problem-39">39</a> · <a href="#problem-40">40</a> · <a href="#problem-43">43</a> · <a href="#problem-44">44</a> · <a href="#problem-45">45</a> · <a href="#problem-48">48</a> · <a href="#problem-49">49</a> · <a href="#problem-53">53</a> · <a href="#problem-54">54</a></p>      </li>
+      <li id="thesis-10">
+        <p class="th-head"><span class="wk-n">论纲 10</span> 发现是递归的 <span class="th-en" lang="en">Discovery is recursive</span></p>
+        <p class="th-claim">数学发现是递归的：提出，用已知的东西检验，抽象经受住检验的部分，再次提问。</p>
+        <p class="th-ref"><span class="wk-label">什么会推翻它</span> 递归的机器运行，在答案已知的问题上，没有重新发现任何已知结果，也没有产生任何经受住其证伪器的猜想（问题 3）；或者一批发现，在其中辨认不出任何抽象步骤。</p>
+<p class="th-probs">对应问题 <a href="#problem-2">2</a> · <a href="#problem-3">3</a></p>      </li>
+      <li id="thesis-11">
+        <p class="th-head"><span class="wk-n">论纲 11</span> 创造语言 <span class="th-en" lang="en">Creating language</span></p>
+        <p class="th-claim">一个数学推理系统必须能够创造记号与语言，而不只是使用它们。</p>
+        <p class="th-ref"><span class="wk-label">什么会推翻它</span> 一个限于固定语言的系统，在问题 14 那一类发现任务上与一个能创造语言的系统表现相当；或者一个能创造语言的系统，其新原语从未经受住审阅。</p>
+<p class="th-probs">对应问题 <a href="#problem-14">14</a> · <a href="#problem-57">57</a></p>      </li>
+      <li id="thesis-12">
+        <p class="th-head"><span class="wk-n">论纲 12</span> 以公开台账评判方法 <span class="th-en" lang="en">Judge a method by its open ledger</span></p>
+        <p class="th-claim">一个方法应当由一份公开台账来评判：它确立了什么，把什么归结为陈述的假设，留下了什么开放。</p>
+        <p class="th-ref"><span class="wk-label">什么会推翻它</span> 在一本书的规模上无法做到可检查的台账——Series 06 自己就记录说，它的台账的可靠性没有确立——或者读者认为台账不如正面陈述有信息量。</p>
+<p class="th-probs">对应问题 <a href="#problem-13">13</a> · <a href="#problem-42">42</a> · <a href="#problem-46">46</a> · <a href="#problem-50">50</a></p>      </li>
+    </ol>
+  </section>
+
+  <section class="block wide" aria-labelledby="problems">
+    <h2 id="problems">57 个问题</h2>
+    <p>其中三十五个出自关于推理系统架构的两部著作，二十二个出自各以一个具名猜想或纲领为研究主题的五部著作；没有一个问题是这些猜想本身。 <span class="cite">（<a href="https://doi.org/10.5281/zenodo.23734426"><cite lang="en">The 57 Grothendieckian Problems</cite></a>，摘要）</span></p>
+    <p><a href="https://github.com/AlienMuse/grothendieckian-problems/issues">这些问题的 GitHub issue →</a></p>
+    <div class="filters">
+      <input type="radio" name="fk" id="fk-all" checked><input type="radio" name="fk" id="fk-math"><input type="radio" name="fk" id="fk-machine"><input type="radio" name="fk" id="fk-formal">
+      <input type="radio" name="fw" id="fw-all" checked><input type="radio" name="fw" id="fw-S01"><input type="radio" name="fw" id="fw-S02"><input type="radio" name="fw" id="fw-S03"><input type="radio" name="fw" id="fw-S04"><input type="radio" name="fw" id="fw-S05"><input type="radio" name="fw" id="fw-S06"><input type="radio" name="fw" id="fw-S07">      <div class="chips" role="group" aria-label="类型">
+        <span class="chips-h">类型</span>
+        <label for="fk-all">全部 · 57</label>
+<label for="fk-math">数学问题 · 25</label><label for="fk-machine">机器问题 · 19</label><label for="fk-formal">形式化问题 · 13</label>      </div>
+      <div class="chips" role="group" aria-label="著作">
+        <span class="chips-h">著作</span>
+        <label for="fw-all">全部</label>
+<label for="fw-S01">01 · 17</label><label for="fw-S02">02 · 18</label><label for="fw-S03">03 · 4</label><label for="fw-S04">04 · 4</label><label for="fw-S05">05 · 5</label><label for="fw-S06">06 · 4</label><label for="fw-S07">07 · 5</label>      </div>
+      <ol class="problems">
+        <li id="problem-1" class="k-machine w-S01">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/1">
+            <span class="pn">1</span>
+            <span class="pt">第一次涨潮事件 <span class="pt-en" lang="en">The first rising-sea event</span></span>
+            <span class="pm">机器问题 · 纲领级 · Series 01 · 论纲 8</span>
+          </a>
+        </li>
+        <li id="problem-2" class="k-formal w-S01">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/2">
+            <span class="pn">2</span>
+            <span class="pt">耦合的世界–语言循环的一个有界不动点 <span class="pt-en" lang="en">A bounded fixed point of the coupled world–language cycle</span></span>
+            <span class="pm">形式化问题 · 纲领级 · Series 01 · 论纲 10</span>
+          </a>
+        </li>
+        <li id="problem-3" class="k-machine w-S01">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/3">
+            <span class="pn">3</span>
+            <span class="pt">从障碍到猜想 <span class="pt-en" lang="en">From obstruction to conjecture</span></span>
+            <span class="pm">机器问题 · 研究级 · Series 01 · 论纲 10</span>
+          </a>
+        </li>
+        <li id="problem-4" class="k-machine w-S01">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/4">
+            <span class="pn">4</span>
+            <span class="pt">最小扩张问题 <span class="pt-en" lang="en">Minimal extension questions</span></span>
+            <span class="pm">机器问题 · 研究级 · Series 01 · 论纲 1</span>
+          </a>
+        </li>
+        <li id="problem-5" class="k-machine w-S01">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/5">
+            <span class="pn">5</span>
+            <span class="pt">目标保真 <span class="pt-en" lang="en">Target fidelity</span></span>
+            <span class="pm">机器问题 · 研究级 · Series 01 · 论纲 6</span>
+          </a>
+        </li>
+        <li id="problem-6" class="k-formal w-S01">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/6">
+            <span class="pn">6</span>
+            <span class="pt">泛性质的经验证编码 <span class="pt-en" lang="en">Verified encodings of universal properties</span></span>
+            <span class="pm">形式化问题 · 研究级 · Series 01 · 论纲 3</span>
+          </a>
+        </li>
+        <li id="problem-7" class="k-formal w-S01">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/7">
+            <span class="pn">7</span>
+            <span class="pt">AURORA-K0 内核 I：语法与检查 <span class="pt-en" lang="en">The AURORA-K0 kernel, I: syntax and checking</span></span>
+            <span class="pm">形式化问题 · 研究级 · Series 01 · 论纲 2</span>
+          </a>
+        </li>
+        <li id="problem-8" class="k-formal w-S01">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/8">
+            <span class="pn">8</span>
+            <span class="pt">AURORA-K0 内核 II：一个模型与相对一致性 <span class="pt-en" lang="en">The AURORA-K0 kernel, II: a model and relative consistency</span></span>
+            <span class="pm">形式化问题 · 研究级 · Series 01 · 论纲 2</span>
+          </a>
+        </li>
+        <li id="problem-9" class="k-formal w-S01">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/9">
+            <span class="pn">9</span>
+            <span class="pt">下降执行的七项义务 <span class="pt-en" lang="en">The seven obligations of descent execution</span></span>
+            <span class="pm">形式化问题 · 研究级 · Series 01 · 论纲 5</span>
+          </a>
+        </li>
+        <li id="problem-10" class="k-formal w-S01">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/10">
+            <span class="pn">10</span>
+            <span class="pt">不自我授权 <span class="pt-en" lang="en">Non-self-authorization</span></span>
+            <span class="pm">形式化问题 · 研究级 · Series 01 · 论纲 7</span>
+          </a>
+        </li>
+        <li id="problem-11" class="k-formal w-S01">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/11">
+            <span class="pn">11</span>
+            <span class="pt">没有权威的演化 <span class="pt-en" lang="en">Evolution without authority</span></span>
+            <span class="pm">形式化问题 · 研究级 · Series 01 · 论纲 7</span>
+          </a>
+        </li>
+        <li id="problem-12" class="k-machine w-S01">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/12">
+            <span class="pn">12</span>
+            <span class="pt">跨实现的确定性同一 <span class="pt-en" lang="en">Deterministic identity across implementations</span></span>
+            <span class="pm">机器问题 · 入门级 · Series 01 · 论纲 6</span>
+          </a>
+        </li>
+        <li id="problem-13" class="k-machine w-S01">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/13">
+            <span class="pn">13</span>
+            <span class="pt">反例与证明发现的冻结基准 <span class="pt-en" lang="en">A frozen benchmark for counterexample and proof discovery</span></span>
+            <span class="pm">机器问题 · 入门级 · Series 01 · 论纲 12</span>
+          </a>
+        </li>
+        <li id="problem-14" class="k-machine w-S01">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/14">
+            <span class="pn">14</span>
+            <span class="pt">语言锻造器（language forge），端到端 <span class="pt-en" lang="en">The language forge, end to end</span></span>
+            <span class="pm">机器问题 · 纲领级 · Series 01 · 论纲 11</span>
+          </a>
+        </li>
+        <li id="problem-15" class="k-machine w-S01">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/15">
+            <span class="pn">15</span>
+            <span class="pt">有类型基变换的预注册检验 <span class="pt-en" lang="en">A preregistered test of typed base change</span></span>
+            <span class="pm">机器问题 · 入门级 · Series 01 · 论纲 1</span>
+          </a>
+        </li>
+        <li id="problem-16" class="k-machine w-S01">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/16">
+            <span class="pn">16</span>
+            <span class="pt">粘合的四种判断的预注册检验 <span class="pt-en" lang="en">A preregistered test of the four judgments of gluing</span></span>
+            <span class="pm">机器问题 · 入门级 · Series 01 · 论纲 5</span>
+          </a>
+        </li>
+        <li id="problem-17" class="k-machine w-S01">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/17">
+            <span class="pn">17</span>
+            <span class="pt">障碍记录的预注册检验 <span class="pt-en" lang="en">A preregistered test of obstruction records</span></span>
+            <span class="pm">机器问题 · 入门级 · Series 01 · 论纲 5</span>
+          </a>
+        </li>
+        <li id="problem-18" class="k-machine w-S02">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/18">
+            <span class="pn">18</span>
+            <span class="pt">发现 site<span class="pt-en" lang="en">Discovering the site</span></span>
+            <span class="pm">机器问题 · 纲领级 · Series 02 · 论纲 3</span>
+          </a>
+        </li>
+        <li id="problem-19" class="k-machine w-S02">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/19">
+            <span class="pn">19</span>
+            <span class="pt">能力赌注 <span class="pt-en" lang="en">The capability wager</span></span>
+            <span class="pm">机器问题 · 研究级 · Series 02 · 论纲 4</span>
+          </a>
+        </li>
+        <li id="problem-20" class="k-machine w-S02">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/20">
+            <span class="pn">20</span>
+            <span class="pt">GRPO 与 RLOO 之间的神经（nerve）基线 <span class="pt-en" lang="en">Nerve baselines between GRPO and RLOO</span></span>
+            <span class="pm">机器问题 · 研究级 · Series 02 · 论纲 4</span>
+          </a>
+        </li>
+        <li id="problem-21" class="k-machine w-S02">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/21">
+            <span class="pn">21</span>
+            <span class="pt">相对障碍作为无支持回答的预测量 <span class="pt-en" lang="en">Relative obstruction as a predictor of unsupported answers</span></span>
+            <span class="pm">机器问题 · 研究级 · Series 02 · 论纲 5</span>
+          </a>
+        </li>
+        <li id="problem-22" class="k-machine w-S02">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/22">
+            <span class="pn">22</span>
+            <span class="pt">Topos-MoE 对比现代稀疏专家混合 <span class="pt-en" lang="en">Topos-MoE against modern sparse mixture-of-experts</span></span>
+            <span class="pm">机器问题 · 研究级 · Series 02 · 论纲 4</span>
+          </a>
+        </li>
+        <li id="problem-23" class="k-machine w-S02">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/23">
+            <span class="pn">23</span>
+            <span class="pt">防御一个整体一致的谬误 <span class="pt-en" lang="en">A defence against a globally coherent falsehood</span></span>
+            <span class="pm">机器问题 · 纲领级 · Series 02 · 论纲 5</span>
+          </a>
+        </li>
+        <li id="problem-24" class="k-math w-S02">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/24">
+            <span class="pn">24</span>
+            <span class="pt">从编译到流式的下降稳定性 <span class="pt-en" lang="en">Compiled-to-streaming descent stability</span></span>
+            <span class="pm">数学问题 · 研究级 · Series 02 · 论纲 4</span>
+          </a>
+        </li>
+        <li id="problem-25" class="k-math w-S02">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/25">
+            <span class="pn">25</span>
+            <span class="pt">Beck–Chevalley 方块 12.6.3<span class="pt-en" lang="en">The Beck–Chevalley square 12.6.3</span></span>
+            <span class="pm">数学问题 · 研究级 · Series 02 · 论纲 4</span>
+          </a>
+        </li>
+        <li id="problem-26" class="k-math w-S02">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/26">
+            <span class="pn">26</span>
+            <span class="pt">等变缺陷的精确累积界 <span class="pt-en" lang="en">Sharp accumulation bounds for equivariance defects</span></span>
+            <span class="pm">数学问题 · 研究级 · Series 02 · 论纲 6</span>
+          </a>
+        </li>
+        <li id="problem-27" class="k-math w-S02">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/27">
+            <span class="pn">27</span>
+            <span class="pt">限制标架轨迹的局部动力学 <span class="pt-en" lang="en">Local dynamics of the restriction-frame locus</span></span>
+            <span class="pm">数学问题 · 研究级 · Series 02 · 论纲 4</span>
+          </a>
+        </li>
+        <li id="problem-28" class="k-math w-S02">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/28">
+            <span class="pn">28</span>
+            <span class="pt">下降求解的一个基变换界 <span class="pt-en" lang="en">A base-change bound for the descent solve</span></span>
+            <span class="pm">数学问题 · 研究级 · Series 02 · 论纲 4</span>
+          </a>
+        </li>
+        <li id="problem-29" class="k-math w-S02">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/29">
+            <span class="pn">29</span>
+            <span class="pt">训练到服务的偏差 <span class="pt-en" lang="en">The training-to-serving deviation</span></span>
+            <span class="pm">数学问题 · 研究级 · Series 02 · 论纲 6</span>
+          </a>
+        </li>
+        <li id="problem-30" class="k-math w-S02">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/30">
+            <span class="pn">30</span>
+            <span class="pt">单调的细化预算 <span class="pt-en" lang="en">Monotone refinement budgets</span></span>
+            <span class="pm">数学问题 · 研究级 · Series 02 · 论纲 5</span>
+          </a>
+        </li>
+        <li id="problem-31" class="k-math w-S02">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/31">
+            <span class="pn">31</span>
+            <span class="pt">歧义轴有多少条？<span class="pt-en" lang="en">How many ambiguity axes are there?</span></span>
+            <span class="pm">数学问题 · 研究级 · Series 02 · 论纲 2</span>
+          </a>
+        </li>
+        <li id="problem-32" class="k-math w-S02">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/32">
+            <span class="pn">32</span>
+            <span class="pt">无需工程的二阶分歧 <span class="pt-en" lang="en">Second-order disagreement without engineering</span></span>
+            <span class="pm">数学问题 · 研究级 · Series 02 · 论纲 5</span>
+          </a>
+        </li>
+        <li id="problem-33" class="k-formal w-S02">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/33">
+            <span class="pn">33</span>
+            <span class="pt">一致电路类的形式化 <span class="pt-en" lang="en">Formalizing uniform circuit classes</span></span>
+            <span class="pm">形式化问题 · 研究级 · Series 02 · 论纲 9</span>
+          </a>
+        </li>
+        <li id="problem-34" class="k-formal w-S02">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/34">
+            <span class="pn">34</span>
+            <span class="pt">第二个内核 <span class="pt-en" lang="en">A second kernel</span></span>
+            <span class="pm">形式化问题 · 入门级 · Series 02 · 论纲 6</span>
+          </a>
+        </li>
+        <li id="problem-35" class="k-formal w-S02">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/35">
+            <span class="pn">35</span>
+            <span class="pt">计算–单价性之桥 <span class="pt-en" lang="en">The computational-univalence bridge</span></span>
+            <span class="pm">形式化问题 · 纲领级 · Series 02 · 论纲 4</span>
+          </a>
+        </li>
+        <li id="problem-36" class="k-math w-S03">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/36">
+            <span class="pn">36</span>
+            <span class="pt">一个分圆谱的极化 <span class="pt-en" lang="en">Polarization of a cyclotomic spectrum</span></span>
+            <span class="pm">数学问题 · 研究级 · Series 03 · 论纲 8</span>
+          </a>
+        </li>
+        <li id="problem-37" class="k-math w-S03">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/37">
+            <span class="pn">37</span>
+            <span class="pt">syntomic 叠上的构造问题 A1<span class="pt-en" lang="en">Construction Problem A1 on the syntomic stack</span></span>
+            <span class="pm">数学问题 · 研究级 · Series 03 · 论纲 8</span>
+          </a>
+        </li>
+        <li id="problem-38" class="k-math w-S03">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/38">
+            <span class="pn">38</span>
+            <span class="pt">来自四元数 THH 的阿基米德 Frobenius<span class="pt-en" lang="en">Archimedean Frobenius from quaternionic THH</span></span>
+            <span class="pm">数学问题 · 研究级 · Series 03 · 论纲 8</span>
+          </a>
+        </li>
+        <li id="problem-39" class="k-machine w-S03">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/39">
+            <span class="pn">39</span>
+            <span class="pt">去极点 Weil 形式的一个经认证惯性 <span class="pt-en" lang="en">A certified inertia for the pole-removed Weil form</span></span>
+            <span class="pm">机器问题 · 入门级 · Series 03 · 论纲 9</span>
+          </a>
+        </li>
+        <li id="problem-40" class="k-math w-S04">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/40">
+            <span class="pn">40</span>
+            <span class="pt">作为局部项的 Tamagawa 因子 <span class="pt-en" lang="en">The Tamagawa factor as a local term</span></span>
+            <span class="pm">数学问题 · 研究级 · Series 04 · 论纲 9</span>
+          </a>
+        </li>
+        <li id="problem-41" class="k-math w-S04">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/41">
+            <span class="pn">41</span>
+            <span class="pt">算术流 <span class="pt-en" lang="en">The arithmetic flow</span></span>
+            <span class="pm">数学问题 · 纲领级 · Series 04 · 论纲 8</span>
+          </a>
+        </li>
+        <li id="problem-42" class="k-math w-S04">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/42">
+            <span class="pn">42</span>
+            <span class="pt">亚导子的秩检测 <span class="pt-en" lang="en">Sub-conductor rank detection</span></span>
+            <span class="pm">数学问题 · 研究级 · Series 04 · 论纲 12</span>
+          </a>
+        </li>
+        <li id="problem-43" class="k-machine w-S04">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/43">
+            <span class="pn">43</span>
+            <span class="pt">来自流的 murmurations：一项证伪测试 <span class="pt-en" lang="en">Murmurations from the flow: a falsification test</span></span>
+            <span class="pm">机器问题 · 入门级 · Series 04 · 论纲 9</span>
+          </a>
+        </li>
+        <li id="problem-44" class="k-formal w-S05">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/44">
+            <span class="pn">44</span>
+            <span class="pt">Lean 中的 Hodge 分解 <span class="pt-en" lang="en">The Hodge decomposition in Lean</span></span>
+            <span class="pm">形式化问题 · 纲领级 · Series 05 · 论纲 9</span>
+          </a>
+        </li>
+        <li id="problem-45" class="k-math w-S05">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/45">
+            <span class="pn">45</span>
+            <span class="pt">阿基米德棱镜上没有 δ-结构 <span class="pt-en" lang="en">No δ-structure on the archimedean prism</span></span>
+            <span class="pm">数学问题 · 研究级 · Series 05 · 论纲 9</span>
+          </a>
+        </li>
+        <li id="problem-46" class="k-math w-S05">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/46">
+            <span class="pn">46</span>
+            <span class="pt">十二条棱镜公理的独立性 <span class="pt-en" lang="en">Independence of the twelve prism axioms</span></span>
+            <span class="pm">数学问题 · 入门级 · Series 05 · 论纲 12</span>
+          </a>
+        </li>
+        <li id="problem-47" class="k-math w-S05">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/47">
+            <span class="pn">47</span>
+            <span class="pt">超越极化情形的下降 <span class="pt-en" lang="en">Descent beyond the polarized case</span></span>
+            <span class="pm">数学问题 · 研究级 · Series 05 · 论纲 5</span>
+          </a>
+        </li>
+        <li id="problem-48" class="k-math w-S05">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/48">
+            <span class="pn">48</span>
+            <span class="pt">Voisin 反例的棱镜解读 <span class="pt-en" lang="en">A prism reading of Voisin’s counterexample</span></span>
+            <span class="pm">数学问题 · 入门级 · Series 05 · 论纲 9</span>
+          </a>
+        </li>
+        <li id="problem-49" class="k-formal w-S06">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/49">
+            <span class="pn">49</span>
+            <span class="pt">闭合形式代数之叶 <span class="pt-en" lang="en">Close the formal algebra leaf</span></span>
+            <span class="pm">形式化问题 · 入门级 · Series 06 · 论纲 9</span>
+          </a>
+        </li>
+        <li id="problem-50" class="k-machine w-S06">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/50">
+            <span class="pn">50</span>
+            <span class="pt">走向 prismatic 上同调的一个算法 <span class="pt-en" lang="en">Toward an algorithm for prismatic cohomology</span></span>
+            <span class="pm">机器问题 · 研究级 · Series 06 · 论纲 12</span>
+          </a>
+        </li>
+        <li id="problem-51" class="k-math w-S06">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/51">
+            <span class="pn">51</span>
+            <span class="pt">实位规范 <span class="pt-en" lang="en">The real-place gauge</span></span>
+            <span class="pm">数学问题 · 研究级 · Series 06 · 论纲 8</span>
+          </a>
+        </li>
+        <li id="problem-52" class="k-math w-S06">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/52">
+            <span class="pn">52</span>
+            <span class="pt">整体基底的粘合问题 <span class="pt-en" lang="en">The gluing problem for the global substrate</span></span>
+            <span class="pm">数学问题 · 纲领级 · Series 06 · 论纲 8</span>
+          </a>
+        </li>
+        <li id="problem-53" class="k-math w-S07">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/53">
+            <span class="pn">53</span>
+            <span class="pt">乘法群闸门 <span class="pt-en" lang="en">The multiplicative-group gate</span></span>
+            <span class="pm">数学问题 · 研究级 · Series 07 · 论纲 9</span>
+          </a>
+        </li>
+        <li id="problem-54" class="k-math w-S07">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/54">
+            <span class="pn">54</span>
+            <span class="pt">GL<span class="m"><sub>2</sub></span> 的第一项证伪测试 <span class="pt-en" lang="en">The first falsification test for GL<span class="m"><sub>2</sub></span></span></span>
+            <span class="pm">数学问题 · 研究级 · Series 07 · 论纲 9</span>
+          </a>
+        </li>
+        <li id="problem-55" class="k-math w-S07">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/55">
+            <span class="pn">55</span>
+            <span class="pt">算术底上的 ambidexterity<span class="pt-en" lang="en">Ambidexterity over the arithmetic base</span></span>
+            <span class="pm">数学问题 · 纲领级 · Series 07 · 论纲 8</span>
+          </a>
+        </li>
+        <li id="problem-56" class="k-math w-S07">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/56">
+            <span class="pn">56</span>
+            <span class="pt">构造整体算术曲线 <span class="pt-en" lang="en">Construct the global arithmetic curve</span></span>
+            <span class="pm">数学问题 · 纲领级 · Series 07 · 论纲 8</span>
+          </a>
+        </li>
+        <li id="problem-57" class="k-formal w-S07">
+          <a href="https://github.com/AlienMuse/grothendieckian-problems/issues/57">
+            <span class="pn">57</span>
+            <span class="pt">算术模式的相干性 <span class="pt-en" lang="en">Coherence for arithmetic modes</span></span>
+            <span class="pm">形式化问题 · 研究级 · Series 07 · 论纲 11</span>
+          </a>
+        </li>
+      </ol>
+    </div>
+    <p class="src">每个编号都打开该问题的 GitHub issue（英文），其中有问题的陈述、出处、何时算作解决以及讨论。类型与级别照论文的标注。</p>
+  </section>
+
+<section class="book-sec" id="s11-1" aria-labelledby="s11-1-h">
+<h2 id="s11-1-h"><span class="sn">§11.1</span> 开放的问题</h2><p>本纲领的每一部著作，都以一份它没有做到的事的清单结尾，陈述得足够精确，可以被接手。第三部留下两个构造问题——一个与谱为零点的算子相容、负指标为一的算术 Hermite 形式，以及对放大后的零点数据的一个上界约束——并邀请读者攻击其中任何一个，而不必接受另一个<span class="cite">（<span class="c1">Series 03, Preface</span>）</span>。第四部留下十二个猜想与十四个障碍，每一个都带有陈述、它阻碍了什么、它的部分结果、一份攻击计划和一个难度评级，排成一个构造计划，并附有放弃某一阶段的准则<span class="cite">（<span class="c1">Series 04, Preface</span>）</span>。第五部留下两个活着的障碍和六十个按难度分级的问题，并告诉想要反驳这本书、或完成它的读者，直接去看从闭流到正流的那一步<span class="cite">（<span class="c1">Series 05, Preface</span>）</span>。第六部留下九十八项具名义务，其中一项承担其主不等式的算术分量<span class="cite">（<span class="c1">Series 06, Abstract</span>）</span>。第七部按依赖次序，留下四个第一难度的缺口和十四个研究问题<span class="cite">（<span class="c1">Series 07, Ch. 40</span>）</span>。前两部留下有待实现的规定和有待运行的实验<span class="cite">（<span class="c1">Series 01, Vol. III</span>; <span class="c1">Series 02, Preface</span>）</span>。</p>
+  <p class="src">译自总纲 §11.1 · <a href="/open/#s11-1" hreflang="en">英文原文：<span lang="en">What is open</span></a></p>
+</section><section class="book-sec" id="s11-2" aria-labelledby="s11-2-h">
+<h2 id="s11-2-h"><span class="sn">§11.2</span> 三类贡献</h2><p>第二部列出最重要的三类贡献，它们适用于本纲领的每一部著作<span class="cite">（<span class="c1">Series 02, Preface</span>）</span>。第一类是<em class="zh-em">反驳</em>（refutation）：一个定理的反例、一项陈述的退化的失败，或一次某个模块没能通过它所命名的闸门的实验；每一项都会去掉一些东西，每一项都受欢迎。第二类是<em class="zh-em">完成</em>（completion）：印为开放的义务陈述得足够精确，可以被接手，其中有几项本身就是有独立意义的问题。第三类是<em class="zh-em">构造</em>（construction）：对某个已规定部分的实现，用各书预先确定的检验来运行。第六部补充了为什么怀疑式的阅读不是一种让步：一个找出了一项错误义务、一个循环依赖，或一次被锁定比较的经认证失败的读者，比一个只觉得这个架构有启发性的读者，更推进了这门学问<span class="cite">（<span class="c1">Series 06, Preface</span>）</span>。</p>
+  <p class="src">译自总纲 §11.2 · <a href="/open/#s11-2" hreflang="en">英文原文：<span lang="en">Three kinds of contribution</span></a></p>
+</section><section class="book-sec" id="s11-3" aria-labelledby="s11-3-h">
+<h2 id="s11-3-h"><span class="sn">§11.3</span> 从哪里开始</h2><p>每一部都为不同的读者给出自己的路线，表 4 从中汇集出贯穿本纲领的五条路线。怀疑者路线是多数著作推荐的路线：第七部称它为推荐路线，因为它对读者注意力的主要要求，在于其记账的精确，而账目在书的后面<span class="cite">（<span class="c1">Series 07, How to Read This Book</span>）</span>。</p>
+    <div class="tbl"><table>
+      <thead><tr><th scope="col">路线</th><th scope="col">适合</th><th scope="col">在七部中读什么</th></tr></thead>
+      <tbody><tr><td>初读</td><td>初次接触本纲领的读者</td><td>本书；每部的 Series Note 与 Abstract；Series 07 第 1 章（"a complete account of the whole architecture"）；Series 04 与 Series 05 的 Part 0</td></tr><tr><td>数学</td><td>数学家</td><td>Series 01 第一卷的总论与来源考订各章；Series 03 Part III（函数域范式）；Series 05 的 Route A；Series 07 的算术学家路线，第 1、7、16、19、33–36、40 章</td></tr><tr><td>机器推理</td><td>AI 研究者</td><td>Series 01 的 Integrated Preface、第三卷第 1–13 章与第四卷前两部分；Series 02 Part I，然后 Part V、VI、IX</td></tr><tr><td>形式化与计算</td><td>形式化工作者或工程师</td><td>Series 01 的形式化路线；Series 05 Part X；Series 06 Part VIII；Series 07 第 37–38 章与附录 G</td></tr><tr><td>怀疑</td><td>审稿人</td><td>Series 02 Part X 与 XIV；Series 03 第 5、58 章；Series 04 第 55 章；Series 05 的 Route G；Series 07 第 40 章、附录 F 与第 39 章</td></tr></tbody>
+    </table><p class="tcap">贯穿本纲领的阅读路线。</p></div>
+  <p class="src">译自总纲 §11.3 · <a href="/open/#s11-3" hreflang="en">英文原文：<span lang="en">Where to begin</span></a></p>
+</section><section class="book-sec" id="s11-4" aria-labelledby="s11-4-h">
+<h2 id="s11-4-h"><span class="sn">§11.4</span> 更正</h2><p>每一部都写明应当用什么工具来更正它。第七部要求对照它的陈述台账报告错误，台账给每一项论断一个稳定的标识符，使一份报告可以写明它所涉及的论断<span class="cite">（<span class="c1">Series 07, Colophon</span>）</span>；第五部承诺维护一份公开的勘误<span class="cite">（<span class="c1">Series 05, Preface</span>）</span>；第四部让每一个断言都在一份证明义务台账中占一行，使读者可以审计这本书，而不只是阅读它<span class="cite">（<span class="c1">Series 04, Preface</span>）</span>。每一部都与它的记录来源一同发布——一个解析到所有版本的概念 DOI、一个仓库和一份签名的校验和清单——使一项更正可以写明它所更正的确切版本。</p>
+<p>本纲领以各研究课题提供自己工具时的那种精神提供出来：供人检查；在它失败之处，供人更正<span class="cite">（<span class="c1">Series 07, Preface</span>）</span>。</p>
+  <p class="src">译自总纲 §11.4 · <a href="/open/#s11-4" hreflang="en">英文原文：<span lang="en">Corrections</span></a></p>
+</section></div>
+</main>
+<footer class="foot">
+  <div class="wrap foot-grid">
+    <div>
+      <p class="foot-lab"><a href="/zh/lab/">Grothendieck Lab · WiseMotif.ai</a></p>
+      <p>Grothendieck Lab 与 Grothendieckian Programme 的官方网站。</p>
+      <p><a href="https://wisemotif.ai">WiseMotif.ai</a> · © 2026 Vincent Liu · <a href="https://orcid.org/0009-0000-8718-222X">ORCID 0009-0000-8718-222X</a></p>
+      <p><a href="/zh/lab/#name">名称</a> · <a href="/zh/lab/#licence">许可</a> · <a href="/open/" hreflang="en" lang="en">English</a></p>
+<p class="foot-note">中文为译文，以英文原文为准；书名、卷名、体系专名与无稳定中文译名的术语保留英文。</p>    </div>
+    <nav class="foot-works" aria-label="七部著作">
+      <ul>
+        <li><a href="/zh/works/grothendieckian-machine/"><span class="sn">01</span> <span lang="en">GAI-MUA: The Grothendieckian Machine</span></a></li>
+        <li><a href="/zh/works/topos-native-intelligence/"><span class="sn">02</span> <span lang="en">GM-Omega-Infinity: Topos-Native Intelligence</span></a></li>
+        <li><a href="/zh/works/arithmetic-spectral-descent/"><span class="sn">03</span> <span lang="en">Arithmetic Spectral Descent</span></a></li>
+        <li><a href="/zh/works/fractured-adelic-geometry/"><span class="sn">04</span> <span lang="en">Fractured Adelic Geometry</span></a></li>
+        <li><a href="/zh/works/the-archimedean-prism/"><span class="sn">05</span> <span lang="en">The Archimedean Prism</span></a></li>
+        <li><a href="/zh/works/strained-prismatic-geometry/"><span class="sn">06</span> <span lang="en">Strained Prismatic Geometry</span></a></li>
+        <li><a href="/zh/works/the-arithmetic-topos/"><span class="sn">07</span> <span lang="en">The Arithmetic Topos</span></a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

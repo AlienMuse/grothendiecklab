@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="zh-Hans" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src &#39;self&#39;; script-src &#39;self&#39;; style-src &#39;self&#39;; img-src &#39;self&#39; data:; font-src &#39;self&#39;; connect-src &#39;self&#39;; object-src &#39;none&#39;; base-uri &#39;none&#39;; form-action &#39;none&#39;">
+<title>Fractured Adelic Geometry（BSD 猜想）· Series 04 · 格罗滕迪克纲领</title>
+<meta name="description" content="Fractured Adelic Geometry——格罗滕迪克纲领 Series 04，研究课题 2 · BSD；4 卷、571 页，开放获取。DOI 10.5281/zenodo.23585887">
+<meta name="author" content="Vincent Liu">
+<meta name="keywords" content="BSD 猜想, 格罗滕迪克纲领, Grothendieck, Birch–Swinnerton-Dyer 猜想, 椭圆曲线, Selmer 群, Tate–Shafarevich 群, 棱柱上同调, 凝聚数学">
+<meta name="tdm-reservation" content="1">
+<meta name="tdm-policy" content="https://github.com/AlienMuse/grothendieckian-programme/blob/main/TDM-AND-AI-POLICY.md">
+<link rel="canonical" href="https://grothendiecklab.com/zh/works/fractured-adelic-geometry/">
+<link rel="alternate" hreflang="en" href="https://grothendiecklab.com/works/fractured-adelic-geometry/">
+<link rel="alternate" hreflang="zh-Hans" href="https://grothendiecklab.com/zh/works/fractured-adelic-geometry/">
+<link rel="alternate" hreflang="x-default" href="https://grothendiecklab.com/works/fractured-adelic-geometry/">
+<meta property="og:site_name" content="Grothendieck Lab · WiseMotif.ai">
+<meta property="og:type" content="book">
+<meta property="og:title" content="Fractured Adelic Geometry（BSD 猜想）· Series 04 · 格罗滕迪克纲领">
+<meta property="og:description" content="Fractured Adelic Geometry——格罗滕迪克纲领 Series 04，研究课题 2 · BSD；4 卷、571 页，开放获取。DOI 10.5281/zenodo.23585887">
+<meta property="og:url" content="https://grothendiecklab.com/zh/works/fractured-adelic-geometry/">
+<meta property="og:image" content="https://grothendiecklab.com/static/img/covers/series-04.jpg">
+<meta property="og:image:alt" content="封面：Fractured Adelic Geometry">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#040a10">
+<link rel="icon" href="/static/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/static/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/static/img/apple-touch-icon.png">
+<link rel="preload" href="/static/fonts/pagella-regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/static/fonts/pagella-italic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/static/css/lab-09a47c6f56.css">
+<meta name="citation_title" content="Fractured Adelic Geometry: A Foundational Framework for the Birch and Swinnerton-Dyer Conjecture">
+<meta name="citation_author" content="Liu, Vincent">
+<meta name="citation_author_institution" content="WiseMotif.ai">
+<meta name="citation_author_orcid" content="https://orcid.org/0009-0000-8718-222X">
+<meta name="citation_publication_date" content="2026/10/23">
+<meta name="citation_publisher" content="Zenodo">
+<meta name="citation_doi" content="10.5281/zenodo.23585888">
+<meta name="citation_language" content="en">
+<meta name="citation_pdf_url" content="https://zenodo.org/records/23585888/files/Fractured-Adelic-Geometry-v1.0.0-Complete.pdf">
+<meta name="citation_abstract_html_url" content="https://grothendiecklab.com/zh/works/fractured-adelic-geometry/">
+<meta name="citation_keywords" content="Birch and Swinnerton-Dyer conjecture">
+<meta name="citation_keywords" content="elliptic curves">
+<meta name="citation_keywords" content="L-functions">
+<meta name="citation_keywords" content="Selmer groups">
+<meta name="citation_keywords" content="Tate–Shafarevich group">
+<meta name="citation_keywords" content="prismatic cohomology">
+<meta name="citation_keywords" content="condensed mathematics">
+<meta name="citation_keywords" content="F-gauges">
+<meta name="citation_keywords" content="Weil-étale cohomology">
+<meta name="citation_keywords" content="determinant of cohomology">
+<meta name="citation_keywords" content="Euler systems">
+<meta name="citation_keywords" content="Iwasawa theory">
+<meta name="citation_keywords" content="shtukas">
+<meta name="citation_keywords" content="arithmetic theta series">
+<meta name="citation_keywords" content="regularised determinants">
+<meta name="citation_keywords" content="equivariant Tamagawa number conjecture">
+<meta name="citation_keywords" content="certified computation">
+<meta name="citation_keywords" content="formal verification">
+<meta name="citation_keywords" content="Grothendieckian Programme">
+<meta name="citation_keywords" content="recursive mathematical discovery">
+<meta name="citation_keywords" content="AI for mathematics">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Book",
+ "@id": "https://doi.org/10.5281/zenodo.23585887",
+ "name": "Fractured Adelic Geometry",
+ "alternativeHeadline": "A Foundational Framework for the Birch and Swinnerton-Dyer Conjecture",
+ "author": {
+  "@type": "Person",
+  "@id": "https://grothendiecklab.com/lab/#person",
+  "name": "Vincent Liu",
+  "url": "https://grothendiecklab.com/zh/lab/",
+  "jobTitle": "Chief AI Mathematician",
+  "worksFor": {
+   "@type": "Organization",
+   "name": "WiseMotif.ai",
+   "url": "https://wisemotif.ai"
+  },
+  "affiliation": {
+   "@id": "https://grothendiecklab.com/#lab"
+  },
+  "sameAs": [
+   "https://orcid.org/0009-0000-8718-222X",
+   "https://scholar.google.com/citations?user=t0sMkU0AAAAJ",
+   "https://github.com/AlienMuse",
+   "https://zenodo.org/communities/grothendieckian-programme",
+   "https://alienmuse.github.io/"
+  ]
+ },
+ "url": "https://grothendiecklab.com/zh/works/fractured-adelic-geometry/",
+ "bookEdition": "Research Architecture Edition 1",
+ "version": "1.0.0",
+ "datePublished": "2026-10-23",
+ "inLanguage": "en",
+ "numberOfPages": 571,
+ "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+ "identifier": [
+  {
+   "@type": "PropertyValue",
+   "propertyID": "DOI",
+   "value": "10.5281/zenodo.23585887"
+  },
+  {
+   "@type": "PropertyValue",
+   "propertyID": "DOI (version)",
+   "value": "10.5281/zenodo.23585888"
+  }
+ ],
+ "isPartOf": [
+  {
+   "@type": "CreativeWorkSeries",
+   "name": "WiseMotif Monograph of Mathematical Intelligence"
+  },
+  {
+   "@type": "CreativeWorkSeries",
+   "name": "The Grothendieckian Programme",
+   "url": "https://grothendiecklab.com/zh/programme/"
+  }
+ ],
+ "publisher": {
+  "@type": "Organization",
+  "name": "Zenodo",
+  "url": "https://zenodo.org"
+ },
+ "bookFormat": "https://schema.org/EBook",
+ "isAccessibleForFree": true,
+ "keywords": "Birch and Swinnerton-Dyer conjecture, elliptic curves, L-functions, Selmer groups, Tate–Shafarevich group, prismatic cohomology, condensed mathematics, F-gauges, Weil-étale cohomology, determinant of cohomology, Euler systems, Iwasawa theory, shtukas, arithmetic theta series, regularised determinants, equivariant Tamagawa number conjecture, certified computation, formal verification, Grothendieckian Programme, recursive mathematical discovery, AI for mathematics",
+ "abstract": "Fractured Adelic Geometry is the fourth work in the WiseMotif Monograph of Mathematical Intelligence. It belongs to the Grothendieckian Programme as a self-contained system and as one of the Programme's research subjects: a problem on which the method of recursive mathematical discovery is carried through in full, in the manner of Grothendieck's rising sea. The problem is the conjecture of Birch and Swinnerton-Dyer, and the question is why sixty years of work have produced theorems only in analytic rank at most one, and what kind of object would make the conjecture a single statement instead of a comparison between two unrelated quantities.",
+ "image": "https://grothendiecklab.com/static/img/covers/series-04.jpg",
+ "sameAs": [
+  "https://doi.org/10.5281/zenodo.23585888",
+  "https://github.com/AlienMuse/fractured-adelic-geometry"
+ ]
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "name": "Grothendieck Lab",
+   "item": "https://grothendiecklab.com/zh/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "name": "格罗滕迪克纲领",
+   "item": "https://grothendiecklab.com/zh/programme/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 3,
+   "name": "Fractured Adelic Geometry",
+   "item": "https://grothendiecklab.com/zh/works/fractured-adelic-geometry/"
+  }
+ ]
+}
+</script>
+<script type="module" src="/static/js/main-PB52Z2DD.js"></script>
+</head>
+<body class="page-work l-zh">
+<a class="skip" href="#main">跳到正文</a>
+<header class="top">
+  <div class="bar">
+    <div class="brand">
+      <a class="brand-home" href="/zh/" aria-label="{&#39;machine_more&#39;: &#39;中心与内核&#39;, &#39;open_more&#39;: &#39;论文、论纲与问题&#39;, &#39;lab_more&#39;: &#39;实验室&#39;}">
+        <img src="/static/img/favicon.svg" alt="" width="26" height="26">
+        <span class="brand-name">Grothendieck Lab</span>
+      </a>
+      <span class="brand-sep" aria-hidden="true">·</span>
+      <a class="brand-org" href="https://wisemotif.ai" title="WiseMotif.ai，公司主站">WiseMotif.ai</a>
+    </div>
+    <div class="bar-r">
+      <nav class="nav" aria-label="主导航">
+        <a href="/zh/programme/">纲领</a>
+        <a href="/zh/method/">方法</a>
+        <a href="/zh/machine/">机器</a>
+        <a href="/zh/open/">开放</a>
+        <a href="/zh/lab/">实验室</a>
+      </nav>
+      <a class="lang" href="/works/fractured-adelic-geometry/" hreflang="en" lang="en" title="本页的英文版">English</a>
+    </div>
+  </div>
+</header>
+<main id="main">
+<section class="work-head violet" aria-labelledby="title">
+  <div class="wrap work-grid">
+    <div class="work-id">
+      <p class="kicker"><span class="wk-n">SERIES 04</span> · 研究课题 2 · BSD</p>
+      <h1 id="title" lang="en">Fractured Adelic Geometry</h1>
+      <p class="subtitle" lang="en">A Foundational Framework for the Birch and Swinnerton-Dyer Conjecture</p>
+      <p class="series-line" lang="en">WiseMotif Monograph of Mathematical Intelligence, Series 04 · Mathematics and Artificial Intelligence</p>
+      <div class="status-card">
+        <p class="wk-label">中心主张的状态（各书自己的说法）</p>
+        <p class="wk-status">由 Conjecture A 与公理推出秩与首项系数公式 <span class="tag">[CONDITIONAL]</span></p>
+        <p class="src">来源：<a href="/zh/programme/">Series 00</a>，表 1</p>
+      </div>
+      <p class="actions">
+        <a class="btn btn-primary" href="https://github.com/AlienMuse/fractured-adelic-geometry/releases/download/v1.0.0/Fractured-Adelic-Geometry-v1.0.0-Complete.pdf">完整 PDF</a>
+        <a class="btn" href="https://doi.org/10.5281/zenodo.23585887">Zenodo 记录</a>
+        <a class="btn" href="https://github.com/AlienMuse/fractured-adelic-geometry">GitHub 仓库</a>
+      </p>
+    </div>
+    <div class="work-aside">
+      <img class="cover" src="/static/img/covers/series-04.webp" width="480" height="678" alt="封面：Fractured Adelic Geometry">
+      <figure class="fig fig-honeycomb" data-fig="honeycomb" data-label="七部著作，画成同一个蜂巢的七格">
+  <div class="hc-stack">
+    <div class="fig-box"></div>
+    <svg class="hc-links has-here" viewBox="0 0 130 130" role="group" aria-label="七部著作，画成同一个蜂巢的七格">
+<a href="/zh/works/grothendieckian-machine/" aria-label="Series 01 · GAI-MUA: The Grothendieckian Machine"><title>Series 01 · GAI-MUA: The Grothendieckian Machine</title><polygon points="88.95,65.00 76.98,85.74 53.02,85.74 41.05,65.00 53.02,44.26 76.98,44.26"/><text class="fb" x="65.0" y="62.8">SERIES 01</text><text class="fb r" x="65.0" y="68.6">GAI-MUA</text></a><a href="/zh/works/topos-native-intelligence/" aria-label="Series 02 · GM-Omega-Infinity: Topos-Native Intelligence"><title>Series 02 · GM-Omega-Infinity: Topos-Native Intelligence</title><polygon points="88.95,22.75 76.98,43.49 53.02,43.49 41.05,22.75 53.02,2.01 76.98,2.01"/><text class="fb" x="65.0" y="20.55">SERIES 02</text><text class="fb r" x="65.0" y="26.35">TOPOS-NATIVE</text></a><a href="/zh/works/arithmetic-spectral-descent/" aria-label="Series 03 · Arithmetic Spectral Descent"><title>Series 03 · Arithmetic Spectral Descent</title><polygon points="125.54,43.88 113.57,64.62 89.61,64.62 77.64,43.88 89.61,23.13 113.57,23.13"/><text class="fb" x="101.59" y="41.68">SERIES 03</text><text class="fb r" x="101.59" y="47.480000000000004">RIEMANN · GRH</text></a><a href="/zh/works/fractured-adelic-geometry/" class="here" aria-current="page" aria-label="Series 04 · Fractured Adelic Geometry"><title>Series 04 · Fractured Adelic Geometry</title><polygon points="125.54,86.12 113.57,106.87 89.61,106.87 77.64,86.12 89.61,65.38 113.57,65.38"/><text class="fb" x="101.59" y="83.92">SERIES 04</text><text class="fb r" x="101.59" y="89.72">BSD</text></a><a href="/zh/works/the-archimedean-prism/" aria-label="Series 05 · The Archimedean Prism"><title>Series 05 · The Archimedean Prism</title><polygon points="88.95,107.25 76.98,127.99 53.02,127.99 41.05,107.25 53.02,86.51 76.98,86.51"/><text class="fb" x="65.0" y="105.05">SERIES 05</text><text class="fb r" x="65.0" y="110.85">HODGE</text></a><a href="/zh/works/strained-prismatic-geometry/" aria-label="Series 06 · Strained Prismatic Geometry"><title>Series 06 · Strained Prismatic Geometry</title><polygon points="52.36,86.12 40.39,106.87 16.43,106.87 4.46,86.12 16.43,65.38 40.39,65.38"/><text class="fb" x="28.41" y="83.92">SERIES 06</text><text class="fb r" x="28.41" y="89.72">abc</text></a><a href="/zh/works/the-arithmetic-topos/" aria-label="Series 07 · The Arithmetic Topos"><title>Series 07 · The Arithmetic Topos</title><polygon points="52.36,43.88 40.39,64.62 16.43,64.62 4.46,43.88 16.43,23.13 40.39,23.13"/><text class="fb" x="28.41" y="41.68">SERIES 07</text><text class="fb r" x="28.41" y="47.480000000000004">LANGLANDS</text></a>    </svg>
+  </div>
+</figure>
+    </div>
+  </div>
+</section>
+
+<div class="wrap prose">
+  <section class="block boundary" aria-labelledby="boundary">
+    <h2 id="boundary">该书的边界，用它自己的话</h2>
+    <blockquote class="q q-lead"><p>Birch–Swinnerton-Dyer 猜想仍未解决。本书没有证明它，没有证明任何此前未知的情形，也没有对任何一条曲线证明 Ш（Tate–Shafarevich 群）的有限性。</p><footer class="src">——<cite>Fractured Adelic Geometry</cite>，Series Note</footer><details class="orig"><summary>英文原文</summary><p lang="en">The Birch and Swinnerton-Dyer conjecture remains open. This work does not prove it, proves no case of it that was not already known, and proves the finiteness of Ш for no curve.</p></details></blockquote>
+  </section>
+
+  <section class="block" aria-labelledby="move">
+    <h2 id="move">这部书迈出的一步</h2>
+    <dl class="move">
+<div><dt>问题原来卡在哪里</dt><dd>两个由毫不相干的机制计算的量，只靠在一点、单一方向上的桥相连</dd></div><div><dt>换掉了什么</dt><dd>一个对象、两种描述：线 Δ(X<sub>E</sub>) 及其两个平凡化</dd></div><div><dt>由此变得自然的东西</dt><dd>秩成为一个指标，首项系数成为一个行列式</dd></div><div><dt>代价；仍然开放的</dt><dd>Conjecture A 并不比猜想本身容易；十二个猜想与十四个障碍</dd></div>    </dl>
+    <p class="src">来源：<a href="/zh/programme/">Series 00</a>，表 2</p>
+  </section>
+
+  <section class="block" aria-labelledby="abstract">
+    <h2 id="abstract">摘要</h2>
+<p>Fractured Adelic Geometry 是 WiseMotif Monograph of Mathematical Intelligence 的第四部著作。它属于 Grothendieckian Programme，自成独立体系，是该 Programme 的研究课题之一：在一个问题上把递归式数学发现（recursive mathematical discovery）的方法完整地走一遍，正如 Grothendieck 的“上涨的海”（rising sea）。所选的问题是 Birch–Swinnerton-Dyer 猜想（BSD 猜想）；所问的是：为什么六十年的工作只在解析秩不超过一时得到定理，以及什么样的对象能使这个猜想成为一个单一的陈述，而不是两个互不相关的量之间的比较。</p><p>诊断是结构性的。每一个已证明的情形，都借助一座桥——Heegner 点、Kolyvagin 系统、Kato 的 Euler 系统——从解析一侧跨到算术一侧，而这座桥只沿一个方向携带一个类；本书把秩为二时的障碍刻画为一个关于外代数作用于导出形变环的陈述，而不是一个技术上的偶然。提议改变的是对象。Frobenius–Arakelov–Prismatic（FAP）空间构成的范畴，以凝聚解析结构、每个素数处的整棱柱 F-gauge、Fargues–Fontaine 实现、Arakelov 边界、绝对分圆结构和一个算术流作为基础数据，由十二条公理 F1–F12 约束。它为 Q 上的椭圆曲线 E 配上一个算术谱 X_E、一个范畴化的 Lefschetz–Verdier 迹公式和一条基本线（fundamental line）Δ(X_E)。猜想于是成为 Master Identity（Conjecture A）：Δ(X_E) 的解析平凡化与代数平凡化在整系数意义下一致。</p><p>下降已经证明：由 Conjecture A 与公理可以推出秩公式与完整的首项系数公式。在退化情形下，这个框架重现已知定理：在有限域上，十二条公理中有九条成为定理，该形式体系特化为 Tate 与 Milne 的定理；对于 Z 上的乘法群，它特化为显式公式与类数公式。剩下的部分以一份登记表和一份图谱陈述出来：十二个猜想，其中十一个被评为两个最高难度等级，只有一个用现有技术可以处理；十四个障碍，其中五个包含一个已知的重大公开问题——用本书的记号，Conjecture A 就是 h¹(E)(1) 的等变 Tamagawa 数猜想。一个带认证引擎的七层计算架构、一个附有明确信任模型的证书层级、一份证明义务台账，以及以未编译形式发布的、对这些陈述的 Lean 4 开发，使全书完整。</p><p>每一项实质性论断都在提出之处带有四个状态标签之一——KNOWN、CONDITIONAL、NEW、OPEN（已知、有条件、新结果、开放）。Birch–Swinnerton-Dyer 猜想仍未解决。本书没有证明它，没有证明任何此前未知的情形，也没有对任何一条曲线证明 Tate–Shafarevich 群的有限性。</p>    <details class="orig"><summary>英文原文</summary><p lang="en">Fractured Adelic Geometry is the fourth work in the WiseMotif Monograph of Mathematical Intelligence. It belongs to the Grothendieckian Programme as a self-contained system and as one of the Programme&#39;s research subjects: a problem on which the method of recursive mathematical discovery is carried through in full, in the manner of Grothendieck&#39;s rising sea. The problem is the conjecture of Birch and Swinnerton-Dyer, and the question is why sixty years of work have produced theorems only in analytic rank at most one, and what kind of object would make the conjecture a single statement instead of a comparison between two unrelated quantities.</p><p lang="en">The diagnosis is structural. Every proved case crosses from the analytic side to the arithmetic side by a bridge — Heegner points, Kolyvagin systems, Kato&#39;s Euler system — that carries one class in one direction, and the book isolates the rank-two obstruction as a statement about the exterior algebra acting on a derived deformation ring, not as a technical accident. The proposal changes the object. A category of Frobenius–Arakelov–Prismatic (FAP) spaces carries condensed analytic structure, integral prismatic F-gauges at every prime, Fargues–Fontaine realisations, an Arakelov boundary, an absolute cyclotomic structure and an arithmetic flow as foundational data, governed by twelve axioms F1–F12. To an elliptic curve E over Q it attaches an arithmetic spectrum X_E, a categorified Lefschetz–Verdier trace formula and a fundamental line Δ(X_E). The conjecture becomes the Master Identity (Conjecture A): the analytic and algebraic trivialisations of Δ(X_E) agree integrally.</p><p lang="en">The descent is proved: from Conjecture A and the axioms the rank formula and the full leading-coefficient formula follow. In the degenerate cases the framework reproduces known theorems: over a finite field nine of the twelve axioms become theorems and the formalism specialises to the theorem of Tate and Milne; for the multiplicative group over Z it specialises to the explicit formula and the class number formula. What remains is stated as a register and an atlas: twelve conjectures, of which eleven are rated at the two highest levels of difficulty and only one is tractable with present technique, and fourteen obstructions, five of which contain a known major open problem — Conjecture A is the equivariant Tamagawa number conjecture for h¹(E)(1) in the notation of the book. A seven-layer computational architecture with certified engines, a certificate hierarchy with a stated trust model, a proof-obligation ledger and a Lean 4 development of the statements, published uncompiled, complete the work.</p><p lang="en">Every substantive assertion carries one of four status labels — known, conditional, new, open — where it is made. The Birch and Swinnerton-Dyer conjecture remains open. This work does not prove it, proves no case of it that was not already known, and proves the finiteness of the Tate–Shafarevich group for no curve.</p></details>
+  </section>
+
+  <section class="block" aria-labelledby="structure">
+    <h2 id="structure">核心结构</h2>
+    <p>一个对象、两种描述：FAP 空间、谱 X<sub>E</sub>、线 Δ(X<sub>E</sub>)</p>
+    <ul class="vols" lang="en"><li>Volume I — Problem and Foundations (Parts 0–II)</li><li>Volume II — The Arithmetic Spectrum and the Rank-Two Barrier (Parts III–V)</li><li>Volume III — The Master Identity and the Engine (Parts VI–VII)</li><li>Volume IV — Formalisation and the Programme (Parts VIII–IX)</li><li>Apparatus — Appendices A–H, bibliography, indexes of notation, names and subjects</li></ul>
+  </section>
+
+  <section class="block" aria-labelledby="labels">
+    <h2 id="labels">状态标签（按原书印出）</h2>
+    <p lang="en">KNOWN · CONDITIONAL · NEW · OPEN</p>
+    <p class="src">来源：<a href="/zh/programme/">Series 00</a>，表 3</p>
+  </section>
+
+  <section class="block" aria-labelledby="record">
+    <h2 id="record">引用</h2>
+    <dl class="meta">
+      <div><dt>规模</dt><dd>4 卷 · 571 页</dd></div>
+      <div><dt>概念 DOI（所有版本）</dt><dd><a href="https://doi.org/10.5281/zenodo.23585887">10.5281/zenodo.23585887</a></dd></div>
+      <div><dt>版本 DOI 1.0.0</dt><dd><a href="https://doi.org/10.5281/zenodo.23585888">10.5281/zenodo.23585888</a></dd></div>
+      <div><dt>发布日期</dt><dd>2026-10-23 · Research Architecture Edition 1</dd></div>
+      <div><dt>许可</dt><dd>CC BY-NC-ND 4.0；代码清单与配套代码另以 Apache-2.0 授权</dd></div>
+    </dl>
+    <pre class="bibtex"><code>@book{liu2026series04,
+  author    = {Liu, Vincent},
+  title     = {Fractured Adelic Geometry --- A Foundational Framework for the Birch and Swinnerton-Dyer Conjecture},
+  series    = {WiseMotif Monograph of Mathematical Intelligence, Series 04},
+  edition   = {Research Architecture Edition 1},
+  version   = {1.0.0},
+  year      = {2026},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.23585887},
+  url       = {https://doi.org/10.5281/zenodo.23585887}
+}</code></pre>
+  </section>
+</div>
+</main>
+<footer class="foot">
+  <div class="wrap foot-grid">
+    <div>
+      <p class="foot-lab"><a href="/zh/lab/">Grothendieck Lab · WiseMotif.ai</a></p>
+      <p>Grothendieck Lab 与 Grothendieckian Programme 的官方网站。</p>
+      <p><a href="https://wisemotif.ai">WiseMotif.ai</a> · © 2026 Vincent Liu · <a href="https://orcid.org/0009-0000-8718-222X">ORCID 0009-0000-8718-222X</a></p>
+      <p><a href="/zh/lab/#name">名称</a> · <a href="/zh/lab/#licence">许可</a> · <a href="/works/fractured-adelic-geometry/" hreflang="en" lang="en">English</a></p>
+<p class="foot-note">中文为译文，以英文原文为准；书名、卷名、体系专名与无稳定中文译名的术语保留英文。</p>    </div>
+    <nav class="foot-works" aria-label="七部著作">
+      <ul>
+        <li><a href="/zh/works/grothendieckian-machine/"><span class="sn">01</span> <span lang="en">GAI-MUA: The Grothendieckian Machine</span></a></li>
+        <li><a href="/zh/works/topos-native-intelligence/"><span class="sn">02</span> <span lang="en">GM-Omega-Infinity: Topos-Native Intelligence</span></a></li>
+        <li><a href="/zh/works/arithmetic-spectral-descent/"><span class="sn">03</span> <span lang="en">Arithmetic Spectral Descent</span></a></li>
+        <li><a href="/zh/works/fractured-adelic-geometry/"><span class="sn">04</span> <span lang="en">Fractured Adelic Geometry</span></a></li>
+        <li><a href="/zh/works/the-archimedean-prism/"><span class="sn">05</span> <span lang="en">The Archimedean Prism</span></a></li>
+        <li><a href="/zh/works/strained-prismatic-geometry/"><span class="sn">06</span> <span lang="en">Strained Prismatic Geometry</span></a></li>
+        <li><a href="/zh/works/the-arithmetic-topos/"><span class="sn">07</span> <span lang="en">The Arithmetic Topos</span></a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
