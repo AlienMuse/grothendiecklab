@@ -316,6 +316,40 @@ strong { color: var(--title); font-weight: 700; }
 .k-math .pn { color: var(--violet); } .k-formal .pn { color: var(--blue); }
 .pt { font: 400 17px/1.35 var(--serif); color: var(--title); }
 .pm { font: 600 12px/1.5 var(--sans); letter-spacing: .03em; color: var(--muted); }
+
+/* a paper's own page (/open/<paper>/, tools/papers.py): the work page's head, the paper's colour, its first page in the
+   site's ink; the contents as the paper's outline; the problems under the paper's own part and work heads */
+.paper-head.gold .wk-n { color: var(--gold); }
+.paper-head .status-card .pp-line { margin: 0 0 .7rem; font-size: 17.5px; line-height: 1.5; color: var(--ink); }
+.paper-head .status-card .pp-line:last-child { margin-bottom: 0; }
+.paper-head .series-line a { color: inherit; text-decoration-color: var(--line2); }
+.paper-head .series-line + .series-line { margin-top: .3rem; }
+.paper-head .nw { white-space: nowrap; }
+.page1 { display: block; border-radius: 4px; }
+.page1 .cover { border: 1px solid var(--line); box-shadow: 0 18px 50px rgba(0, 0, 0, .45); }
+.page1:hover .cover { border-color: var(--line2); }
+.paper-head.gold .page1:hover .cover { border-color: rgba(225, 204, 144, .5); }
+.paper-head.cyan .page1:hover .cover { border-color: rgba(120, 226, 219, .5); }
+.paper-head.blue .page1:hover .cover { border-color: rgba(153, 181, 252, .5); }
+.paper-meta { margin-top: 1.4rem; }
+.contents { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+.contents li { display: flex; align-items: baseline; gap: 14px; padding: .5rem 0; border-bottom: 1px solid var(--line); }
+.contents .ct { flex: 1; font: 400 17px/1.4 var(--serif); color: var(--ink); }
+.contents .cp { font: 600 12.5px/1.4 var(--sans); letter-spacing: .04em; color: var(--muted); font-variant-numeric: tabular-nums; }
+.contents .lv2 .ct { padding-left: 1.4rem; font-size: 16px; color: var(--ink2); }
+.contents .lv3 .ct { padding-left: 2.8rem; font-size: 15.5px; color: var(--ink2); }
+.pg-part { margin: 2rem 0 0; font: 400 26px/1.25 var(--serif); color: var(--title); }
+.pg-work { margin: 1.6rem 0 0; font: 400 19px/1.35 var(--serif); font-style: italic; color: var(--subt); }
+.page-paper .problems { width: min(calc(100vw - 56px), 1180px); }
+.paper-works { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+.paper-works li { padding: .8rem 0 .85rem; border-bottom: 1px solid var(--line); }
+.paper-works a { text-decoration: none; }
+.paper-works .wk-n { margin-right: .5rem; font: 900 12px/1 var(--sans); letter-spacing: .14em; }
+.paper-works .cyan .wk-n { color: var(--cyan); } .paper-works .blue .wk-n { color: var(--blue); }
+.paper-works .violet .wk-n { color: var(--violet); }
+.pw-t { font: 400 20px/1.3 var(--serif); color: var(--title); }
+.paper-works a:hover .pw-t { text-decoration: underline; text-decoration-color: var(--line2); }
+.pw-p { display: block; margin-top: .25rem; font: 600 13px/1.5 var(--sans); letter-spacing: .02em; color: var(--muted); }
 .fig-box canvas, .fig-box .hud { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
 .fig-box .hud { overflow: visible; }
 .fig-box .hud text { font-family: "Segoe UI", "Lab Sans", "Lab Figure Math", "TGP Symbol Math", sans-serif; font-weight: 400;
